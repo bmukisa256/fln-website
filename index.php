@@ -79,7 +79,8 @@
                 <div class="single-Promo">
                     <div class="promo-icon"><i class="material-icons">near_me</i></div>
                     <h2><a href="#">Professionalism & Integrity</a></h2>
-                    <p class="p-1">The FLN will operate with strong adherence to moral and ethical principles and
+                    <p class="p-1" style="padding: 1px;">The FLN will operate with strong adherence to moral and ethical
+                        principles and
                         values such as
                         honesty,
                         honor,
@@ -91,7 +92,8 @@
                     <div class="promo-icon"><i class="material-icons">favorite</i></div>
                     <h2><a href="#">Gender Equality,
                             Justice & Empowerment</a></h2>
-                    <p class="p-1"> The FLN will be known for advocating for gender equality and creating a society
+                    <p class="p-1" style="padding: 1px;"> The FLN will be known for advocating for gender equality and
+                        creating a society
                         where everyone
                         can thrive regardless of their gender (male or female). <br>The FLN will be known for laying a
                         platform where women and girls can gain influence and equal opportunity to pursue personal,
@@ -104,7 +106,8 @@
                 <div class="single-Promo">
                     <div class="promo-icon"><i class="material-icons">dashboard</i></div>
                     <h2><a href="#">Collaboration & Good Stewardship</a></h2>
-                    <p class="p-1">The FLN will be known for partnering and cooperating with several stakeholders,
+                    <p class="p-1" style="padding: 1px;">The FLN will be known for partnering and cooperating with
+                        several stakeholders,
                         teams,
                         and individuals with whom they share an ideology of promoting gender justice and empowerment of
                         women and girls in Africa.<br>The FLN will be known for carefully,
