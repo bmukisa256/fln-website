@@ -14,6 +14,7 @@
         /* Optional: Add shadow for depth */
         overflow: hidden;
         /* Prevent overflow of content */
+        max-width: 100%;
     }
 
     .card-body {
@@ -111,8 +112,8 @@
                 ["image" => "imgs/personal dev.jpg", "date" => "25th NOVEMBER 2022|4:00 pm", "name" => "Dr. Joyce Birimumaaso"],
             ];
             foreach ($events as $event) {
-                echo '<div class="col-md-3 col-xs-6 mb-4 d-flex justify-content-center">';
-                echo '<div class="card events_single" style="width: 18rem;">';
+                echo '<div class="col-md-3 col-sm-6 mb-4 d-flex justify-content-center">'; // Adjusted to use col-sm-6 for smaller screens
+                echo '<div class="card events_single w-100">'; // Added w-100 to make the card take full width of the column
                 echo '<img src="' . $event['image'] . '" class="card-img-top" alt="">';
                 echo '<div class="card-body">';
                 echo '<p class="card-text"><span class="event_left"><i class="material-icons">access_time</i>' . $event['date'] . '</span></p>';
