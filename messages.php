@@ -1,25 +1,30 @@
 <?php include('header.php'); ?>
 
-<section class="carosal-area">
+<!-- About Us Section -->
+<section class="carousel-area" style="background-color: #f8f9fa; padding: 40px 0;">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="client owl-carousel owl-theme">
                     <div class="item">
-                        <div class="text">
-                            <h3>ABOUT US<i class="fa fa-users" aria-hidden="true"></i></h3>
-                            <p>The Female Lawyers’ Network (FLN) is a not-for-profit membership-based women in
-                                law network established in 2022. The FLN offers training and motivational
-                                sessions, empowerment sessions, mentorship and legal referral services with the
-                                aim to mentor and inspire women in law and girls.
-                                The FLN Membership cuts across sectors and age groups and encompasses members
-                                from the judiciary, private legal practice, in-house counsel, diplomatic
-                                mission, security forces, public service and law students.
-                                Further, the FLN membership comprises associate members who include the male
-                                Lawyers, male law students and any other people who embrace the FLN Agenda.</p>
-
-                            <h5 class="white-button"><a href="mailto:femalelawyersnetwork@gmail.com">CONTACT
-                                    US</a></h5>
+                        <div class="text text-center">
+                            <h3 class="display-4" style="color: #343a40;">ABOUT US <i class="fa fa-users"
+                                    aria-hidden="true"></i></h3>
+                            <p class="lead" style="color: #6c757d;">
+                                The Female Lawyers’ Network (FLN) is a not-for-profit membership-based women in law
+                                network established in 2022. The FLN offers training, motivational sessions,
+                                empowerment, mentorship, and legal referral services aimed at mentoring and inspiring
+                                women in law and girls.
+                            </p>
+                            <p style="color: #495057;">
+                                The FLN Membership cuts across sectors and age groups, encompassing members from the
+                                judiciary, private legal practice, in-house counsel, diplomatic missions, security
+                                forces, public service, and law students. Our membership also includes associate
+                                members, including male lawyers, male law students, and anyone who embraces the FLN
+                                agenda.
+                            </p>
+                            <a href="mailto:femalelawyersnetwork@gmail.com" class="btn btn-primary btn-lg mt-3">CONTACT
+                                US</a>
                         </div>
                     </div>
                 </div>
@@ -28,54 +33,60 @@
     </div>
 </section>
 
-<section class="our_activity">
-    <h2>MESSAGE FROM PRESIDENT|FOUNDER</h2>
-    <p>"It is a delight to bring to you the good news from Female Lawyers’ Network (FLN) of an empowered Female
-        Lawyers and the girl child in a gender-equal and just world.
-        Female Lawyers’ Network is alive to the fact that gender equality is pivotal to the achievement of
-        sustainable development not only in Uganda but in the world at large and this is the very reason as to
-        why it comes to focus on core values of;<br>
-        • Gender equality<br>
-        • Good stewardship<br>
-        • Empowerment<br>
-        • Collaboration<br>
-        which values not only benefit female lawyers but also the girl child in general. Because times are
-        shifting and the world is evolving so fast, these core values allow women participate in decision making
-        and even shape the direction of any movement as and when it comes forth thus eradicating gender
-        inequalities, injustices and bias in all spaces worldwide.
-        Women are not any different from men. Once empowered, they actually perform greatly, save for the weak
-        background status driven by stereotypical cultural norms.<br>
-        At Female Lawyers’ Network, we strongly believe and trust that female lawyers and the girl child be
-        given a platform to make manifest of their greatness by involving them in the competitive atmospheres,
-        decision making and many more such avenues to promote good governance and uphold the Rule of Law. I
-        therefore urge us all to join the FLN noble cause to effectively walk the talk because we all are
-        stakeholders in a gender-equal and just world.
-        lift up a woman; Lift up society."<br>
-        Hon Dr.Joyce Nalunga<br>
-        President Female Lawyers’ Network (FLN)<br>
-    </p>
+<!-- Message from President and Chairperson Section -->
+<section class="our_activity" style="background-color: #ffffff; padding: 40px 0;">
+    <div class="container">
+        <h2 class="text-center my-5" style="color: #343a40;">Messages from Leadership</h2>
 
-    <h2>MESSAGE FROM CHAIRPERSON</h2>
-    <p>"Female Lawyers Network.
-        <br>
-        To uphold women’s human rights is to ensure that every woman and girl lives up to her full potential.
-        This year we celebrated the International Women’s Day under the theme DigitALL: Innovation and
-        technology for gender equality”. We do not only celebrate the woman on this day but we also look to the
-        future and think about what we have yet to achieve.
-        The world today with the increase of technology there is a high likelihood that some people will be left
-        behind. That is why the Female Lawyers Network seeks to reach out to girls who intend to influence the
-        world through the law, so that they are not left behind
-        I invite us to search within you and ask ourselves how can I facilitate a young girl to achieve their
-        dream. I encourage you to cultivate a willingness within to look out for them, meet with them and invite
-        them to the Female Lawyers Network.
-        This way you will have contributed to a greater commitment of the Female Lawyers Network whose Mission
-        is to <br>"Eradicate Gender injustices through engagement and awareness with women and girls to promote
-        women rights, foster good governance and uphold Rule of Law in Africa"<br> and a Vision <br>"Empowered
-        female lawyers and the girl child in a gender equal and just world".<br>
-        I invite you all to subscribe to the Female Lawyers Network and make a difference in the life of a girl
-        child.
-        "
-    </p>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm" style="border-radius: 10px;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #007bff;">Message from the President | Founder</h5>
+                        <p class="card-text" style="color: #495057;">
+                            "It is a delight to bring to you the good news from the Female Lawyers’ Network (FLN) of
+                            empowered female lawyers and the girl child in a gender-equal and just world. FLN is
+                            alive to the fact that gender equality is pivotal to sustainable development, not only in
+                            Uganda but globally. This is why we focus on core values such as:
+                        </p>
+                        <ul style="color: #495057;">
+                            <li>Gender equality</li>
+                            <li>Good stewardship</li>
+                            <li>Empowerment</li>
+                            <li>Collaboration</li>
+                        </ul>
+                        <p style="color: #495057;">
+                            These values benefit not only female lawyers but also the girl child in general. Once
+                            empowered, women can significantly contribute to decision-making processes, thereby
+                            eradicating gender inequalities and injustices.
+                        </p>
+                        <footer class="blockquote-footer" style="color: #6c757d;">Hon Dr. Joyce Nalunga<br>President,
+                            Female Lawyers’ Network (FLN)</footer>
+                    </div>
+                </div>
+            </div>
 
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm" style="border-radius: 10px;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #007bff;">Message from the Chairperson</h5>
+                        <p class="card-text" style="color: #495057;">
+                            "To uphold women’s human rights is to ensure that every woman and girl lives up to her full
+                            potential. This year, we celebrated International Women’s Day under the theme 'DigitALL:
+                            Innovation and technology for gender equality'. We aim to empower young girls who intend
+                            to influence the world through law so they are not left behind.
+                        </p>
+                        <p style="color: #495057;">
+                            I invite you to search within and ask how you can facilitate a young girl in achieving her
+                            dreams. Join us in our mission to eradicate gender injustices and promote women’s rights.
+                        </p>
+                        <!-- <footer class="blockquote-footer" style="color: #6c757d;">[Chairperson Name]<br>Chairperson,
+                            Female Lawyers’ Network (FLN)</footer> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
+
 <?php include('footer.php'); ?>
