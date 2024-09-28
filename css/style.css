@@ -286,7 +286,7 @@
     color: #fff;
 }
 
-.our_activity .single-Promo:hover>h2::before {
+.our_activity .:hover>h2::before {
     background: #3a162e ;
     color: #fff;
 }
