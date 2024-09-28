@@ -115,7 +115,10 @@
 
 <section class="latest_news">
     <div class="container">
-        <h2>NEWS <i class="fa fa-newspaper-o" aria-hidden="true"></i></h2>
+        <h2 style="color: black; text-align: center; font-size: 24px;">
+            NEWS <i class="fa fa-newspaper" aria-hidden="true"></i>
+        </h2>
+
 
         <div class="row">
             <?php

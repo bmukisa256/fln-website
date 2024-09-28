@@ -70,7 +70,8 @@ include('header.php');
 </style>
 
 <section class="our_causes">
-    <h2>FLN IN PICTURES <i class="fa fa-camera-retro" aria-hidden="true"></i></h2>
+    <h2 style="color: black; text-align: center; font-size: 24px;">FLN IN PICTURES <i class="fa fa-camera-retro"
+            aria-hidden="true"></i></h2>
     <div class="container">
         <div class="grid-container">
 

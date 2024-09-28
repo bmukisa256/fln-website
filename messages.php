@@ -3,7 +3,8 @@
 <!-- Message from President and Chairperson Section -->
 <section class="our_activity" style="background-color: #ffffff; padding: 40px 0;">
     <div class="container">
-        <h2>MESSAGES <i class="fa fa-envelope" aria-hidden="true"></i></h2>
+        <h2 style="color: black; text-align: center; font-size: 24px;">MESSAGES <i class="fa fa-envelope"
+                aria-hidden="true"></i></h2>
         <div class="row">
             <!-- Message from the President -->
             <div class="col-md-6 mb-4">
