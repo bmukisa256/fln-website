@@ -186,12 +186,15 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="donors_input text-center mb-4">
-                    <h2>BECOME A MEMBER</h2><a
-                        href="https://docs.google.com/forms/d/e/1FAIpQLScUzczqbNKdgHCIa-9vkAdGuyoCkm8ZcmeG6fj1UixVLH00bw/viewform?usp=sf_link"
-                        class="btn btn-primary btn-lg" target="_blank"><i class="fa fa-user-plus"
-                            aria-hidden="true"></i>JOIN FLN MEMBERSHIP TODAY </a>
+                <div class="donors_input text-center mb-4"
+                    style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh;">
+                    <h2>BECOME A MEMBER</h2>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScUzczqbNKdgHCIa-9vkAdGuyoCkm8ZcmeG6fj1UixVLH00bw/viewform?usp=sf_link"
+                        class="btn btn-primary btn-lg" target="_blank">
+                        <i class="fa fa-user-plus" aria-hidden="true"></i> JOIN FLN MEMBERSHIP TODAY
+                    </a>
                 </div>
+
                 <div class="donors_image">
                     <h2 class="text-center mb-4">FLN SECRETARIAT</h2>
                     <div class="donors_featured owl-carousel owl-theme">
