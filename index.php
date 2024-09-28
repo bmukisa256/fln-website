@@ -38,38 +38,37 @@
                 </h2>
                 <div class="timeline">
                     <div class="row">
-                        < !-- Timeline Item for Slogan -->
-                            <div class="col-md-4 text-center">
-                                <div class="timeline-card">
-                                    <div class="timeline-dot bg-primary"><i class="fa fa-pencil-square"
-                                            aria-hidden="true"></i></div>
-                                    <h3 class="h5">SLOGAN</h3>
-                                    <p class="lead text-muted">"STRATEGIC EQUALITY IN LAW" </p>
-                                </div>
+
+                        <div class="col-md-4 text-center">
+                            <div class="timeline-card">
+                                <div class="timeline-dot bg-primary"><i class="fa fa-pencil-square"
+                                        aria-hidden="true"></i></div>
+                                <h3 class="h5">SLOGAN</h3>
+                                <p class="lead text-muted">"STRATEGIC EQUALITY IN LAW" </p>
                             </div>
-                            < !-- Timeline Item for Mission -->
-                                <div class="col-md-4 text-center">
-                                    <div class="timeline-card">
-                                        <div class="timeline-dot bg-success"><i class="fa fa-dot-circle-o"
-                                                aria-hidden="true"></i></div>
-                                        <h3 class="h5">OUR MISSION</h3>
-                                        <p class="lead text-muted">"To eradicate gender injustice through engagement and
-                                            awareness with women and girls to promote women’s rights,
-                                            foster good governance,
-                                            and uphold the Rule of Law in Africa."</p>
-                                    </div>
-                                </div>
-                                < !-- Timeline Item for Vision -->
-                                    <div class="col-md-4 text-center">
-                                        <div class="timeline-card">
-                                            <div class="timeline-dot bg-info"><i class="fa fa-eye"
-                                                    aria-hidden="true"></i></div>
-                                            <h3 class="h5">VISION</h3>
-                                            <p class="lead text-muted">"To have empowered women in law and the girl
-                                                child in a
-                                                gender equal and just world."</p>
-                                        </div>
-                                    </div>
+                        </div>
+
+                        <div class="col-md-4 text-center">
+                            <div class="timeline-card">
+                                <div class="timeline-dot bg-success"><i class="fa fa-dot-circle-o"
+                                        aria-hidden="true"></i></div>
+                                <h3 class="h5">OUR MISSION</h3>
+                                <p class="lead text-muted">"To eradicate gender injustice through engagement and
+                                    awareness with women and girls to promote women’s rights,
+                                    foster good governance,
+                                    and uphold the Rule of Law in Africa."</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 text-center">
+                            <div class="timeline-card">
+                                <div class="timeline-dot bg-info"><i class="fa fa-eye" aria-hidden="true"></i></div>
+                                <h3 class="h5">VISION</h3>
+                                <p class="lead text-muted">"To have empowered women in law and the girl
+                                    child in a
+                                    gender equal and just world."</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
