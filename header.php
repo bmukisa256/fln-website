@@ -4,8 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FLN-FEMALE LAWYERS NETWORK</title>
+    <title>FLN - Female Lawyers Network | Empowering Women in Law</title>
 
+    <meta name="description"
+        content="Join the Female Lawyers Network (FLN) to empower women in the legal profession. Connect, collaborate, and grow with a community of talented female lawyers.">
+    <meta name="keywords"
+        content="Female Lawyers Network, women in law, legal empowerment, women lawyers, FLN, legal community, networking for women lawyers">
+    <meta name="author" content="Female Lawyers Network">
+
+    <link rel="icon" href="imgs/FLN_logo-full_color_50.png" type="image/x-icon"> <!-- Update with your favicon path -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
