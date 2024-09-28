@@ -16,7 +16,7 @@
                         <!-- Center-aligned content -->
                         <!-- Title styling for more outstanding effect -->
                         <h1 class="card-title" style="color: #007bff; font-size: 2rem; font-weight: bold;">
-                            Message from the President | Founder
+                            Message from the President
                         </h1>
                         <p class="card-text" style="color: #495057; text-align: justify;">
                             "It is a delight to bring to you the good news from the Female Lawyers’ Network (FLN) of
