@@ -28,7 +28,7 @@
         }
 
         .nav-link {
-            padding: 10px 6px;
+            padding: 8px 3px;
             color: #343a40;
             text-decoration: none;
             font-weight: 500;
@@ -42,7 +42,7 @@
         }
 
         .nav-icon {
-            margin-right: 2px;
+            margin-right: 1px;
         }
 
         @media (max-width: 1024px) {
