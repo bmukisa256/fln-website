@@ -1,77 +1,74 @@
 <?php
-// Enable error reporting
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+
 
 include('header.php');
 ?>
 
 <style>
-.our_causes {
-    padding: 50px 0;
-    background-color: #f9f9f9;
-}
+    .our_causes {
+        padding: 50px 0;
+        background-color: #f9f9f9;
+    }
 
-.our_causes h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 2.5rem;
-    color: #333;
-}
+    .our_causes h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 2.5rem;
+        color: #333;
+    }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-}
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+    }
 
-.grid-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-    background: rgba(255, 255, 255, 0.9);
-}
+    .grid-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        background: rgba(255, 255, 255, 0.9);
+    }
 
-.grid-item img {
-    width: 100%;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-}
+    .grid-item img {
+        width: 100%;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+    }
 
-.grid-item:hover img {
-    transform: scale(1.05);
-}
+    .grid-item:hover img {
+        transform: scale(1.05);
+    }
 
-.for_padding {
-    padding: 15px;
-    text-align: center;
-}
+    .for_padding {
+        padding: 15px;
+        text-align: center;
+    }
 
-.for_padding h2 {
-    font-size: 1.5rem;
-    color: #333;
-    margin: 10px 0;
-}
+    .for_padding h2 {
+        font-size: 1.5rem;
+        color: #333;
+        margin: 10px 0;
+    }
 
-.for_padding p {
-    color: #666;
-}
+    .for_padding p {
+        color: #666;
+    }
 
-.ribbon {
-    position: absolute;
-    right: -10px;
-    top: 10px;
-    background: #f44336;
-    /* Red color */
-    color: #fff;
-    padding: 5px 10px;
-    font-size: 0.8rem;
-    transform: rotate(45deg);
-    text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-}
+    .ribbon {
+        position: absolute;
+        right: -10px;
+        top: 10px;
+        background: #f44336;
+        /* Red color */
+        color: #fff;
+        padding: 5px 10px;
+        font-size: 0.8rem;
+        transform: rotate(45deg);
+        text-align: center;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
 </style>
 
 <section class="our_causes">

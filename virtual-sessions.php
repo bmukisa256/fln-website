@@ -1,73 +1,73 @@
 <?php include('header.php'); ?>
 
 <style>
-.events_single {
-    height: 280px;
-    /* Adjusted height for better spacing */
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #ccc;
-    /* Optional: Add border for better distinction */
-    border-radius: 8px;
-    /* Optional: Rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    /* Optional: Add shadow for depth */
-    overflow: hidden;
-    /* Prevent overflow of content */
-}
+    .events_single {
+        height: 280px;
+        /* Adjusted height for better spacing */
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #ccc;
+        /* Optional: Add border for better distinction */
+        border-radius: 8px;
+        /* Optional: Rounded corners */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        /* Optional: Add shadow for depth */
+        overflow: hidden;
+        /* Prevent overflow of content */
+    }
 
-.card-body {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 15px;
-    /* Increased padding for better spacing */
-}
+    .card-body {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 15px;
+        /* Increased padding for better spacing */
+    }
 
-.card-title {
-    font-size: 1.25rem;
-    /* Slightly larger font size for better visibility */
-    font-weight: bold;
-    /* Make the title bold */
-    margin: 10px 0 5px;
-    /* Add margin for spacing */
-    color: #333;
-    /* Darker color for better contrast */
-}
+    .card-title {
+        font-size: 1.25rem;
+        /* Slightly larger font size for better visibility */
+        font-weight: bold;
+        /* Make the title bold */
+        margin: 10px 0 5px;
+        /* Add margin for spacing */
+        color: #333;
+        /* Darker color for better contrast */
+    }
 
-.card-text {
-    font-size: 14px;
-    /* Adjust font size for better readability */
-    color: #555;
-    /* Lighter color for the date */
-    margin: 0;
-    /* Remove margin for better alignment */
-}
+    .card-text {
+        font-size: 14px;
+        /* Adjust font size for better readability */
+        color: #555;
+        /* Lighter color for the date */
+        margin: 0;
+        /* Remove margin for better alignment */
+    }
 
-.event_left {
-    display: flex;
-    align-items: center;
-    /* Center the icon and text vertically */
-    font-size: 14px;
-    /* Ensure consistent font size */
-    margin-bottom: 5px;
-    /* Add spacing below the date */
-}
+    .event_left {
+        display: flex;
+        align-items: center;
+        /* Center the icon and text vertically */
+        font-size: 14px;
+        /* Ensure consistent font size */
+        margin-bottom: 5px;
+        /* Add spacing below the date */
+    }
 
-.material-icons {
-    margin-right: 5px;
-    /* Space between icon and text */
-    color: #06B6D4;
-    /* Customize icon color */
-}
+    .material-icons {
+        margin-right: 5px;
+        /* Space between icon and text */
+        color: #06B6D4;
+        /* Customize icon color */
+    }
 
-.card-img-top {
-    height: 150px;
-    /* Fixed height for images */
-    object-fit: cover;
-    /* Ensure the image covers the area without distortion */
-}
+    .card-img-top {
+        height: 150px;
+        /* Fixed height for images */
+        object-fit: cover;
+        /* Ensure the image covers the area without distortion */
+    }
 </style>
 
 <section class="events_section_area py-5">
@@ -112,7 +112,7 @@
             ];
             foreach ($events as $event) {
                 echo '<div class="col-md-3 col-xs-6 mb-4 d-flex justify-content-center">';
-                echo '<div class="card events_single" style="width: 18rem;">';
+                echo '<div class="card events_single">';
                 echo '<img src="' . $event['image'] . '" class="card-img-top" alt="">';
                 echo '<div class="card-body">';
                 echo '<p class="card-text"><span class="event_left"><i class="material-icons">access_time</i>' . $event['date'] . '</span></p>';
