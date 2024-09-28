@@ -45,7 +45,7 @@
         <ul>
             <li><a href="https://www.facebook.com/profile.php?id=100085065440813&mibextid=ZbWKwL"><img
                         src="imgs/logos/fb-icon.png" alt="Facebook"></a></li>
-            <li><a href="https://twitter.com/femalelawyernet"><img src="imgs/logos/x.png" alt="X"></a>
+            <li><a href="https://twitter.com/femalelawyernet"><img src="imgs/x.png" alt="X"></a>
             </li>
             <li><a href="https://www.instagram.com/invites/contact/?i=x6wh7po2r80w&utm_content=pdz0f9z"><img
                         src="imgs/logos/instagram-icon.png" alt="Instagram"></a></li>
@@ -65,8 +65,6 @@
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/active.js"></script>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
 
 
 <script>
