@@ -12,7 +12,7 @@
         content="Female Lawyers Network, women in law, legal empowerment, women lawyers, FLN, legal community, networking for women lawyers">
     <meta name="author" content="Female Lawyers Network">
 
-    <link rel="icon" href="imgs/FLN_logo-full_color_50.png" type="image/x-icon"> <!-- Update with your favicon path -->
+    <link rel="icon" href="imgs/FLN_logo-full_color_50.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -23,250 +23,228 @@
     <link rel="stylesheet" href="css/responsive.css">
 
     <style>
-    body {
-        background-color: #f8f9fa;
-        /* Light background for better contrast */
-    }
-
-    .nav-link {
-        padding: 10px 15px;
-        color: #343a40;
-        /* Dark grey for links */
-        text-decoration: none;
-        /* Remove underline */
-        font-weight: 500;
-        /* Bold font */
-        transition: color 0.3s;
-        /* Smooth color transition */
-    }
-
-    .nav-link:hover {
-        color: #007bff;
-        /* Primary color on hover */
-        background-color: rgba(0, 123, 255, 0.1);
-        /* Light background on hover */
-        border-radius: 5px;
-        /* Rounded corners */
-    }
-
-    .nav-icon {
-        margin-right: 5px;
-        /* Space between icon and text */
-    }
-
-    @media (max-width: 767px) {
-        .navbar {
-            flex-direction: column;
-            /* Stack items vertically on small screens */
-            align-items: flex-start;
-            /* Align items to the start */
-        }
-
-        .navbar-nav {
-            width: 100%;
-            /* Full width for better touch area */
-        }
-
-        .nav-item {
-            width: 100%;
-            /* Full width for nav items */
+        body {
+            background-color: #f8f9fa;
         }
 
         .nav-link {
-            text-align: left;
-            /* Align text to the left */
-            border-bottom: 1px solid #e0e0e0;
-            /* Bottom border for separation */
+            padding: 10px 15px;
+            color: #343a40;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
         }
 
-        .nav-link:last-child {
-            border-bottom: none;
-            /* Remove border from the last item */
-        }
-
-        .navbar-toggler {
-            display: block;
-            /* Show toggle button on small screens */
-            border: none;
-            /* Remove border */
-            background-color: #007bff;
-            /* Button color */
-            color: white;
-            /* Icon color */
+        .nav-link:hover {
+            color: #007bff;
+            background-color: rgba(0, 123, 255, 0.1);
             border-radius: 5px;
-            /* Rounded corners */
-            padding: 10px;
-            /* Padding for better touch area */
         }
 
-        .navbar-toggler i {
-            font-size: 1.5rem;
-            /* Larger icon for better visibility */
-        }
-    }
-
-    @media (min-width: 768px) {
-        .navbar-toggler {
-            display: none;
-            /* Hide toggle button on larger screens */
+        .nav-icon {
+            margin-right: 5px;
         }
 
-        .nav-item {
+        @media (max-width: 767px) {
+            .contact .email {
+                display: none;
+            }
+
+            .contact .phone {
+                display: inline-block;
+            }
+
+            .main-logo {
+                text-align: center;
+                margin: 0 auto;
+            }
+
+            .navbar-toggler {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                border: none;
+                background-color: #007bff;
+                color: white;
+                border-radius: 5px;
+                padding: 10px;
+            }
+
+            .navbar-toggler i {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (min-width: 768px) {
+
+            .contact .email,
+            .contact .phone {
+                display: inline-block;
+            }
+
+            .navbar-toggler {
+                display: none;
+            }
+
+            .nav-item {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .main-logo img {
+            max-height: 80px;
+        }
+
+        .contact p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        .contact span {
+            margin-right: 15px;
             display: flex;
-            /* Display items in a row */
             align-items: center;
-            /* Center items vertically */
         }
-    }
 
-    .contact p {
-        margin: 0;
-        /* Remove default margin */
-        font-size: 0.9rem;
-        /* Slightly smaller font size */
-    }
+        .contact i {
+            margin-right: 5px;
+            color: #007bff;
+        }
 
-    .contact span {
-        margin-right: 15px;
-        /* Space between phone and email */
-        display: flex;
-        align-items: center;
-        /* Center icons vertically */
-    }
-
-    .contact i {
-        margin-right: 5px;
-        /* Space between icon and text */
-        color: #007bff;
-        /* Icon color */
-    }
+        .navbar-nav {
+            margin-left: auto;
+        }
     </style>
-    <style>
-    .strategic-objectives h5 {
-        color: #06B6D4;
-        /* Customize the color of the heading */
-    }
 
-    .strategic-objectives h2 {
-        margin-top: 2rem;
-        /* Space above the button */
-    }
+
+
+
+    <style>
+        .strategic-objectives h5 {
+            color: #06B6D4;
+            /* Customize the color of the heading */
+        }
+
+        .strategic-objectives h2 {
+            margin-top: 2rem;
+            /* Space above the button */
+        }
     </style>
 
     <style>
-    .events_section_area h2 {
-        color: #06B6D4;
-        /* Customize the heading color */
-    }
+        .events_section_area h2 {
+            color: #06B6D4;
+            /* Customize the heading color */
+        }
 
-    .list-group-item {
-        font-size: 1.1rem;
-        /* Adjust font size for better readability */
-    }
+        .list-group-item {
+            font-size: 1.1rem;
+            /* Adjust font size for better readability */
+        }
     </style>
 
     <style>
-    .timeline {
-        position: relative;
-        margin: 40px 0;
-    }
+        .timeline {
+            position: relative;
+            margin: 40px 0;
+        }
 
-    .timeline-card {
-        background: #f8f9fa;
-        padding: 20px 20px 20px 60px;
-        /* Added left padding for icon space */
-        border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        margin-bottom: 20px;
-        position: relative;
-        z-index: 1;
-        /* To ensure card is above the line */
-    }
+        .timeline-card {
+            background: #f8f9fa;
+            padding: 20px 20px 20px 60px;
+            /* Added left padding for icon space */
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+            /* To ensure card is above the line */
+        }
 
-    .timeline-dot {
-        position: absolute;
-        top: 10px;
-        /* Adjusted top position */
-        left: 10px;
-        /* Adjusted left position */
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-size: 20px;
-        z-index: 2;
-        /* Above the card */
-    }
+        .timeline-dot {
+            position: absolute;
+            top: 10px;
+            /* Adjusted top position */
+            left: 10px;
+            /* Adjusted left position */
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            z-index: 2;
+            /* Above the card */
+        }
 
-    .timeline-card:nth-child(1) .timeline-dot {
-        top: 10px;
-        /* Adjusted for specific item */
-        left: 10px;
-        /* Adjusted for specific item */
-    }
+        .timeline-card:nth-child(1) .timeline-dot {
+            top: 10px;
+            /* Adjusted for specific item */
+            left: 10px;
+            /* Adjusted for specific item */
+        }
 
-    .timeline-card:nth-child(2) .timeline-dot {
-        top: 10px;
-        /* Adjusted for specific item */
-        left: 10px;
-        /* Adjusted for specific item */
-    }
+        .timeline-card:nth-child(2) .timeline-dot {
+            top: 10px;
+            /* Adjusted for specific item */
+            left: 10px;
+            /* Adjusted for specific item */
+        }
 
-    .timeline-card:nth-child(3) .timeline-dot {
-        top: 10px;
-        /* Adjusted for specific item */
-        left: 10px;
-        /* Adjusted for specific item */
-    }
+        .timeline-card:nth-child(3) .timeline-dot {
+            top: 10px;
+            /* Adjusted for specific item */
+            left: 10px;
+            /* Adjusted for specific item */
+        }
 
-    .timeline::before {
-        content: '';
-        position: absolute;
-        top: 50px;
-        /* Adjust this to position the line */
-        left: 0;
-        right: 0;
-        height: 4px;
-        background: #ddd;
-        /* Line color */
-        z-index: 0;
-        /* Behind the cards */
-    }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 50px;
+            /* Adjust this to position the line */
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: #ddd;
+            /* Line color */
+            z-index: 0;
+            /* Behind the cards */
+        }
 
-    .events_single {
-        height: 300px;
-        /* Adjust the height as needed */
-        display: flex;
-        flex-direction: column;
-    }
+        .events_single {
+            height: 300px;
+            /* Adjust the height as needed */
+            display: flex;
+            flex-direction: column;
+        }
 
-    .card-body {
-        flex-grow: 1;
-        /* Allow the body to take up remaining space */
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        /* Distribute space evenly */
-    }
+        .card-body {
+            flex-grow: 1;
+            /* Allow the body to take up remaining space */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            /* Distribute space evenly */
+        }
 
-    .card-title {
-        overflow: hidden;
-        /* Prevent text overflow */
-        text-overflow: ellipsis;
-        /* Add ellipsis for overflow text */
-        white-space: nowrap;
-        /* Prevent wrapping */
-    }
+        .card-title {
+            overflow: hidden;
+            /* Prevent text overflow */
+            text-overflow: ellipsis;
+            /* Add ellipsis for overflow text */
+            white-space: nowrap;
+            /* Prevent wrapping */
+        }
 
-    .card-text {
-        font-size: 14px;
-        /* Adjust font size for better readability */
-    }
+        .card-text {
+            font-size: 14px;
+            /* Adjust font size for better readability */
+        }
     </style>
-
 
 </head>
 
@@ -280,11 +258,15 @@
                         <div class="col-md-8 col-sm-8 col-xs-12">
                             <div class="contact">
                                 <p>
-                                    <span><i class="fas fa-phone-alt"></i><a href="tel:+256755999544"> +256
-                                            755999544</a> <i class="fas fa-envelope"></i><a
-                                            href="mailto:femalelawyersnetwork@gmail.com">
-                                            femalelawyersnetwork@gmail.com</a></span>
-
+                                    <span class="phone">
+                                        <i class="fas fa-phone-alt"></i>
+                                        <a href="tel:+256755999544">+256 755999544</a>
+                                    </span>
+                                    <span class="email">
+                                        <i class="fas fa-envelope"></i>
+                                        <a
+                                            href="mailto:femalelawyersnetwork@gmail.com">femalelawyersnetwork@gmail.com</a>
+                                    </span>
                                 </p>
                             </div>
                         </div>
@@ -303,9 +285,8 @@
                         <div class="col-md-5 col-sm-12 col-xs-12 text-center text-md-left">
                             <a href="#">
                                 <div class="main-logo">
-                                    <img src="imgs/FLN_logo-full_color_50.png" alt="FLN-logo" class="img-fluid"
-                                        style="max-height: 80px;">
-                                    <h2 class="d-none">FLN</h2> <!-- Keep the h2 for accessibility but hide it -->
+                                    <img src="imgs/FLN_logo-full_color_50.png" alt="FLN-logo" class="img-fluid">
+                                    <h2 class="d-none">FLN</h2>
                                 </div>
                             </a>
                         </div>
@@ -314,7 +295,7 @@
                                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                                     data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                                     aria-label="Toggle navigation">
-                                    <i class="fas fa-bars"></i> <!-- Better toggle icon -->
+                                    <i class="fas fa-bars"></i>
                                 </button>
                                 <div class="collapse navbar-collapse" id="navbarNav">
                                     <ul class="navbar-nav ml-auto">
@@ -328,17 +309,16 @@
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="virtual-sessions.php"><i
-                                                    class="fas fa-video nav-icon"></i>
-                                                VIRTUAL SESSIONS</a>
+                                                    class="fas fa-video nav-icon"></i> VIRTUAL SESSIONS</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="news.php"><i
-                                                    class="fas fa-newspaper nav-icon"></i> NEWS</a>
+                                                    class="fas fa-newspaper nav-icon"></i>
+                                                NEWS</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="pictorial.php"><i
-                                                    class="fas fa-image nav-icon"></i>
-                                                PICTORIAL</a>
+                                                    class="fas fa-image nav-icon"></i> PICTORIAL</a>
                                         </li>
                                     </ul>
                                 </div>
