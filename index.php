@@ -79,11 +79,11 @@
                 <div class="single-Promo">
                     <div class="promo-icon"><i class="material-icons">near_me</i></div>
                     <h2><a href="#">Professionalism & Integrity</a></h2>
-                    <p class="p-1"></p>>The FLN will operate with strong adherence to moral and ethical principles and
-                    values such as
-                    honesty,
-                    honor,
-                    dependability and trustworthiness.</p>
+                    <p class="p-1">The FLN will operate with strong adherence to moral and ethical principles and
+                        values such as
+                        honesty,
+                        honor,
+                        dependability and trustworthiness.</p>
                 </div>
             </div>
             <div class="col-md-4 col-xs-12">
@@ -91,13 +91,13 @@
                     <div class="promo-icon"><i class="material-icons">favorite</i></div>
                     <h2><a href="#">Gender Equality,
                             Justice & Empowerment</a></h2>
-                    <p class="p-1"></p>> The FLN will be known for advocating for gender equality and creating a society
-                    where everyone
-                    can thrive regardless of their gender (male or female). <br>The FLN will be known for laying a
-                    platform where women and girls can gain influence and equal opportunity to pursue personal,
-                    social,
-                    and economic endeavors,
-                    engaging in all parts of society on the same basis as men. </p>
+                    <p class="p-1"> The FLN will be known for advocating for gender equality and creating a society
+                        where everyone
+                        can thrive regardless of their gender (male or female). <br>The FLN will be known for laying a
+                        platform where women and girls can gain influence and equal opportunity to pursue personal,
+                        social,
+                        and economic endeavors,
+                        engaging in all parts of society on the same basis as men. </p>
                 </div>
             </div>
             <div class="col-md-4 col-xs-12">
