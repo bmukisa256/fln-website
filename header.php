@@ -28,7 +28,7 @@
         }
 
         .nav-link {
-            padding: 10px 15px;
+            padding: 10px 6px;
             color: #343a40;
             text-decoration: none;
             font-weight: 500;
@@ -42,10 +42,10 @@
         }
 
         .nav-icon {
-            margin-right: 5px;
+            margin-right: 2px;
         }
 
-        @media (max-width: 767px) {
+        @media (max-width: 1024px) {
             .contact .email {
                 display: none;
             }
@@ -75,7 +75,7 @@
             }
         }
 
-        @media (min-width: 768px) {
+        @media (min-width: 900px) {
 
             .contact .email,
             .contact .phone {
