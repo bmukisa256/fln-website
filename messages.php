@@ -3,11 +3,7 @@
 <!-- Message from President and Chairperson Section -->
 <section class="our_activity" style="background-color: #ffffff; padding: 40px 0;">
     <div class="container">
-        <!-- Center aligned section title -->
-        <h1 class="text-center my-5" style="color: #343a40; font-size: 3.5rem; font-weight: bold;">
-            Messages from Leadership
-        </h1>
-
+        <h2>MESSAGES <i class="fa fa-envelope" aria-hidden="true"></i></h2>
         <div class="row">
             <!-- Message from the President -->
             <div class="col-md-6 mb-4">

@@ -73,7 +73,7 @@
 
 <section class="events_section_area py-5">
     <div class="container">
-        <h2 class="text-center mb-4">FLN VIRTUAL ENGAGEMENTS <i class="fa fa-desktop" aria-hidden="true"></i></h2>
+        <h2>FLN VIRTUAL ENGAGEMENTS <i class="fa fa-desktop" aria-hidden="true"></i></h2>
         <p class="text-center mb-5">
             Female Lawyers’ Network (FLN) has been successful in conducting various sessions; both virtual and physical
             sessions. These sessions have covered a wide range of areas cutting across the legal spectrum, health,
