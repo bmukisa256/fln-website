@@ -76,10 +76,10 @@
         <h2 class="text-center">CORE VALUES<i class="fa fa-diamond" aria-hidden="true"></i></h2>
         <div class="row">
             <div class="col-md-4 col-xs-12">
-                <div class="single-Promo " style="padding-left:10">
+                <div class="single-Promo ">
                     <div class="promo-icon"><i class="material-icons">near_me</i></div>
                     <h2><a href="#">Professionalism & Integrity</a></h2>
-                    <p class="p-1" style="padding: 1px;">The FLN will operate with strong adherence to moral and ethical
+                    <p style="padding: 1px;">The FLN will operate with strong adherence to moral and ethical
                         principles and
                         values such as
                         honesty,
@@ -92,7 +92,7 @@
                     <div class="promo-icon"><i class="material-icons">favorite</i></div>
                     <h2><a href="#">Gender Equality,
                             Justice & Empowerment</a></h2>
-                    <p class="p-1" style="padding: 1px;"> The FLN will be known for advocating for gender equality and
+                    <p style="padding: 1px;"> The FLN will be known for advocating for gender equality and
                         creating a society
                         where everyone
                         can thrive regardless of their gender (male or female). <br>The FLN will be known for laying a
@@ -106,7 +106,7 @@
                 <div class="single-Promo">
                     <div class="promo-icon"><i class="material-icons">dashboard</i></div>
                     <h2><a href="#">Collaboration & Good Stewardship</a></h2>
-                    <p class="p-1" style="padding: 1px;">The FLN will be known for partnering and cooperating with
+                    <p style="padding: 1px;">The FLN will be known for partnering and cooperating with
                         several stakeholders,
                         teams,
                         and individuals with whom they share an ideology of promoting gender justice and empowerment of
