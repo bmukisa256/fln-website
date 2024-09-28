@@ -286,88 +286,88 @@
             <div class="col-md-12">
                 <div class="volunteer_single owl-carousel owl-theme">
                     <div class="item">
-                        <img src="imgs/WhatsApp Image 2023-01-05 at 13.31.00.jpeg" alt="">
-                        <div class="text">
+                        <img src="imgs/WhatsApp Image 2023-01-05 at 13.31.00.jpeg" alt="" class="img-fluid">
+                        <div class="text text-center">
                             <h3>Hon Dr. Joyce Nalunga Birimumaaso</h3>
                             <h6>PRESIDENT | FOUNDER</h6>
                             <p>Member, Leadership Code Tribunal.</p>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="imgs/justice lillian.jfif" alt="">
-                        <div class="text">
+                        <img src="imgs/justice lillian.jfif" alt="" class="img-fluid">
+                        <div class="text text-center">
                             <h3>Hon Prof. Lady Justice Lillian Tibatemwa Ekirukubinza</h3>
                             <h6>CHAIRPERSON</h6>
                             <p>Justice of the Supreme Court.</p>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="imgs/jane abodo.png" alt="">
-                        <div class="text">
+                        <img src="imgs/jane abodo.png" alt="" class="img-fluid">
+                        <div class="text text-center">
                             <h3>Hon. Lady Justice Jane Frances Abodo</h3>
                             <h6>VICE CHAIRPERSON</h6>
                             <p>Director of Public Prosecutions.</p>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="imgs/WhatsApp Image 2023-01-05 at 14.26.09.jpeg" alt="">
-                        <div class="text">
+                        <img src="imgs/WhatsApp Image 2023-01-05 at 14.26.09.jpeg" alt="" class="img-fluid">
+                        <div class="text text-center">
                             <h3>Ms. Angelina Namakula Ofwono</h3>
                             <h6>MEMBER</h6>
                             <p>Chief Legal, DFCU Bank.</p>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="imgs/WhatsApp Image 2023-01-05 at 21.01.33.jpeg" alt="">
-                        <div class="text">
+                        <img src="imgs/WhatsApp Image 2023-01-05 at 21.01.33.jpeg" alt="" class="img-fluid">
+                        <div class="text text-center">
                             <h3>Mariam Mbabaali</h3>
                             <h6>MEMBER</h6>
                             <p>Managing Partner, M/s Kabuzire, Mbabaali & Co. Advocates</p>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="imgs/WhatsApp Image 2023-01-06 at 08.48.58.jpeg" alt="">
-                        <div class="text">
+                        <img src="imgs/WhatsApp Image 2023-01-06 at 08.48.58.jpeg" alt="" class="img-fluid">
+                        <div class="text text-center">
                             <h3>Bulya Lillian</h3>
                             <h6>SECRETARY</h6>
                             <p>Managing Partner, L-Bulya & Co. Advocates.</p>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="imgs/PHOTO-2022-06-27-16-56-26.jpg" alt="">
-                        <div class="text">
+                        <img src="imgs/PHOTO-2022-06-27-16-56-26.jpg" alt="" class="img-fluid">
+                        <div class="text text-center">
                             <h3>Hope Atuhairwe Kisitu</h3>
                             <h6>MEMBER</h6>
                             <p>Corporation Secretary, Uganda Development Corporation.</p>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="imgs/WhatsApp Image 2023-01-09 at 15.23.47.jpeg" alt="">
-                        <div class="text">
+                        <img src="imgs/WhatsApp Image 2023-01-09 at 15.23.47.jpeg" alt="" class="img-fluid">
+                        <div class="text text-center">
                             <h3>Anne Abeja</h3>
                             <h6>MEMBER</h6>
                             <p>Company Secretary Housing Finance Bank.</p>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="imgs/Photo - sharing.jpg" alt="">
-                        <div class="text">
+                        <img src="imgs/Photo - sharing.jpg" alt="" class="img-fluid">
+                        <div class="text text-center">
                             <h3>Hon. Lady Justice Patience T. Rubagumya</h3>
                             <h6>MEMBER</h6>
                             <p>High Court Judge</p>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="imgs/suz.jpg" alt="">
-                        <div class="text">
+                        <img src="imgs/suz.jpg" alt="" class="img-fluid">
+                        <div class="text text-center">
                             <h3>Suzan Batuuka</h3>
                             <h6>MEMBER</h6>
                             <p>Head Legal Uganda Airlines</p>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="imgs/joanita.jpg" alt="">
-                        <div class="text">
+                        <img src="imgs/joanita.jpg" alt="" class="img-fluid">
+                        <div class="text text-center">
                             <h3>Joanita Bushara</h3>
                             <h6>MEMBER</h6>
                             <p>Managing Partner of Justitia Advocates Private Practice.</p>
@@ -381,57 +381,51 @@
 
 <section class="volunteer_area">
     <h2 class="text-center display-4 font-weight-bold">FLN ASSOCIATE MEMBERS</h2>
-    <p class="text-center mb-5"></p>
+    <p class="text-center mb-5">Our Associate Members are also highly skilled professionals.</p>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="volunteer_single owl-carousel owl-theme">
                     <div class="item">
-                        <img src="imgs/asuman.png" alt="">
-                        <div class="text">
+                        <img src="imgs/asuman.png" alt="" class="img-fluid">
+                        <div class="text text-center">
                             <h3>Hon. Asuman Kiyingi</h3>
-                            <h6></h6>
-                            <p>Deputy Chairperson, Leadership Code Tribunal.</p>
+                            <h6>Deputy Chairperson, Leadership Code Tribunal.</h6>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="imgs/deo.jpg" alt="">
-                        <div class="text">
+                        <img src="imgs/deo.jpg" alt="" class="img-fluid">
+                        <div class="text text-center">
                             <h3>Kalikumutima Deo</h3>
-                            <h6></h6>
-                            <p>Managing Partner Kalikumutima & Co. Advocates.</p>
+                            <h6>Managing Partner Kalikumutima & Co. Advocates.</h6>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="imgs/sp.jpg" alt="">
-                        <div class="text">
+                        <img src="imgs/sp.jpg" alt="" class="img-fluid">
+                        <div class="text text-center">
                             <h3>Musangala Simon Peter</h3>
-                            <h6></h6>
-                            <p>Managing Partner Musangala & Co. Advocates</p>
+                            <h6>Managing Partner Musangala & Co. Advocates</h6>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="imgs/sto.jpg" alt="">
-                        <div class="text">
+                        <img src="imgs/sto.jpg" alt="" class="img-fluid">
+                        <div class="text text-center">
                             <h3>Stanley Oketcho</h3>
-                            <h6></h6>
-                            <p>Partner Gem Advocates.</p>
+                            <h6>Partner Gem Advocates.</h6>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="imgs/robert.jpg" alt="">
-                        <div class="text">
+                        <img src="imgs/robert.jpg" alt="" class="img-fluid">
+                        <div class="text text-center">
                             <h3>Robert Mackay</h3>
-                            <h6></h6>
-                            <p>Managing Partner, R. Mackay & Co. Advocates</p>
+                            <h6>Managing Partner, R. Mackay & Co. Advocates</h6>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="imgs/PHOTO-2023-12-29-21-35-17.jpg" alt="">
-                        <div class="text">
+                        <img src="imgs/PHOTO-2023-12-29-21-35-17.jpg" alt="" class="img-fluid">
+                        <div class="text text-center">
                             <h3>Otim Isaac</h3>
-                            <h6></h6>
-                            <p>Musangala Advocates</p>
+                            <h6>Musangala Advocates</h6>
                         </div>
                     </div>
                 </div>
@@ -439,6 +433,7 @@
         </div>
     </div>
 </section>
+
 
 <section class="carosal_bottom">
     <div class="container">
