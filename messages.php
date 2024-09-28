@@ -1,7 +1,7 @@
 <?php include('header.php'); ?>
 
 <!-- About Us Section -->
-<section class="carousel-area" style="background-color: #f8f9fa; padding: 40px 0;">
+<!-- <section class="carousel-area" style="background-color: #f8f9fa; padding: 40px 0;">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -31,7 +31,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <!-- Message from President and Chairperson Section -->
 <section class="our_activity" style="background-color: #ffffff; padding: 40px 0;">
