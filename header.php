@@ -290,23 +290,25 @@
                                 <div class="collapse navbar-collapse" id="navbarNav">
                                     <ul class="navbar-nav ml-auto">
                                         <li class="nav-item active">
-                                            <a class="nav-link" href="index.html"><i class="fas fa-home nav-icon"></i>
+                                            <a class="nav-link" href="index.php"><i class="fas fa-home nav-icon"></i>
                                                 HOME</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="flnpg1.html"><i
+                                            <a class="nav-link" href="messages.php"><i
                                                     class="fas fa-comments nav-icon"></i> MESSAGES</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="flnpg2.html"><i class="fas fa-video nav-icon"></i>
+                                            <a class="nav-link" href="virtual-sessions.php"><i
+                                                    class="fas fa-video nav-icon"></i>
                                                 VIRTUAL SESSIONS</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="flnpg3.html"><i
+                                            <a class="nav-link" href="news.php"><i
                                                     class="fas fa-newspaper nav-icon"></i> NEWS</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="flnpg4.html"><i class="fas fa-image nav-icon"></i>
+                                            <a class="nav-link" href="pictorial.php"><i
+                                                    class="fas fa-image nav-icon"></i>
                                                 PICTORIAL</a>
                                         </li>
                                     </ul>
