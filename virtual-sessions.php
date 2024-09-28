@@ -112,7 +112,7 @@
             ];
             foreach ($events as $event) {
                 echo '<div class="col-md-3 col-xs-6 mb-4 d-flex justify-content-center">';
-                echo '<div class="card events_single" style="width: 16rem;">';
+                echo '<div class="card events_single" style="width: 18rem;">';
                 echo '<img src="' . $event['image'] . '" class="card-img-top" alt="">';
                 echo '<div class="card-body">';
                 echo '<p class="card-text"><span class="event_left"><i class="material-icons">access_time</i>' . $event['date'] . '</span></p>';
