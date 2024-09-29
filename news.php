@@ -139,6 +139,11 @@
                     'title' => 'OUR SOCIALS',
                     'image' => 'imgs/WhatsApp Image 2023-01-04 at 14.01.56.jpeg',
                 ],
+                [
+                    'date' => 'September 15, 2024',
+                    'title' => 'SENSITIZATION AND AWARENESS ON CLIMATE CHANGE',
+                    'image' => 'imgs/climate_change.jpeg',
+                ],
             ];
 
             foreach ($news_items as $news) {
