@@ -38,7 +38,7 @@
 
     .latest_news img {
         width: 100%;
-        height: 200px;
+        height: 350px;
         /* Fixed height for uniformity */
         object-fit: cover;
         /* Ensures images are uniform and cropped */
@@ -102,7 +102,7 @@
         }
 
         .latest_news img {
-            height: 150px;
+            height: 250px;
             /* Smaller image height on mobile */
         }
 
