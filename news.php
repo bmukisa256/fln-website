@@ -125,17 +125,17 @@
             // Example array of news articles
             $news_items = [
                 [
-                    'date' => 'January 1, 2023',
+                    'date' => '2024',
                     'title' => 'FLN DISTINGUISHED DINNER SPONSORS',
                     'image' => 'imgs/dinnersponsors.jpg',
                 ],
                 [
-                    'date' => 'January 5, 2023',
+                    'date' => '2024',
                     'title' => 'FOUNDER/PRESIDENT BIO',
                     'image' => 'imgs/PHOTO-2023-12-29-20-28-10.jpg',
                 ],
                 [
-                    'date' => 'January 10, 2023',
+                    'date' => '2024',
                     'title' => 'OUR SOCIALS',
                     'image' => 'imgs/WhatsApp Image 2023-01-04 at 14.01.56.jpeg',
                 ],
