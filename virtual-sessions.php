@@ -2,7 +2,7 @@
 
 <style>
     .events_single {
-        height: 280px;
+        height: 360px;
         /* Adjusted height for better spacing */
         display: flex;
         flex-direction: column;
@@ -64,7 +64,7 @@
     }
 
     .card-img-top {
-        height: 150px;
+        height: 270px;
         /* Fixed height for images */
         object-fit: cover;
         /* Ensure the image covers the area without distortion */
