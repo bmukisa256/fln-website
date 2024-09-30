@@ -111,9 +111,9 @@
                 ["image" => "imgs/goodcommun.jpg", "date" => "3rd NOVEMBER 2024|6:00 pm", "name" => "Norah Matovu Muwanga"],
                 ["image" => "imgs/stragtegicnetw.jpg", "date" => "25th NOVEMBER 2024|4:00 pm", "name" => "Dr. Joyce Birimumaaso"],
                 ["image" => "imgs/personal dev.jpg", "date" => "25th NOVEMBER 2024|4:00 pm", "name" => "Dr. Joyce Birimumaaso"],
-                ["image" => "imgs/virtaul_session1.jpeg", "date" => "25th AUGUST 2024|8:00 am", "name" => "Dr. Joyce Birimumaaso"],
-                ["image" => "imgs/virtaul_session2.jpeg", "date" => "27th JULY 2024|4:00 pm", "name" => "Dr. Joyce Birimumaaso"],
-                ["image" => "imgs/virtaul_session3.jpeg", "date" => "12th SEPTEMBER 2024|8:00 am", "name" => "Dr. Joyce Birimumaaso"],
+                ["image" => "imgs/virtaul_session1.jpeg", "date" => "25th AUGUST 2024|8:00 am", "name" => "Daisy Mulamuzi"],
+                ["image" => "imgs/virtaul_session2.jpeg", "date" => "27th JULY 2024|4:00 pm", "name" => "Leah Nasasira"],
+                ["image" => "imgs/virtaul_session3.jpeg", "date" => "12th SEPTEMBER 2024|8:00 am", "name" => "Sandra Nantaba"],
             ];
             foreach ($events as $event) {
                 echo '<div class="col-md-3 col-sm-6 mb-4 d-flex justify-content-center">'; // Adjusted to use col-sm-6 for smaller screens
