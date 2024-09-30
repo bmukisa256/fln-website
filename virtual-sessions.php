@@ -111,7 +111,7 @@
                 ["image" => "imgs/goodcommun.jpg", "date" => "3rd NOVEMBER 2023|6:00 pm", "name" => "Norah Matovu Muwanga"],
                 ["image" => "imgs/stragtegicnetw.jpg", "date" => "25th NOVEMBER 2022|4:00 pm", "name" => "Dr. Joyce Birimumaaso"],
                 ["image" => "imgs/personal dev.jpg", "date" => "25th NOVEMBER 2022|4:00 pm", "name" => "Dr. Joyce Birimumaaso"],
-                ["image" => "imgs/virtaul_sessions1.jpeg", "date" => "25th AUGUST 2022|8:00 am", "name" => "Dr. Joyce Birimumaaso"],
+                ["image" => "imgs/virtaul_session1.jpeg", "date" => "25th AUGUST 2022|8:00 am", "name" => "Dr. Joyce Birimumaaso"],
                 ["image" => "imgs/virtaul_session2.jpeg", "date" => "27th JULY 2022|4:00 pm", "name" => "Dr. Joyce Birimumaaso"],
                 ["image" => "imgs/virtaul_session3.jpeg", "date" => "12th SEPTEMBER 2022|8:00 am", "name" => "Dr. Joyce Birimumaaso"],
             ];
