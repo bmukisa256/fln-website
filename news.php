@@ -144,6 +144,21 @@
                     'title' => 'SENSITIZATION AND AWARENESS ON CLIMATE CHANGE',
                     'image' => 'imgs/climate_change.jpeg',
                 ],
+                [
+                    'date' => '2024',
+                    'title' => 'END VIOLENCE OF WOMEN AND CHILDREN WITH DISABILITIES',
+                    'image' => 'imgs/FLN end women violence.jpg',
+                ],
+                [
+                    'date' => '2024',
+                    'title' => 'ADVANCING GENDER EQUALITY FOR WOMEN AND CHILDREN WITH DISABILITIES',
+                    'image' => 'imgs/FLN advancing equality.jpg',
+                ],
+                [
+                    'date' => '2024',
+                    'title' => 'ONLINE SYMPOSIUM OF WOMEN AND CHILDREN WITH DISABILITIES',
+                    'image' => 'imgs/FLN online.jpg',
+                ],
             ];
 
             foreach ($news_items as $news) {
