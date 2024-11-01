@@ -176,12 +176,12 @@
                 [
                     'date' => '2024',
                     'title' => 'ADVANCING GENDER EQUALITY FOR WOMEN AND CHILDREN WITH DISABILITIES',
-                    'image' => 'imgs/FLN advancing equality.jpg',
+                    'image' => 'imgs/FLN advancing gender equality.jpg',
                 ],
                 [
                     'date' => '2024',
                     'title' => 'ONLINE SYMPOSIUM OF WOMEN AND CHILDREN WITH DISABILITIES',
-                    'image' => 'imgs/FLN online.jpg',
+                    'image' => 'imgs/FLN online symposium.jpg',
                 ],
 
             ];
