@@ -187,6 +187,220 @@ include('header.php');
                     'title' => 'PERSONAL DEVELOPMENT SEMINAR',
                     'description' => 'Personal Development Seminar by Mandela Group to the members of the Female Lawyers’ Network.',
                 ],
+
+                [
+                    'image' => 'imgs/pictorial (1).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (2).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (3).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (4).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (5).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (6).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (7).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (8).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (9).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (10).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (11).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (12).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (13).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (14).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (15).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (16).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (17).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (18).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (19).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (20).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (21).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (22).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (23).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (24).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (25).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (26).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (27).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (28).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (29).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (30).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (31).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (32).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (33).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (34).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (35).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (36).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (37).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (38).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (39).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (40).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (41).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+                [
+                    'image' => 'imgs/pictorial (42).jpeg',
+                    'title' => '',
+                    'description' => '',
+                ],
+
+
+
             ];
 
             // Loop through the image items and generate HTML

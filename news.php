@@ -145,6 +145,30 @@
                     'image' => 'imgs/climate_change.jpeg',
                 ],
                 [
+                    'title' => 'CLIMATE JUSTICE LEGAL',
+                    'image' => 'imgs/news (1).jpeg',
+                ],
+                [
+                    'date' => '2024',
+                    'title' => 'CLIMATE JUSTICE EDUCATION & PUBLIC AWARENESS',
+                    'image' => 'imgs/news (2).jpeg',
+                ],
+                [
+                    'date' => '2024',
+                    'title' => 'SENSITIZATION & AWARENESS ON CLIMATE CHANGE',
+                    'image' => 'imgs/news (3).jpeg',
+                ],
+                [
+                    'date' => '2024',
+                    'title' => 'THE ROLE OF WOMEN IN CLIMATE JUSTICE ACTION',
+                    'image' => 'imgs/news (4).jpeg',
+                ],
+                [
+                    'date' => '2024',
+                    'title' => 'EFFECTS OF CLIMATE JUSTICE CHANGE AND ITS NEGATIVE IMPACT ON THE SOCIETY',
+                    'image' => 'imgs/news (5).jpeg',
+                ],
+                [
                     'date' => '2024',
                     'title' => 'END VIOLENCE OF WOMEN AND CHILDREN WITH DISABILITIES',
                     'image' => 'imgs/FLN end women violence.jpg',
@@ -159,6 +183,7 @@
                     'title' => 'ONLINE SYMPOSIUM OF WOMEN AND CHILDREN WITH DISABILITIES',
                     'image' => 'imgs/FLN online.jpg',
                 ],
+
             ];
 
             foreach ($news_items as $news) {
