@@ -1,13 +1,13 @@
-/* styles.css */
+/* Updated styles.css */
 
 /* Base Styles */
 :root {
-  --color-primary: #; /* Deep Blue */
-  --color-secondary: #3A162E; /* Teal Accent */
-  --color-accent: #ffd700; /* Gold Accent */
-  --color-text: #333333;
-  --color-background: #ffffff;
-  --color-glass: rgba(255, 255, 255, 0.1);
+  --color-primary: #3A162E; /* Deep Purple */
+  --color-secondary: #BB86FC; /* Soft Lavender */
+  --color-accent: #FFD700; /* Gold Accent */
+  --color-text: #2D2D2D; /* Dark Charcoal */
+  --color-background: #FAF9FB; /* Off White */
+  --color-glass: rgba(255, 255, 255, 0.15);
   --blur-amount: 10px;
   --font-primary: 'Montserrat', sans-serif;
 }
@@ -132,8 +132,8 @@ header {
   left: 0;
   height: 100vh;
   width: 250px;
-  background: #333;
-  color: #fff;
+  background: var(--color-primary);
+  color: var(--color-background);
   transform: translateX(-100%);
   transition: transform 0.3s ease;
   z-index: 9999;
@@ -146,13 +146,13 @@ header {
 .sidebar-links a {
   display: block;
   padding: 10px 0;
-  color: #fff;
+  color: var(--color-background);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .sidebar-links a:hover {
-  color: #ffd700;
+  color: var(--color-secondary);
 }
 
 /* Mobile Nav Toggle Button */
@@ -162,7 +162,7 @@ header {
   right: 20px;
   z-index: 10000;
   background-color: var(--color-primary);
-  color: #ffffff;
+  color: var(--color-background);
   border: none;
   border-radius: 50%;
   width: 60px;
@@ -243,8 +243,9 @@ header {
 /* Highlights Section */
 .highlights {
   padding: 4rem 0;
-  background-color: #f8f8f8;
+  background-color: #F3E5F5; /* Light Lavender */
 }
+
 
 .card-container {
   display: flex;
