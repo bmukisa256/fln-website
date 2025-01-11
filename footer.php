@@ -1,5 +1,5 @@
 <!-- footer.php -->
-<footer class="bg-dark text-light pt-5 pb-3">
+<footer class="text-light pt-5 pb-3">
     <div class="container">
         <div class="row">
             <!-- Quick Links -->
