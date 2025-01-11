@@ -5,61 +5,34 @@ include('header.php');
 
 <main style="padding-top: 17vh;">
     <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
+    <section class="page-header py-5 text-white">
+        <div class="container text-center">
             <h1>Events</h1>
+            <p class="lead">Discover Our Upcoming and Past Events</p>
         </div>
     </section>
 
     <!-- Upcoming Events Section -->
-    <section class="upcoming-events">
+    <section class="upcoming-events py-5">
         <div class="container">
-            <h2 class="text-center mb-5">Upcoming Events</h2>
-            <div class="row event-list">
+            <h2 class="text-center mb-5"><i class="bi bi-calendar-event text-primary me-2"></i>Upcoming Events</h2>
+            <div class="row">
                 <?php
-                // Example array of upcoming events
-                $upcoming_events = [
-                    [
-                        "date" => "2024-07-15 16:00",
-                        "title" => "Annual Women in Law Conference",
-                        "description" => "Join us for our flagship event featuring keynote speakers, panel discussions, and networking opportunities.",
-                        "image" => "imgs/annual_conference.jpg", // Replace with actual image
-                        "link" => "event_detail.php?id=1", // Replace with actual link if available
-                    ],
-                    [
-                        "date" => "2024-08-22 08:00",
-                        "title" => "Legal Tech Workshop",
-                        "description" => "Learn about the latest technological advancements in the legal industry and how to leverage them in your practice.",
-                        "image" => "imgs/legal_tech_workshop.jpg", // Replace with actual image
-                        "link" => "event_detail.php?id=2",
-                    ],
-                    [
-                        "date" => "2024-09-10 18:00",
-                        "title" => "Mentorship Program Kickoff",
-                        "description" => "Our annual mentorship program begins with a networking event for mentors and mentees. Join us to meet your match and kickstart your mentorship journey.",
-                        "image" => "imgs/mentorship_kickoff.jpg", // Replace with actual image
-                        "link" => "event_detail.php?id=3",
-                    ],
-                    // Add more upcoming events as needed
+                $events = [
+                    ["image" => "imgs/virtaul_session2.jpeg", "date" => "27th JULY 2024 | 4:00 pm", "name" => "Leah Nasasira"],
+                    ["image" => "imgs/virtaul_session1.jpeg", "date" => "25th AUGUST 2024 | 8:00 am", "name" => "Daisy Mulamuzi"],
+                    ["image" => "imgs/virtaul_session3.jpeg", "date" => "12th SEPTEMBER 2024 | 8:00 am", "name" => "Sandra Nantaba"],
                 ];
 
-                foreach ($upcoming_events as $event) {
-                    $eventDate = DateTime::createFromFormat('Y-m-d H:i', $event["date"]);
-                    echo '<div class="col-md-6 mb-4">';
-                    echo '<div class="card event-card glass-section h-100">';
-                    echo '<div class="row g-0">';
-                    echo '<div class="col-md-4">';
-                    echo '<img src="' . htmlspecialchars($event["image"]) . '" class="img-fluid rounded-start" alt="' . htmlspecialchars($event["title"]) . '">';
-                    echo '</div>';
-                    echo '<div class="col-md-8">';
-                    echo '<div class="card-body">';
-                    echo '<h5 class="card-title">' . htmlspecialchars($event["title"]) . '</h5>';
-                    echo '<p class="card-text"><i class="bi bi-calendar-event"></i> ' . $eventDate->format('F d, Y | h:i A') . '</p>';
-                    echo '<p class="card-text">' . htmlspecialchars($event["description"]) . '</p>';
-                    echo '<a href="' . htmlspecialchars($event["link"]) . '" class="btn btn-primary">Register</a>';
-                    echo '</div>';
-                    echo '</div>';
-                    echo '</div>';
+                foreach ($events as $event) {
+                    echo '<div class="col-md-4 mb-4">';
+                    echo '    <div class="card event-card glass-section h-100 shadow">';
+                    echo '        <img src="' . htmlspecialchars($event["image"]) . '" alt="' . htmlspecialchars($event["name"]) . '" class="card-img-top img-fluid" loading="lazy">';
+                    echo '        <div class="card-body">';
+                    echo '            <h5 class="card-title text-primary">' . htmlspecialchars($event["name"]) . '</h5>';
+                    echo '            <p class="card-text"><i class="bi bi-clock text-warning me-2"></i>' . htmlspecialchars($event["date"]) . '</p>';
+                    echo '        </div>';
+                    echo '    </div>';
                     echo '</div>';
                 }
                 ?>
@@ -68,40 +41,50 @@ include('header.php');
     </section>
 
     <!-- Past Events Section -->
-    <section class="past-events bg-light">
+    <section class="past-events bg-light py-5">
         <div class="container">
-            <h2 class="text-center mb-5">Past Event Highlights</h2>
-            <div class="row event-grid">
+            <h2 class="text-center mb-5"><i class="bi bi-calendar-check text-success me-2"></i>Past Events</h2>
+            <div class="row">
                 <?php
-                // Example array of past events
                 $past_events = [
-                    [
-                        "title" => "Women's Leadership Summit",
-                        "description" => "Our annual summit brought together influential women leaders in law to share insights and inspire the next generation.",
-                        "image" => "imgs/womens_leadership_summit.jpg", // Replace with actual image
-                    ],
-                    [
-                        "title" => "Pro Bono Week",
-                        "description" => "Members provided free legal services to underserved communities, making a significant impact on access to justice.",
-                        "image" => "imgs/pro_bono_week.jpg", // Replace with actual image
-                    ],
-                    [
-                        "title" => "Career Development Workshop",
-                        "description" => "Experienced professionals shared strategies for career advancement and work-life balance in the legal field.",
-                        "image" => "imgs/career_development_workshop.jpg", // Replace with actual image
-                    ],
-                    // Add more past events as needed
+                    ["image" => "imgs/WhatsApp Image 2023-01-04 at 21.47.42.jpeg", "date" => "7th SEPTEMBER 2022 | 4:00 pm", "name" => "Hope Atuhairwe"],
+                    ["image" => "imgs/WhatsApp Image 2023-01-04 at 21.47.43 (1).jpeg", "date" => "7th SEPTEMBER 2022 | 4:00 pm", "name" => "Mariam Mbabaali"],
+                    ["image" => "imgs/WhatsApp Image 2023-01-04 at 21.47.43.jpeg", "date" => "7th SEPTEMBER 2022 | 4:00 pm", "name" => "Dr. Joyce Nalunga Birimumaaso"],
+                    ["image" => "imgs/WhatsApp Image 2023-01-04 at 21.47.44 (1).jpeg", "date" => "7th SEPTEMBER 2022 | 4:00 pm", "name" => "Dr. Zahara Nampewo"],
+                    ["image" => "imgs/WhatsApp Image 2023-01-04 at 21.47.44.jpeg", "date" => "7th SEPTEMBER 2022 | 4:00 pm", "name" => "Angelina Namakula Ofwono"],
+                    ["image" => "imgs/WhatsApp Image 2023-01-04 at 21.47.45 (1).jpeg", "date" => "7th SEPTEMBER 2022 | 4:00 pm", "name" => "Hon. Lady Justice Jane Frances Abodo"],
+                    ["image" => "imgs/WhatsApp Image 2023-01-04 at 21.47.45.jpeg", "date" => "7th SEPTEMBER 2022 | 4:00 pm", "name" => "Dr. Sylivia Namubiru Mukasa"],
+                    ["image" => "imgs/WhatsApp Image 2023-01-04 at 21.47.46.jpeg", "date" => "7th SEPTEMBER 2022 | 4:00 pm", "name" => "Dr. Patricia Achan Okiria"],
+                    ["image" => "imgs/WhatsApp Image 2023-01-04 at 21.47.50 (1).jpeg", "date" => "23rd SEPTEMBER 2022 | 4:00 pm", "name" => "Alice Nakato Lwanga"],
+                    ["image" => "imgs/WhatsApp Image 2023-01-04 at 21.47.47 (1).jpeg", "date" => "30th SEPTEMBER 2022 | 4:00 pm", "name" => "Cecilia Namuddu Muhwezi"],
+                    ["image" => "imgs/WhatsApp Image 2023-01-04 at 21.47.48.jpeg", "date" => "7th OCTOBER 2022 | 4:00 pm", "name" => "Hon. Lady Justice Lillian T. Ekirukubinza"],
+                    ["image" => "imgs/WhatsApp Image 2023-01-04 at 21.47.48 (1).jpeg", "date" => "14th OCTOBER 2022 | 4:00 pm", "name" => "Dr. Sabrina Kitaka"],
+                    ["image" => "imgs/WhatsApp Image 2023-01-04 at 21.47.49.jpeg", "date" => "21st OCTOBER 2022 | 4:00 pm", "name" => "Dr. Justice Walusimbi-Ngobi"],
+                    ["image" => "imgs/WhatsApp Image 2023-01-04 at 21.47.49 (1).jpeg", "date" => "28th OCTOBER 2022 | 4:00 pm", "name" => "Sylivia Mbabazi"],
+                    ["image" => "imgs/WhatsApp Image 2023-01-04 at 21.47.50.jpeg", "date" => "4th NOVEMBER 2022 | 4:00 pm", "name" => "Hon. Lady Justice Julia Sebutinde"],
+                    ["image" => "imgs/WhatsApp Image 2023-01-04 at 21.47.51 (1).jpeg", "date" => "18th NOVEMBER 2022 | 4:00 pm", "name" => "Mercy Kainobwisho"],
+                    ["image" => "imgs/WhatsApp Image 2023-01-04 at 21.47.52.jpeg", "date" => "25th NOVEMBER 2022 | 4:00 pm", "name" => "Patience T. Rubagumya"],
+                    ["image" => "imgs/corporatewomen.jpg", "date" => "1st JUNE 2023 | 5:00 pm", "name" => "Hilder Bahati Sabiti"],
+                    ["image" => "imgs/essential.png", "date" => "16th JUNE 2023 | 4:00 pm", "name" => "Ivan Baguma"],
+                    ["image" => "imgs/personal fina.jpg", "date" => "7th JULY 2023 | 4:00 pm", "name" => "Angelina Ofwono"],
+                    ["image" => "imgs/pp.jpg", "date" => "21st JULY 2023 | 6:00 pm", "name" => "Dr. Joyce Birimumaaso"],
+                    ["image" => "imgs/journey.jpg", "date" => "22nd SEPTEMBER 2023 | 4:00 pm", "name" => "Penelope Sanyu"],
+                    ["image" => "imgs/century female.jpg", "date" => "13th OCTOBER 2023 | 4:00 pm", "name" => "Daisy Mulamuzi Kasujja"],
+                    ["image" => "imgs/dynamic.jpg", "date" => "27th OCTOBER 2023 | 4:00 pm", "name" => "Fatuma Omar"],
+                    ["image" => "imgs/goodcommun.jpg", "date" => "3rd NOVEMBER 2023 | 6:00 pm", "name" => "Norah Matovu Muwanga"],
+                    ["image" => "imgs/stragtegicnetw.jpg", "date" => "6th OCTOBER 2023 | 4:00 pm", "name" => "Dr. Joyce Birimumaaso"],
+                    ["image" => "imgs/personal dev.jpg", "date" => "26th AUGUST 2023 | 8:00 am", "name" => "Mr. Venkatesh Kumar"],
                 ];
 
                 foreach ($past_events as $event) {
                     echo '<div class="col-md-4 mb-4">';
-                    echo '<div class="card past-event-card glass-section h-100">';
-                    echo '<img src="' . htmlspecialchars($event["image"]) . '" class="card-img-top" alt="' . htmlspecialchars($event["title"]) . '">';
-                    echo '<div class="card-body">';
-                    echo '<h5 class="card-title">' . htmlspecialchars($event["title"]) . '</h5>';
-                    echo '<p class="card-text">' . htmlspecialchars($event["description"]) . '</p>';
-                    echo '</div>';
-                    echo '</div>';
+                    echo '    <div class="card past-event-card glass-section h-100 shadow">';
+                    echo '        <img src="' . htmlspecialchars($event["image"]) . '" alt="' . htmlspecialchars($event["name"]) . '" class="card-img-top img-fluid" loading="lazy">';
+                    echo '        <div class="card-body">';
+                    echo '            <h5 class="card-title text-success">' . htmlspecialchars($event["name"]) . '</h5>';
+                    echo '            <p class="card-text"><i class="bi bi-clock text-warning me-2"></i>' . htmlspecialchars($event["date"]) . '</p>';
+                    echo '        </div>';
+                    echo '    </div>';
                     echo '</div>';
                 }
                 ?>
