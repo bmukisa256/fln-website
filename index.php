@@ -1,424 +1,681 @@
-<?php include('header.php'); ?>
+<!-- index.php -->
+<?php
+include('header.php');
+?>
 
-
-<section class="carosal-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="client owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="text">
-                            <h3>ABOUT US<i class="fa fa-users" aria-hidden="true"></i></h3>
-                            <p>The Female Lawyers’ Network (FLN) is a not-for-profit membership-based women in law
-                                network established in 2022. The FLN offers training and motivational sessions,
-                                empowerment sessions,
-                                mentorship and legal referral services with the aim to mentor and inspire women in law
-                                and girls. The FLN Membership cuts across sectors and age groups and encompasses members
-                                from the judiciary,
-                                private legal practice,
-                                in-house counsel,
-                                diplomatic mission,
-                                security forces,
-                                public service and law students. Further,
-                                the FLN membership comprises associate members who include the male Lawyers,
-                                male law students and any other people who embrace the FLN Agenda. </p>
-                            <h5 class="white-button"><a href="mailto:femalelawyersnetwork@gmail.com">CONTACT US</a></h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<main>
+    <!-- Hero Section -->
+    <section class="hero"
+        style="background-image: url('imgs/hero-image.jpg'); background-size: cover; background-position: center; height: 100vh; position: relative;">
+        <div
+            class="container glass-section p-5 text-center text-light d-flex flex-column justify-content-center align-items-center h-100">
+            <h1 class="display-4">Empowering Women in Law for a Brighter Tomorrow</h1>
+            <a href="membership.php" class="cta-button btn btn-primary btn-lg mt-4">
+                Join Us Today <i class="bi bi-arrow-right"></i>
+            </a>
         </div>
-    </div>
-</section>
-<section class="our_activity">
-    <div class="container">
-        <section class="my-5">
-            <div class="container">
-                <h2 class="text-center mb-4 display-4 font-weight-bold"><i class="fa fa-road" aria-hidden="true"></i>
-                </h2>
-                <div class="timeline">
-                    <div class="row">
+    </section>
 
-                        <div class="col-md-4 text-center">
-                            <div class="timeline-card">
-                                <div class="timeline-dot bg-primary"><i class="fa fa-pencil-square"
-                                        aria-hidden="true"></i></div>
-                                <h3 class="h5">SLOGAN</h3>
-                                <p class="lead text-muted">"STRATEGIC EQUALITY IN LAW" </p>
-                            </div>
-                        </div>
+    <!-- Highlights Section -->
+    <section class="highlights py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Latest Highlights <i class="bi bi-star-fill text-warning"></i></h2>
+            <div id="highlightsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators/Dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#highlightsCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Highlight 1"></button>
+                    <button type="button" data-bs-target="#highlightsCarousel" data-bs-slide-to="1"
+                        aria-label="Highlight 2"></button>
+                    <button type="button" data-bs-target="#highlightsCarousel" data-bs-slide-to="2"
+                        aria-label="Highlight 3"></button>
+                </div>
 
-                        <div class="col-md-4 text-center">
-                            <div class="timeline-card">
-                                <div class="timeline-dot bg-success"><i class="fa fa-dot-circle-o"
-                                        aria-hidden="true"></i></div>
-                                <h3 class="h5">OUR MISSION</h3>
-                                <p class="lead text-muted">"To eradicate gender injustice through engagement and
-                                    awareness with women and girls to promote women’s rights,
-                                    foster good governance,
-                                    and uphold the Rule of Law in Africa."</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 text-center">
-                            <div class="timeline-card">
-                                <div class="timeline-dot bg-info"><i class="fa fa-eye" aria-hidden="true"></i></div>
-                                <h3 class="h5">VISION</h3>
-                                <p class="lead text-muted">"To have empowered women in law and the girl
-                                    child in a
-                                    gender equal and just world."</p>
+                <!-- Carousel Inner -->
+                <div class="carousel-inner">
+                    <!-- Slide 1: About Us -->
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="card glass-section h-100 text-center shadow">
+                                    <div class="card-body">
+                                        <i class="bi bi-info-circle-fill highlight-icon mb-3"></i>
+                                        <h3 class="card-title">About Us</h3>
+                                        <p class="card-text">
+                                            The Female Lawyers’ Network (FLN) empowers women in the legal profession to
+                                            lead,
+                                            collaborate, and advocate for equality.
+                                        </p>
+                                        <a href="about.php" class="btn btn-primary">
+                                            Learn More <i class="bi bi-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Slide 2: Core Values -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="card glass-section h-100 text-center shadow">
+                                    <div class="card-body">
+                                        <i class="bi bi-briefcase-fill highlight-icon mb-3"></i>
+                                        <h3 class="card-title">Core Values</h3>
+                                        <p class="card-text">
+                                            We uphold professionalism, integrity, gender equality, and collaboration to
+                                            foster a
+                                            supportive legal community.
+                                        </p>
+                                        <a href="about.php#core-values" class="btn btn-primary">
+                                            Discover Values <i class="bi bi-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3: Join FLN -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="card glass-section h-100 text-center shadow">
+                                    <div class="card-body">
+                                        <i class="bi bi-person-plus-fill highlight-icon mb-3"></i>
+                                        <h3 class="card-title">Join FLN</h3>
+                                        <p class="card-text">
+                                            Become a member today and connect with a network of talented female lawyers
+                                            dedicated to your growth.
+                                        </p>
+                                        <a href="membership.php" class="btn btn-primary">
+                                            Become a Member <i class="bi bi-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <h2 class="text-center">CORE VALUES<i class="fa fa-diamond" aria-hidden="true"></i></h2>
-        <div class="row">
-            <div class="col-md-4 col-xs-12">
-                <div class="single-Promo ">
-                    <div class="promo-icon"><i class="material-icons">near_me</i></div>
-                    <h2><a href="#">Professionalism & Integrity</a></h2>
-                    <p style="padding: 1px;">The FLN will operate with strong adherence to moral and ethical
-                        principles and
-                        values such as
-                        honesty,
-                        honor,
-                        dependability and trustworthiness.</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-xs-12">
-                <div class="single-Promo">
-                    <div class="promo-icon"><i class="material-icons">favorite</i></div>
-                    <h2><a href="#">Gender Equality,
-                            Justice & Empowerment</a></h2>
-                    <p style="padding: 1px;"> The FLN will be known for advocating for gender equality and
-                        creating a society
-                        where everyone
-                        can thrive regardless of their gender (male or female). <br>The FLN will be known for laying a
-                        platform where women and girls can gain influence and equal opportunity to pursue personal,
-                        social,
-                        and economic endeavors,
-                        engaging in all parts of society on the same basis as men. </p>
-                </div>
-            </div>
-            <div class="col-md-4 col-xs-12">
-                <div class="single-Promo">
-                    <div class="promo-icon"><i class="material-icons">dashboard</i></div>
-                    <h2><a href="#">Collaboration & Good Stewardship</a></h2>
-                    <p style="padding: 1px;">The FLN will be known for partnering and cooperating with
-                        several stakeholders,
-                        teams,
-                        and individuals with whom they share an ideology of promoting gender justice and empowerment of
-                        women and girls in Africa.<br>The FLN will be known for carefully,
-                        trustfully,
-                        and responsibly dealing with its members,
-                        and stakeholders in the execution of its mandate. </p>
-                </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#highlightsCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#highlightsCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
-    </div>
-</section>
-<section class="donate_section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 for-padding">
-                <h4 color="black">JOIN FLN</h4>
-                <h3>The FLN has developed five (5) years Strategic plan (2023-2027),
-                    themed:<p>Women in law empowerment agenda: Adopting a gender inclusive and conducive environment.
+    </section>
+
+    <!-- About Us Section -->
+    <section class="introduction bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">About Us</h2>
+            <p class="text-center mb-5">
+                The Female Lawyers’ Network (FLN) is a not-for-profit membership-based network established in 2022 to
+                empower women in the legal profession.
+            </p>
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4">
+                    <img src="imgs/nk7.jpg" alt="About Us Detail" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-6">
+                    <p>
+                        FLN is committed to fostering professional growth, advocating for gender equality, and providing
+                        a supportive community for female legal professionals. We organize events, workshops, and
+                        mentorship programs to ensure our members have the resources and connections they need to excel
+                        in their careers.
                     </p>
-                </h3>
-                <h5 class="font-weight-bold mb-4 text-info text-center">Strategic Objectives:</h5>
-                <p class="mb-3"><i class="fa fa-thumb-tack text-danger" aria-hidden="true"></i>To empower female lawyers
-                    and the girl child in a gender equal and just world. </p>
-                <p class="mb-3"><i class="fa fa-thumb-tack text-danger" aria-hidden="true"></i>To promote gender justice
-                    and human rights and uphold the rule of law in Uganda. </p>
-                <p class="mb-3"><i class="fa fa-thumb-tack text-danger" aria-hidden="true"></i>To develop and strengthen
-                    the FLN secretariat and enhance institutional capacity. </p>
-                <p class="mb-3"><i class="fa fa-thumb-tack text-danger" aria-hidden="true"></i>To enhance resource
-                    mobilization and management. </p>
-                <p class="mb-3"><i class="fa fa-thumb-tack text-danger" aria-hidden="true"></i>To develop networks,
-                    partnerships,
-                    and synergies with the highest levels of accountability. </p>
-                <p class="mb-4"><i class="fa fa-thumb-tack text-danger" aria-hidden="true"></i>To strengthen the brand
-                    and image of FLN to become an effective and professional network meeting the needs of its members.
-                </p>
-                <h2><a href="mailto:femalelawyersnetwork@gmail.com" class="btn btn-outline-primary"><i
-                            class="fa fa-envelope" aria-hidden="true"></i>EMAIL US FOR MORE INFO </a></h2>
+                    <p>
+                        Our mission is to create an inclusive environment where women in law can thrive, lead, and make
+                        impactful changes within the legal sector and beyond.
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-<section class="events_section_area py-5">
-    <div class="container">
-        <h2 class="text-center mb-4">FLN MILESTONES <i class="fa fa-handshake-o" aria-hidden="true"></i></h2>
-        <div class="list-group">
-            <div class="list-group-item"><i class="fa fa-check text-success" aria-hidden="true"></i>Registered with the
-                Uganda Registrations Services Bureau and legally operating under the Laws of Uganda. </div>
-            <div class="list-group-item"><i class="fa fa-check text-success" aria-hidden="true"></i>Launched its 5-year
-                strategic plan from 2022 to 2028. </div>
-            <div class="list-group-item"><i class="fa fa-check text-success" aria-hidden="true"></i>Operationalized the
-                Secretariat which is headed by the Chief Executive Officer who is assisted by the Executive Coordinator
-                alongside a team including social media personnel,
-                Finance,
-                ICT personnel,
-                Interns and volunteers. </div>
-            <div class="list-group-item"><i class="fa fa-check text-success" aria-hidden="true"></i>Launched FLN Clubs
-                in various Universities and Colleges which are led by the patrons who link the club to the University
-                and coordinators who act as a link to the secretariat. </div>
-            <div class="list-group-item"><i class="fa fa-check text-success" aria-hidden="true"></i>Holds weekly online
-                sessions for women in law and law students focused on various areas like excellence in the legal career,
-                professional ethics,
-                mental health,
-                work-life balance,
-                and career guidance. </div>
-            <div class="list-group-item"><i class="fa fa-check text-success" aria-hidden="true"></i>Established
-                strategic partnerships and synergies with various organizations in pursuance of the FLN vision. </div>
-            <div class="list-group-item"><i class="fa fa-check text-success" aria-hidden="true"></i>Carried out
-                Corporate Social Responsibility in various places like Katalemwa Cheshire Home for rehabilitation
-                services (Kawempe division, Kampala district). </div>
-            <div class="list-group-item"><i class="fa fa-check text-success" aria-hidden="true"></i>Held a Dinner in
-                which the FLN Digital Lab was launched. </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="core-values py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Core Values <i class="bi bi-heart-fill text-danger"></i></h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center shadow h-100">
+                        <div class="card-body">
+                            <i class="bi bi-briefcase-fill fs-1 text-primary mb-3"></i>
+                            <h5 class="card-title">Professionalism & Integrity</h5>
+                            <p class="card-text">
+                                We operate with honesty, honor, dependability, and trustworthiness.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center shadow h-100">
+                        <div class="card-body">
+                            <i class="bi bi-people-fill fs-1 text-primary mb-3"></i>
+                            <h5 class="card-title">Gender Equality</h5>
+                            <p class="card-text">
+                                Advocating for a society where everyone thrives regardless of gender.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center shadow h-100">
+                        <div class="card-body">
+                            <i class="bi bi-hand-thumbs-up-fill fs-1 text-primary mb-3"></i>
+                            <h5 class="card-title">Collaboration & Stewardship</h5>
+                            <p class="card-text">
+                                Partnering with stakeholders to promote gender justice responsibly.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
-<section class="donors py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="donors_input text-center mb-4"
-                    style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh;">
-                    <h2>BECOME A MEMBER</h2>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScUzczqbNKdgHCIa-9vkAdGuyoCkm8ZcmeG6fj1UixVLH00bw/viewform?usp=sf_link"
-                        class="btn btn-primary btn-lg" target="_blank">
-                        <i class="fa fa-user-plus" aria-hidden="true"></i> JOIN FLN MEMBERSHIP TODAY
-                    </a>
+    </section>
+
+    <!-- Join FLN Section -->
+    <section class="membership py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Join FLN <i class="bi bi-person-plus-fill text-primary"></i></h2>
+            <p class="text-center mb-5">
+                Become a member of FLN to connect, collaborate, and grow with a community of talented female lawyers.
+            </p>
+            <div class="text-center">
+                <a href="membership.php" class="btn btn-primary btn-lg">
+                    Join FLN Today <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Messages Section -->
+    <section class="messages py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Messages from Our Leaders <i
+                    class="bi bi-chat-left-text-fill text-primary"></i></h2>
+            <div class="row">
+                <!-- Message from the President -->
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary">Message from the President</h3>
+                            <p class="card-text">
+                                "It is a delight to bring to you the good news from the Female Lawyers’ Network (FLN) of
+                                empowered female lawyers and the girl child in a gender-equal and just world. FLN is
+                                alive to the fact that gender equality is pivotal to sustainable development, not only
+                                in Uganda but globally. This is why we focus on core values such as:
+                            </p>
+                            <ul>
+                                <li>Gender equality</li>
+                                <li>Good stewardship</li>
+                                <li>Empowerment</li>
+                                <li>Collaboration</li>
+                            </ul>
+                            <p class="card-text">
+                                These values benefit not only female lawyers but also the girl child in general. Once
+                                empowered, women can significantly contribute to decision-making processes, thereby
+                                eradicating gender inequalities and injustices.
+                            </p>
+                            <footer class="blockquote-footer">Hon Dr. Joyce Nalunga Birimumaaso<br>President, Female
+                                Lawyers’ Network (FLN)</footer>
+                        </div>
+                    </div>
+                </div>
+                <!-- Message from the Chairperson -->
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary">Message from the Chairperson</h3>
+                            <p class="card-text">
+                                "To uphold women’s human rights is to ensure that every woman and girl lives up to her
+                                full potential. This year, we celebrated International Women’s Day under the theme
+                                'DigitALL: Innovation and technology for gender equality'. We aim to empower young girls
+                                who intend to influence the world through law so they are not left behind.
+                            </p>
+                            <p class="card-text">
+                                I invite you to search within and ask how you can facilitate a young girl in achieving
+                                her dreams. Join us in our mission to eradicate gender injustices and promote women’s
+                                rights.
+                            </p>
+                            <footer class="blockquote-footer">Hon. Lady Justice Lillian Tibatemwa
+                                Ekirukubinza<br>Chairperson, Female Lawyers’ Network (FLN)</footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FLN Secretariat Section -->
+    <section class="fln-secretariat py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">FLN Secretariat <i class="bi bi-people-fill text-secondary"></i></h2>
+            <div id="flnSecretariatCarousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators/Dots -->
+                <div class="carousel-indicators">
+                    <?php
+                    // Define team members grouped into slides (4 per slide)
+                    $team_members = [
+                        // Slide 1
+                        [
+                            [
+                                'image' => 'imgs/WhatsApp Image 2023-02-16 at 16.39.39.jpg',
+                                'name' => 'LEAH NASASIRA',
+                                'position' => 'Chief Executive Officer',
+                            ],
+                            [
+                                'image' => 'imgs/WhatsApp Image 2023-04-04 at 11.08.26 (1).jpg',
+                                'name' => 'SANDRA NANTABA',
+                                'position' => 'Executive Coordinator',
+                            ],
+                            [
+                                'image' => 'imgs/daisy.jpg',
+                                'name' => 'DAISY MULAMUZI KASUJJA',
+                                'position' => 'Strategic Advisor',
+                            ],
+                            [
+                                'image' => 'imgs/fatta.jpg',
+                                'name' => 'MUZAFAR GWEYAWADDE',
+                                'position' => 'Social Media Officer',
+                            ],
+                        ],
+                        // Slide 2
+                        [
+                            [
+                                'image' => 'imgs/PHOTO-2024-01-03-19-42-44.jpg',
+                                'name' => 'MUBIRU BYRON',
+                                'position' => 'I.T',
+                            ],
+                            [
+                                'image' => 'imgs/PHOTO-2024-01-03-19-42-54.jpg',
+                                'name' => 'JORDANAH NANDAULA',
+                                'position' => 'Coordinator',
+                            ],
+                            [
+                                'image' => 'imgs/WhatsApp Image 2023-01-10 at 19.57.11.jpg',
+                                'name' => 'APHOPHIA KOMUGAMBE',
+                                'position' => 'Law University Coordinator',
+                            ],
+                            [
+                                'image' => 'imgs/lavender.jpg',
+                                'name' => 'LAVENDER NASSANGA',
+                                'position' => 'Volunteer',
+                            ],
+                        ],
+                    ];
+
+                    $total_slides = count($team_members);
+                    for ($i = 0; $i < $total_slides; $i++) {
+                        $active_class = $i === 0 ? 'active' : '';
+                        echo '<button type="button" data-bs-target="#flnSecretariatCarousel" data-bs-slide-to="' . $i . '" class="' . $active_class . '" aria-current="' . ($i === 0 ? 'true' : 'false') . '" aria-label="FLN Secretariat Member ' . ($i + 1) . '"></button>';
+                    }
+                    ?>
                 </div>
 
-                <div class="donors_image">
-                    <h2 class="text-center mb-4">FLN SECRETARIAT</h2>
-                    <div class="donors_featured owl-carousel owl-theme">
-                        <div class="item"><img src="imgs/WhatsApp Image 2023-02-16 at 16.39.39.jpg" alt="">
-                            <h3>LEAH NASASIRA</h3>
-                            <p>Chief Executive Officer</p>
-                        </div>
-                        <div class="item"><img src="imgs/WhatsApp Image 2023-04-04 at 11.08.26 (1).jpg" alt="">
-                            <h3>SANDRA NANTABA</h3>
-                            <p>Executive Coordinator</p>
-                        </div>
-                        <div class="item"><img src="imgs/daisy.jpg" alt="">
-                            <h3>DAISY MULAMUZI KASUJJA</h3>
-                            <p>Strategic Advisor</p>
-                        </div>
-                        <div class="item"><img src="imgs/fatta.jpg" alt="">
-                            <h3>MUZAFAR GWEYAWADDE</h3>
-                            <p>Social Media Officer</p>
-                        </div>
-                        <div class="item"><img src="imgs/PHOTO-2024-01-03-19-42-44.jpg" alt="">
-                            <h3>MUBIRU BYRON</h3>
-                            <p>I.T</p>
-                        </div>
-                        <div class="item"><img src="imgs/PHOTO-2024-01-03-19-42-54.jpg" alt="">
-                            <h3>JORDANAH NANDAULA</h3>
-                            <p>Coordinator</p>
-                        </div>
-                        <div class="item"><img src="imgs/WhatsApp Image 2023-01-10 at 19.57.11.jpg" alt="">
-                            <h3>APHOPHIA KOMUGAMBE</h3>
-                            <p>Law University Coordinator</p>
-                        </div>
-                        <div class="item"><img src="imgs/lavender.jpg" alt="">
-                            <h3>LAVENDER NASSANGA</h3>
-                            <p>Volunteer</p>
-                        </div>
-                    </div>
+                <!-- Carousel Inner -->
+                <div class="carousel-inner">
+                    <?php
+                    foreach ($team_members as $slide_index => $members_chunk) {
+                        $active_class = $slide_index === 0 ? 'active' : '';
+                        echo '<div class="carousel-item ' . $active_class . '">';
+                        echo '  <div class="row justify-content-center">';
+                        foreach ($members_chunk as $member) {
+                            echo '      <div class="col-lg-3 col-md-6 mb-4">';
+                            echo '          <div class="card glass-section h-100 text-center shadow">';
+                            echo '              <img src="' . htmlspecialchars($member['image']) . '" alt="' . htmlspecialchars($member['name']) . '" class="img-fluid rounded-circle mx-auto mt-3" style="width: 150px; height: 150px; object-fit: cover;" loading="lazy">';
+                            echo '              <div class="card-body">';
+                            echo '                  <h5 class="card-title">' . htmlspecialchars($member['name']) . '</h5>';
+                            echo '                  <p class="card-text">' . htmlspecialchars($member['position']) . '</p>';
+                            echo '              </div>';
+                            echo '          </div>';
+                            echo '      </div>';
+                        }
+                        echo '  </div>';
+                        echo '</div>';
+                    }
+                    ?>
                 </div>
-            </div>
-        </div>
-    </div>
-</section><br>
 
-<section class="volunteer_area">
-    <h2 class="text-center display-4 font-weight-bold">FLN BOARD MEMBERS</h2>
-    <p class="text-center mb-5">Our Board Comprises Highly Skilled and Professional Women</p>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="volunteer_single owl-carousel owl-theme">
-                    <div class="item"><img src="imgs/WhatsApp Image 2023-01-05 at 13.31.00.jpeg" alt=""
-                            class="img-fluid">
-                        <div class="text text-center">
-                            <h3>Hon Dr. Joyce Nalunga Birimumaaso</h3>
-                            <h6>PRESIDENT | FOUNDER</h6>
-                            <p>Member,
-                                Leadership Code Tribunal.</p>
-                        </div>
-                    </div>
-                    <div class="item"><img src="imgs/justice lillian.jfif" alt="" class="img-fluid">
-                        <div class="text text-center">
-                            <h3>Hon Prof. Lady Justice Lillian Tibatemwa Ekirukubinza</h3>
-                            <h6>CHAIRPERSON</h6>
-                            <p>Justice of the Supreme Court.</p>
-                        </div>
-                    </div>
-                    <div class="item"><img src="imgs/jane abodo.png" alt="" class="img-fluid">
-                        <div class="text text-center">
-                            <h3>Hon. Lady Justice Jane Frances Abodo</h3>
-                            <h6>VICE CHAIRPERSON</h6>
-                            <p>Director of Public Prosecutions.</p>
-                        </div>
-                    </div>
-                    <div class="item"><img src="imgs/WhatsApp Image 2023-01-05 at 14.26.09.jpeg" alt=""
-                            class="img-fluid">
-                        <div class="text text-center">
-                            <h3>Ms. Angelina Namakula Ofwono</h3>
-                            <h6>MEMBER</h6>
-                            <p>Chief Legal,
-                                DFCU Bank.</p>
-                        </div>
-                    </div>
-                    <div class="item"><img src="imgs/WhatsApp Image 2023-01-05 at 21.01.33.jpeg" alt=""
-                            class="img-fluid">
-                        <div class="text text-center">
-                            <h3>Mariam Mbabaali</h3>
-                            <h6>MEMBER</h6>
-                            <p>Managing Partner,
-                                M/s Kabuzire,
-                                Mbabaali & Co. Advocates</p>
-                        </div>
-                    </div>
-                    <div class="item"><img src="imgs/WhatsApp Image 2023-01-06 at 08.48.58.jpeg" alt=""
-                            class="img-fluid">
-                        <div class="text text-center">
-                            <h3>Bulya Lillian</h3>
-                            <h6>SECRETARY</h6>
-                            <p>Managing Partner,
-                                L-Bulya & Co. Advocates.</p>
-                        </div>
-                    </div>
-                    <div class="item"><img src="imgs/PHOTO-2022-06-27-16-56-26.jpg" alt="" class="img-fluid">
-                        <div class="text text-center">
-                            <h3>Hope Atuhairwe Kisitu</h3>
-                            <h6>MEMBER</h6>
-                            <p>Corporation Secretary,
-                                Uganda Development Corporation.</p>
-                        </div>
-                    </div>
-                    <div class="item"><img src="imgs/WhatsApp Image 2023-01-09 at 15.23.47.jpeg" alt=""
-                            class="img-fluid">
-                        <div class="text text-center">
-                            <h3>Anne Abeja</h3>
-                            <h6>MEMBER</h6>
-                            <p>Company Secretary Housing Finance Bank.</p>
-                        </div>
-                    </div>
-                    <div class="item"><img src="imgs/Photo - sharing.jpg" alt="" class="img-fluid">
-                        <div class="text text-center">
-                            <h3>Hon. Lady Justice Patience T. Rubagumya</h3>
-                            <h6>MEMBER</h6>
-                            <p>High Court Judge</p>
-                        </div>
-                    </div>
-                    <div class="item"><img src="imgs/suz.jpg" alt="" class="img-fluid">
-                        <div class="text text-center">
-                            <h3>Suzan Batuuka</h3>
-                            <h6>MEMBER</h6>
-                            <p>Head Legal Uganda Airlines</p>
-                        </div>
-                    </div>
-                    <div class="item"><img src="imgs/joanita.jpg" alt="" class="img-fluid">
-                        <div class="text text-center">
-                            <h3>Joanita Bushara</h3>
-                            <h6>MEMBER</h6>
-                            <p>Managing Partner of Justitia Advocates Private Practice.</p>
-                        </div>
-                    </div>
-                </div>
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#flnSecretariatCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#flnSecretariatCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
-    </div>
-</section>
-<section class="volunteer_area">
-    <h2 class="text-center display-4 font-weight-bold">FLN ASSOCIATE MEMBERS</h2>
-    <p class="text-center mb-5">Our Associate Members are also highly skilled professionals.</p>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="volunteer_single owl-carousel owl-theme">
-                    <div class="item"><img src="imgs/asuman.png" alt="" class="img-fluid">
-                        <div class="text text-center">
-                            <h3>Hon. Asuman Kiyingi</h3>
-                            <h6>Deputy Chairperson,
-                                Leadership Code Tribunal.</h6>
-                        </div>
-                    </div>
-                    <div class="item"><img src="imgs/deo.jpg" alt="" class="img-fluid">
-                        <div class="text text-center">
-                            <h3>Kalikumutima Deo</h3>
-                            <h6>Managing Partner Kalikumutima & Co. Advocates.</h6>
-                        </div>
-                    </div>
-                    <div class="item"><img src="imgs/sp.jpg" alt="" class="img-fluid">
-                        <div class="text text-center">
-                            <h3>Musangala Simon Peter</h3>
-                            <h6>Managing Partner Musangala & Co. Advocates</h6>
-                        </div>
-                    </div>
-                    <div class="item"><img src="imgs/sto.jpg" alt="" class="img-fluid">
-                        <div class="text text-center">
-                            <h3>Stanley Oketcho</h3>
-                            <h6>Partner Gem Advocates.</h6>
-                        </div>
-                    </div>
-                    <div class="item"><img src="imgs/robert.jpg" alt="" class="img-fluid">
-                        <div class="text text-center">
-                            <h3>Robert Mackay</h3>
-                            <h6>Managing Partner,
-                                R. Mackay & Co. Advocates</h6>
-                        </div>
-                    </div>
-                    <div class="item"><img src="imgs/PHOTO-2023-12-29-21-35-17.jpg" alt="" class="img-fluid">
-                        <div class="text text-center">
-                            <h3>Otim Isaac</h3>
-                            <h6>Musangala Advocates</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
-<section class="carosal_bottom">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="carosal_bottom_single owl-carousel owl-theme">
-                    <div class="item"><img src="imgs/WhatsApp Image 2023-01-05 at 13.31.00.jpeg" alt="">
-                        <h5><i class="material-icons">format_quote</i></h5>
-                        <h4 class="font-weight-bold">HON. DR. JOYCE NALUNGA BIRIMUMAASO</h4><a href="flnpg1.html">
-                            <h4>MESSAGE FROM FOUNDER</h4>
-                        </a>
-                        <h6>FOUNDER | PRESIDENT (FLN)</h6>
-                    </div>
-                    <div class="item"><img src="imgs/justice lillian.jfif" alt="">
-                        <h5><i class="material-icons">format_quote</i></h5>
-                        <h4 class="font-weight-bold">Hon. Lady Justice Lillian Tibatemwa Ekirukubinza</h4><a
-                            href="flnpg1.html">
-                            <h4>MESSAGE FROM CHAIRPERSON</h4>
-                        </a>
-                        <h6>CHAIRPERSON</h6>
-                    </div>
-                    <div class="item"><img src="imgs/kadaga.jfif" alt="">
-                        <h5><i class="material-icons">format_quote</i></h5>
-                        <h4 class="font-weight-bold">RT. HON. REBECCA ALITWALA KADAGA</h4><a href="flnpg1.html">
-                            <h4>MESSAGE FROM PATRON</h4>
-                        </a>
-                        <h6>PATRON (FLN)</h6>
-                    </div>
+    <!-- Board Members Section -->
+    <section class="volunteer_area py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center display-4 font-weight-bold mb-4">FLN Board Members <i
+                    class="bi bi-people-fill text-secondary"></i></h2>
+            <p class="text-center mb-5">Our Board Comprises Highly Skilled and Professional Women</p>
+            <div id="boardCarousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators/Dots -->
+                <div class="carousel-indicators">
+                    <?php
+                    // Assuming there are 4 board members per slide
+                    $board_members = [
+                        [
+                            'image' => 'imgs/WhatsApp Image 2023-01-05 at 13.31.00.jpeg',
+                            'name' => 'Hon Dr. Joyce Nalunga Birimumaaso',
+                            'position' => 'PRESIDENT | FOUNDER',
+                            'description' => 'Member, Leadership Code Tribunal.',
+                        ],
+                        [
+                            'image' => 'imgs/justice lillian.jfif',
+                            'name' => 'Hon Prof. Lady Justice Lillian Tibatemwa Ekirukubinza',
+                            'position' => 'CHAIRPERSON',
+                            'description' => 'Justice of the Supreme Court.',
+                        ],
+                        [
+                            'image' => 'imgs/jane abodo.png',
+                            'name' => 'Hon. Lady Justice Jane Frances Abodo',
+                            'position' => 'VICE CHAIRPERSON',
+                            'description' => 'Director of Public Prosecutions.',
+                        ],
+                        [
+                            'image' => 'imgs/WhatsApp Image 2023-01-05 at 14.26.09.jpeg',
+                            'name' => 'Ms. Angelina Namakula Ofwono',
+                            'position' => 'MEMBER',
+                            'description' => 'Chief Legal, DFCU Bank.',
+                        ],
+                        [
+                            'image' => 'imgs/WhatsApp Image 2023-01-06 at 08.48.58.jpeg',
+                            'name' => 'Bulya Lillian',
+                            'position' => 'SECRETARY',
+                            'description' => 'Managing Partner, L-Bulya & Co. Advocates.',
+                        ],
+                        [
+                            'image' => 'imgs/PHOTO-2022-06-27-16-56-26.jpg',
+                            'name' => 'Hope Atuhairwe Kisitu',
+                            'position' => 'MEMBER',
+                            'description' => 'Corporation Secretary, Uganda Development Corporation.',
+                        ],
+                        [
+                            'image' => 'imgs/WhatsApp Image 2023-01-09 at 15.23.47.jpeg',
+                            'name' => 'Anne Abeja',
+                            'position' => 'MEMBER',
+                            'description' => 'Company Secretary Housing Finance Bank.',
+                        ],
+                        [
+                            'image' => 'imgs/suz.jpg',
+                            'name' => 'Suzan Batuuka',
+                            'position' => 'MEMBER',
+                            'description' => 'Head Legal Uganda Airlines.',
+                        ],
+                        [
+                            'image' => 'imgs/joanita.jpg',
+                            'name' => 'Joanita Bushara',
+                            'position' => 'MEMBER',
+                            'description' => 'Managing Partner of Justitia Advocates Private Practice.',
+                        ],
+                    ];
+
+                    $total_slides = ceil(count($board_members) / 4);
+                    for ($i = 0; $i < $total_slides; $i++) {
+                        $active_class = $i === 0 ? 'active' : '';
+                        echo '<button type="button" data-bs-target="#boardCarousel" data-bs-slide-to="' . $i . '" class="' . $active_class . '" aria-current="' . ($i === 0 ? 'true' : 'false') . '" aria-label="Board Slide ' . ($i + 1) . '"></button>';
+                    }
+                    ?>
                 </div>
+
+                <!-- Carousel Inner -->
+                <div class="carousel-inner">
+                    <?php
+                    foreach (array_chunk($board_members, 4) as $slide_index => $members_chunk) {
+                        $active_class = $slide_index === 0 ? 'active' : '';
+                        echo '<div class="carousel-item ' . $active_class . '">';
+                        echo '  <div class="row">';
+                        foreach ($members_chunk as $member) {
+                            echo '      <div class="col-md-3 mb-4">';
+                            echo '          <div class="card glass-section h-100 text-center shadow">';
+                            echo '              <img src="' . htmlspecialchars($member['image']) . '" alt="' . htmlspecialchars($member['name']) . '" class="card-img-top img-fluid rounded-circle mx-auto mt-3" style="width: 150px; height: 150px; object-fit: cover;">';
+                            echo '              <div class="card-body">';
+                            echo '                  <h5 class="card-title">' . htmlspecialchars($member['name']) . '</h5>';
+                            echo '                  <h6 class="card-subtitle mb-2 text-muted">' . htmlspecialchars($member['position']) . '</h6>';
+                            echo '                  <p class="card-text">' . htmlspecialchars($member['description']) . '</p>';
+                            echo '              </div>';
+                            echo '          </div>';
+                            echo '      </div>';
+                        }
+                        echo '  </div>';
+                        echo '</div>';
+                    }
+                    ?>
+                </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#boardCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#boardCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+    </section>
+
+    <!-- Associate Members Section -->
+    <section class="associate-members py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Associate Members <i class="bi bi-people-fill text-secondary"></i></h2>
+            <p class="text-center mb-5">Our Associate Members are also highly skilled professionals.</p>
+            <div id="associateCarousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators/Dots -->
+                <div class="carousel-indicators">
+                    <?php
+                    $associate_members = [
+                        [
+                            'image' => 'imgs/asuman.png',
+                            'name' => 'Hon. Asuman Kiyingi',
+                            'position' => 'Deputy Chairperson, Leadership Code Tribunal.',
+                        ],
+                        [
+                            'image' => 'imgs/deo.jpg',
+                            'name' => 'Kalikumutima Deo',
+                            'position' => 'Managing Partner Kalikumutima & Co. Advocates.',
+                        ],
+                        [
+                            'image' => 'imgs/sp.jpg',
+                            'name' => 'Musangala Simon Peter',
+                            'position' => 'Managing Partner Musangala & Co. Advocates.',
+                        ],
+                        [
+                            'image' => 'imgs/sto.jpg',
+                            'name' => 'Stanley Oketcho',
+                            'position' => 'Partner Gem Advocates.',
+                        ],
+                        [
+                            'image' => 'imgs/robert.jpg',
+                            'name' => 'Robert Mackay',
+                            'position' => 'Managing Partner, R. Mackay & Co. Advocates.',
+                        ],
+                        [
+                            'image' => 'imgs/PHOTO-2023-12-29-21-35-17.jpg',
+                            'name' => 'Otim Isaac',
+                            'position' => 'Musangala Advocates.',
+                        ],
+                    ];
+
+                    $total_associate_slides = ceil(count($associate_members) / 3); // 3 per slide
+                    for ($i = 0; $i < $total_associate_slides; $i++) {
+                        $active_class = $i === 0 ? 'active' : '';
+                        echo '<button type="button" data-bs-target="#associateCarousel" data-bs-slide-to="' . $i . '" class="' . $active_class . '" aria-current="' . ($i === 0 ? 'true' : 'false') . '" aria-label="Associate Slide ' . ($i + 1) . '"></button>';
+                    }
+                    ?>
+                </div>
+
+                <!-- Carousel Inner -->
+                <div class="carousel-inner">
+                    <?php
+                    foreach (array_chunk($associate_members, 3) as $slide_index => $members_chunk) {
+                        $active_class = $slide_index === 0 ? 'active' : '';
+                        echo '<div class="carousel-item ' . $active_class . '">';
+                        echo '  <div class="row justify-content-center">';
+                        foreach ($members_chunk as $member) {
+                            echo '      <div class="col-md-4 mb-4">';
+                            echo '          <div class="card glass-section h-100 text-center shadow">';
+                            echo '              <img src="' . htmlspecialchars($member['image']) . '" alt="' . htmlspecialchars($member['name']) . '" class="card-img-top img-fluid rounded-circle mx-auto mt-3" style="width: 150px; height: 150px; object-fit: cover;">';
+                            echo '              <div class="card-body">';
+                            echo '                  <h5 class="card-title">' . htmlspecialchars($member['name']) . '</h5>';
+                            echo '                  <p class="card-text">' . htmlspecialchars($member['position']) . '</p>';
+                            echo '              </div>';
+                            echo '          </div>';
+                            echo '      </div>';
+                        }
+                        echo '  </div>';
+                        echo '</div>';
+                    }
+                    ?>
+                </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#associateCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#associateCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
-    </div>
-</section>
-<?php include('footer.php');
+    </section>
+
+    <!-- Carousel Bottom Section -->
+    <section class="carousel_bottom py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Messages from Our Leaders <i
+                    class="bi bi-chat-left-text-fill text-primary"></i></h2>
+            <div id="messagesCarousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators/Dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#messagesCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Message 1"></button>
+                    <button type="button" data-bs-target="#messagesCarousel" data-bs-slide-to="1"
+                        aria-label="Message 2"></button>
+                    <button type="button" data-bs-target="#messagesCarousel" data-bs-slide-to="2"
+                        aria-label="Message 3"></button>
+                </div>
+
+                <!-- Carousel Inner -->
+                <div class="carousel-inner">
+                    <!-- Slide 1: Founder Message -->
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6">
+                                <div class="card glass-section h-100 text-center shadow">
+                                    <div class="card-body">
+                                        <img src="imgs/WhatsApp Image 2023-01-05 at 13.31.00.jpeg" alt="Founder Message"
+                                            class="img-fluid rounded-circle mb-3"
+                                            style="width: 120px; height: 120px; object-fit: cover;">
+                                        <h5 class="card-title">HON. DR. JOYCE NALUNGA BIRIMUMAASO</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">FOUNDER | PRESIDENT (FLN)</h6>
+                                        <p class="card-text">
+                                            <i class="bi bi-quote"></i> "Our mission is to empower female lawyers to
+                                            lead with integrity and advocate for gender equality in the legal
+                                            profession." <i class="bi bi-quote"></i>
+                                        </p>
+                                        <a href="flnpg1.html" class="btn btn-primary">
+                                            Read Message <i class="bi bi-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2: Chairperson Message -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6">
+                                <div class="card glass-section h-100 text-center shadow">
+                                    <div class="card-body">
+                                        <img src="imgs/justice lillian.jfif" alt="Chairperson Message"
+                                            class="img-fluid rounded-circle mb-3"
+                                            style="width: 120px; height: 120px; object-fit: cover;">
+                                        <h5 class="card-title">Hon. Lady Justice Lillian Tibatemwa Ekirukubinza</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">CHAIRPERSON</h6>
+                                        <p class="card-text">
+                                            <i class="bi bi-quote"></i> "We strive to create an inclusive environment
+                                            where every female lawyer can thrive and make impactful changes." <i
+                                                class="bi bi-quote"></i>
+                                        </p>
+                                        <a href="flnpg1.html" class="btn btn-primary">
+                                            Read Message <i class="bi bi-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3: Patron Message -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6">
+                                <div class="card glass-section h-100 text-center shadow">
+                                    <div class="card-body">
+                                        <img src="imgs/kadaga.jfif" alt="Patron Message"
+                                            class="img-fluid rounded-circle mb-3"
+                                            style="width: 120px; height: 120px; object-fit: cover;">
+                                        <h5 class="card-title">RT. HON. REBECCA ALITWALA KADAGA</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">PATRON (FLN)</h6>
+                                        <p class="card-text">
+                                            <i class="bi bi-quote"></i> "Empowering women in law is essential for
+                                            achieving justice and equality in society." <i class="bi bi-quote"></i>
+                                        </p>
+                                        <a href="flnpg1.html" class="btn btn-primary">
+                                            Read Message <i class="bi bi-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#messagesCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#messagesCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<?php
+include('footer.php');
 ?>
