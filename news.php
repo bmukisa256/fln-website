@@ -38,7 +38,7 @@ include('header.php');
                     ['date' => '2024', 'title' => 'FLN Distinguished Dinner Sponsors', 'image' => 'imgs/dinnersponsors.jpg'],
                     ['date' => '2024', 'title' => 'Founder/President Bio', 'image' => 'imgs/PHOTO-2023-12-29-20-28-10.jpg'],
                     ['date' => '2024', 'title' => 'Our Socials', 'image' => 'imgs/WhatsApp Image 2023-01-04 at 14.01.56.jpeg'],
-                    ['date' => 'September 15, 2024', 'title' => 'Sensitization and Awareness on Climate Change', 'image' => 'imgs/climate_change.jpeg'],
+                    ['date' => '2024', 'title' => 'Sensitization and Awareness on Climate Change', 'image' => 'imgs/climate_change.jpeg'],
                     ['date' => '2024', 'title' => 'Climate Justice Legal', 'image' => 'imgs/news (1).jpeg'],
                     ['date' => '2024', 'title' => 'Climate Justice Education & Public Awareness', 'image' => 'imgs/news (2).jpeg'],
                     ['date' => '2024', 'title' => 'Sensitization & Awareness on Climate Change', 'image' => 'imgs/news (3).jpeg'],
@@ -47,6 +47,12 @@ include('header.php');
                     ['date' => '2024', 'title' => 'End Violence Against Women and Children with Disabilities', 'image' => 'imgs/FLN end women violence.jpg'],
                     ['date' => '2024', 'title' => 'Advancing Gender Equality for Women and Children with Disabilities', 'image' => 'imgs/FLN advancing gender equality.jpg'],
                     ['date' => '2024', 'title' => 'Online Symposium on Women and Children with Disabilities', 'image' => 'imgs/FLN online symposium.jpg'],
+                    ['date' => '2025', 'title' => 'Global fund for Women', 'image' => 'imgs/IMG-20250409-WA0013.jpg'],
+                    ['date' => '2025', 'title' => 'Climate Justice', 'image' => 'imgs/IMG-20250409-WA0014.jpg'],
+                    ['date' => '2025', 'title' => 'Developed Countries', 'image' => 'imgs/IMG-20250409-WA0015.jpg'],
+                    ['date' => '2025', 'title' => 'Intergenerational Equity', 'image' => 'imgs/IMG-20250409-WA0016.jpg'],
+                    ['date' => '2025', 'title' => 'Green Economy', 'image' => 'imgs/IMG-20250409-WA0017.jpg'],
+                    ['date' => '2025', 'title' => 'Vulnerable Communities', 'image' => 'imgs/IMG-20250409-WA0018.jpg'],
                 ];
 
                 foreach ($news_items as $news) {
