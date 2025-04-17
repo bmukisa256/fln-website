@@ -45,6 +45,8 @@ include('header.php');
                     ['image' => 'imgs/dn1.jpg', 'title' => 'FLN DISTINGUISHED DINNER', 'description' => '', 'category' => 'events'],
                     ['image' => 'imgs/JM.jpg', 'title' => 'JURAL MEDIA', 'description' => 'Collaboration with Jural Media, a virtual media house.', 'category' => 'conferences'],
                     ['image' => 'imgs/pds.jpg', 'title' => 'PERSONAL DEVELOPMENT SEMINAR', 'description' => 'Personal Development Seminar by Mandela Group.', 'category' => 'workshops'],
+                    ['image' => 'imgs/IMG-20250416-WA0028.jpg', 'title' => 'CLIMATE JUSTICE 2025 ', 'description' => 'Climate justice at Busukuma headed by the FLN president.', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250416-WA0021.jpg', 'title' => 'CLIMATE 2025', 'description' => 'At Busukuma, the team handed over various types of trees to the locals.', 'category' => 'events'],
                     // Add all remaining images
                 ];
 
