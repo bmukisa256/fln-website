@@ -51,6 +51,12 @@ include('header.php');
                     ['image' => 'imgs/IMG-20250501-WA0021.jpg', 'title' => 'KAJJANSI MARKET CLIMATE CHANGE SENSITIZATION 2025', 'description' => 'Kajjansi Market', 'category' => 'events'],
                     ['image' => 'imgs/IMG-20250501-WA0023.jpg', 'title' => 'KAJJANSI MARKET CLIMATE CHANGE SENSITIZATION 2025', 'description' => 'The locals were very receptive and welcoming to the drive.', 'category' => 'events'],
                     ['image' => 'imgs/IMG-20250501-WA0026.jpg', 'title' => 'KAJJANSI MARKET CLIMATE CHANGE SENSITIZATION 2025', 'description' => 'The locals were very receptive and welcoming to the drive.', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250501-WA0026.jpg', 'title' => 'KAJJANSI MARKET CLIMATE CHANGE SENSITIZATION 2025', 'description' => 'The locals were very receptive and welcoming to the drive.', 'category' => 'events'],
+
+                    ['image' => 'imgs/IMG-20250616-WA0064.jpg', 'title' => 'FLN President at Blessed Parents" School about Climate change', 'description' => 'FLN empowers young girls in climate justice.', 'category' => 'events'], 
+                    ['image' => 'imgs/IMG-20250616-WA0061.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250616-WA0063.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250616-WA0068.jpg', 'title' => 'Blessed Parents" School', 'description' => 'Climate justice is not just about protecting the environment — it is about protecting people, especially women and girls, who are often the most affected by climate crises.', 'category' => 'events'],
                     // Add all remaining images
                 ];
 
