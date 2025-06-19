@@ -65,9 +65,9 @@ include('header.php');
                     ['image' => 'imgs/IMG-20250618-WA0042.jpg', 'title' => '', 'description' => '', 'category' => 'conferences'],
                     ['image' => 'imgs/IMG-20250619-WA0022.jpg', 'title' => '', 'description' => '', 'category' => 'conferences'],
 
-                    ['image' => 'imgs/IMG-20250619-WA0048.jpg', 'title' => 'FLN Climate change activities sponsored by Global fund for women', 'description' => 'The purpose of mentoring women and girls on climate justice is to empower them with knowledge, confidence, and leadership skills to actively participate in shaping sustainable and equitable responses to the climate crisis.', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250619-WA0048.jpg', 'title' => 'FLN Climate change activities sponsored by Global fund for women', 'description' => '', 'category' => 'events'],
                     ['image' => 'imgs/IMG-20250619-WA0039.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
-                    ['image' => 'imgs/IMG-20250619-WA0038.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250619-WA0038.jpg', 'title' => '', 'description' => 'The purpose of mentoring women and girls on climate justice is to empower them with confidence, and leadership skills to actively participate in equitable responses to the climate crisis.', 'category' => 'events'],
                     ['image' => 'imgs/IMG-20250619-WA0035.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
                     ['image' => 'imgs/IMG-20250619-WA0029.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
                     ['image' => 'imgs/IMG-20250619-WA0030.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
