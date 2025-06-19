@@ -57,10 +57,10 @@ include('header.php');
                     ['image' => 'imgs/IMG-20250616-WA0061.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
                     ['image' => 'imgs/IMG-20250616-WA0063.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
                     ['image' => 'imgs/IMG-20250616-WA0068.jpg', 'title' => 'Blessed Parents" School', 'description' => 'Climate justice is not just about protecting the environment — it is about protecting people, especially women and girls, who are often the most affected by climate crises.', 'category' => 'events'],
-                    // Add all remaining images
-                    ['image' => 'imgs/IMG-20250619-WA0027.jpg', 'title' => 'FLN President Mentors Women on Climate Justice 16th June 2025 as part of the Conference organised by the International Biometrics Society Conference at Global Hotel.', 'description' => 'Mentorship equips them to not only understand the complex intersections between gender and climate change, but also to become agents of change in their communities.', 'category' => 'events'], 
+                    
+                    ['image' => 'imgs/IMG-20250619-WA0027.jpg', 'title' => 'International Biometrics Society Conference at Global Hotel.', 'description' => 'Mentorship equips them to not only understand the complex intersections between gender and climate change, but also to become agents of change in their communities.', 'category' => 'events'], 
                     ['image' => 'imgs/IMG-20250619-WA0026.jpg', 'title' => '', 'description' => 'Women and girls are among the most affected by climate change due to existing social, economic, and cultural inequalities.', 'category' => 'conferences'],
-                    ['image' => 'imgs/IMG-20250618-WA0045.jpg', 'title' => '', 'description' => '', 'category' => 'conferences'],
+                    ['image' => 'imgs/IMG-20250618-WA0045.jpg', 'title' => '', 'description' => 'FLN President Mentors Women on Climate Justice 16th June 2025 as part of the Conference organised by the ', 'category' => 'conferences'],
                     ['image' => 'imgs/IMG-20250618-WA0041.jpg', 'title' => '', 'description' => '', 'category' => 'conferences'],
                     ['image' => 'imgs/IMG-20250618-WA0042.jpg', 'title' => '', 'description' => '', 'category' => 'conferences'],
                     ['image' => 'imgs/IMG-20250619-WA0022.jpg', 'title' => '', 'description' => '', 'category' => 'conferences'],
