@@ -51,7 +51,7 @@ include('header.php');
                     ['image' => 'imgs/IMG-20250501-WA0021.jpg', 'title' => 'KAJJANSI MARKET CLIMATE CHANGE SENSITIZATION 2025', 'description' => 'Kajjansi Market', 'category' => 'events'],
                     ['image' => 'imgs/IMG-20250501-WA0023.jpg', 'title' => 'KAJJANSI MARKET CLIMATE CHANGE SENSITIZATION 2025', 'description' => 'The locals were very receptive and welcoming to the drive.', 'category' => 'events'],
                     ['image' => 'imgs/IMG-20250501-WA0026.jpg', 'title' => 'KAJJANSI MARKET CLIMATE CHANGE SENSITIZATION 2025', 'description' => 'The locals were very receptive and welcoming to the drive.', 'category' => 'events'],
-                    ['image' => 'imgs/IMG-20250501-WA0026.jpg', 'title' => 'KAJJANSI MARKET CLIMATE CHANGE SENSITIZATION 2025', 'description' => 'The locals were very receptive and welcoming to the drive.', 'category' => 'events'],
+                    
 
                     ['image' => 'imgs/IMG-20250616-WA0064.jpg', 'title' => 'FLN President at Blessed Parents" School about Climate change', 'description' => 'FLN empowers young girls in climate justice.', 'category' => 'events'], 
                     ['image' => 'imgs/IMG-20250616-WA0061.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
@@ -72,6 +72,33 @@ include('header.php');
                     ['image' => 'imgs/IMG-20250619-WA0029.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
                     ['image' => 'imgs/IMG-20250619-WA0030.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
                     ['image' => 'imgs/IMG-20250619-WA0031.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
+
+                    ['image' => 'imgs/IMG-20250620-WA0004.jpg', 'title' => 'Victory Senior Secondary School', 'description' => 'The fight for climate justice will not be won without the full participation of girls.', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250619-WA0070.jpg', 'title' => '', 'description' => "They are not just part of the future — they are central to today’s solutions.", 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250619-WA0071.jpg', 'title' => '', 'description' => ' By empowering girls, we do not only advance gender equality, we unlock a generation of resilient leaders who will defend our planet with courage, knowledge, and hope.', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250619-WA0062.jpg', 'title' => '', 'description' => ' Let us raise empowered girls for a just and sustainable world.', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250619-WA0079.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250620-WA0005.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250620-WA0010.jpg', 'title' => '', 'description' => 'The time to act is now.', 'category' => 'events'],
+
+                    ['image' => 'imgs/IMG-20250620-WA0018.jpg', 'title' => 'Buganda Road Primary School', 'description' => 'Invest in girls’ education, especially climate literacy and green skills.', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250620-WA0023.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250620-WA0019.jpg', 'title' => '', 'description' => 'Promote inclusive policies that recognize the gender-climate connection.', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250620-WA0021.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250620-WA0024.jpg', 'title' => '', 'description' => 'Provide leadership opportunities and safe platforms for girls to participate in decision-making.', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250620-WA0035.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250620-WA0025.jpg', 'title' => '', 'description' => 'Protect girls from gender-based violence exacerbated by climate crises.', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250620-WA0038.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
+                    
+                    ['image' => 'imgs/IMG-20250621-WA0002.jpg', 'title' => '', 'description' => 'FLN is passionate about building *climate change resilience* in schools which is crucial to ensure that students, staff, and infrastructure can withstand and adapt to the impacts of climate change', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250621-WA0005.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250621-WA0004.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250621-WA0007.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250621-WA0008.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250621-WA0012.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250621-WA0006.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250621-WA0001.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
+                    
                 ];
 
                 foreach ($gallery_items as $item) {
