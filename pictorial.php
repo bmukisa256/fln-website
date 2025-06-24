@@ -90,7 +90,7 @@ include('header.php');
                     ['image' => 'imgs/IMG-20250620-WA0025.jpg', 'title' => '', 'description' => 'Protect girls from gender-based violence exacerbated by climate crises.', 'category' => 'events'],
                     ['image' => 'imgs/IMG-20250620-WA0038.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
                     
-                    ['image' => 'imgs/IMG-20250621-WA0002.jpg', 'title' => '', 'description' => 'FLN is passionate about building *climate change resilience* in schools which is crucial to ensure that students, staff, and infrastructure can withstand and adapt to the impacts of climate change', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250621-WA0002.jpg', 'title' => 'Mpererewe Local Communties', 'description' => 'FLN is passionate about building *climate change resilience* in schools which is crucial to ensure that students, staff, and infrastructure can withstand and adapt to the impacts of climate change', 'category' => 'events'],
                     ['image' => 'imgs/IMG-20250621-WA0005.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
                     ['image' => 'imgs/IMG-20250621-WA0004.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
                     ['image' => 'imgs/IMG-20250621-WA0007.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
