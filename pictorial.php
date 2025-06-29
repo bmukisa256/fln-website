@@ -99,6 +99,24 @@ include('header.php');
                     ['image' => 'imgs/IMG-20250621-WA0006.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
                     ['image' => 'imgs/IMG-20250621-WA0001.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
                     
+                    ['image' => 'imgs/IMG-20250624-WA0024.jpg', 'title' => '', 'description' => 'Mentoring women and girls for climate justice is not just about equity it’s about survival.', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250624-WA0019.jpg', 'title' => '', 'description' => 'Their leadership, knowledge, and resilience are critical to building a sustainable future.', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250624-WA0021.jpg', 'title' => '', 'description' => 'By investing in mentorship, we unlock the full potential of half the world’s population to drive transformative change.', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250624-WA0028.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250624-WA0027.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250624-WA0026.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250624-WA0020.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
+
+                    ['image' => 'imgs/IMG-20250628-WA0032.jpg', 'title' => '', 'description' => 'FLN as part of climate action agenda trains,encourages and supports women and girls in local markets to lead tree planting efforts.', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250628-WA0034.jpg', 'title' => '', 'description' => 'FLN supporting such involvement means providing access to information, mentoring ,training, and supporting women-led climate initiatives.', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250628-WA0025.jpg', 'title' => '', 'description' => 'This helps to dismantle these barriers.It signals a shift towards inclusive climate solutions where gender equality is integrated into environmental policy and practice.', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250628-WA0022.jpg', 'title' => '', 'description' => 'It also means recognizing and valuing indigenous and local knowledge held by women about plant species, forest ecosystems, and traditional conservation methods.', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250628-WA0024.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250628-WA0029.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250628-WA0035.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
+
+
+                    
                 ];
 
                 foreach ($gallery_items as $item) {

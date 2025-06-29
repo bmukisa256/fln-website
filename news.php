@@ -53,6 +53,9 @@ include('header.php');
                     ['date' => '2025', 'title' => 'Intergenerational Equity', 'image' => 'imgs/IMG-20250409-WA0016.jpg'],
                     ['date' => '2025', 'title' => 'Green Economy', 'image' => 'imgs/IMG-20250409-WA0017.jpg'],
                     ['date' => '2025', 'title' => 'Vulnerable Communities', 'image' => 'imgs/IMG-20250409-WA0018.jpg'],
+                    ['date' => '2025', 'title' => 'Strategic Partnership Announcement', 'image' => 'imgs/tress assn.jpg'],
+                    ['date' => '2025', 'title' => 'FLN and Emparthy Whale', 'image' => 'imgs/tree assn2.jpg'],
+                    ['date' => '2025', 'title' => 'Planting Trees', 'image' => 'imgs/planting_trees.jpg'],
                 ];
 
                 foreach ($news_items as $news) {
