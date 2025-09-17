@@ -107,7 +107,6 @@ include('header.php');
                     ['image' => 'imgs/IMG-20250628-WA0035.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
                     ['image' => 'imgs/IMG-20250628-WA0032.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
 
-                    // 10/08/25
                     ['image' => 'imgs/IMG-20250725-WA0024.jpg', 'title' => 'FLN Annual Corporate Social Responsibility', 'description' => 'FLN visited disabled children in a home in Mukono to give share with them love,goods and happiness.', 'category' => 'events'],
                     ['image' => 'imgs/IMG-20250725-WA0026.jpg', 'title' => '', 'description' => 'Elizabeth Home Mukono', 'category' => 'events'],
                     ['image' => 'imgs/IMG-20250725-WA0029.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
@@ -201,7 +200,18 @@ include('header.php');
                     ['image' => 'imgs/IMG-20250806-WA0054.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
                     ['image' => 'imgs/IMG-20250806-WA0048.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
 
-
+                    ['image' => 'imgs/IMG-20250917-WA0105.jpg', 'title' => 'Owino Market, Kampala - Climate Change Session', 'description' => '', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250917-WA0104.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250917-WA0103.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250917-WA0115.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250917-WA0111.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250917-WA0100.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250917-WA0095.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250917-WA0102.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250917-WA0096.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250917-WA0098.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
+                    ['image' => 'imgs/IMG-20250917-WA0101.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
+                   
 
 
                 ];
