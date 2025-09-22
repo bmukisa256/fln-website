@@ -212,6 +212,20 @@ include('header.php');
                     ['image' => 'imgs/IMG-20250917-WA0098.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
                     ['image' => 'imgs/IMG-20250917-WA0101.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
                    
+                    ['image' => 'imgs/IMG-20250921-WA0016.jpg', 'title' => '', 'description' => '', 'category' => 'conferences'],
+                    ['image' => 'imgs/IMG-20250921-WA0019.jpg', 'title' => '', 'description' => '', 'category' => 'conferences'],
+                    ['image' => 'imgs/IMG-20250921-WA0021.jpg', 'title' => '', 'description' => '', 'category' => 'conferences'],
+                    ['image' => 'imgs/IMG-20250921-WA0022.jpg', 'title' => '', 'description' => '', 'category' => 'conferences'],
+                    ['image' => 'imgs/IMG-20250921-WA0018.jpg', 'title' => '', 'description' => '', 'category' => 'conferences'],
+                    ['image' => 'imgs/IMG-20250921-WA0017.jpg', 'title' => '', 'description' => '', 'category' => 'conferences'],
+                    ['image' => 'imgs/IMG-20250921-WA0023.jpg', 'title' => '', 'description' => '', 'category' => 'conferences'],
+
+                    ['image' => 'imgs/IMG-20250921-WA0034.jpg', 'title' => '', 'description' => '', 'category' => 'conferences'],
+                    ['image' => 'imgs/IMG-20250921-WA0028.jpg', 'title' => '', 'description' => '', 'category' => 'conferences'],
+                    ['image' => 'imgs/IMG-20250921-WA0033.jpg', 'title' => '', 'description' => '', 'category' => 'conferences'],
+                    ['image' => 'imgs/IMG-20250921-WA0031.jpg', 'title' => '', 'description' => '', 'category' => 'conferences'],
+                    ['image' => 'imgs/IMG-20250921-WA0027.jpg', 'title' => '', 'description' => '', 'category' => 'conferences'],
+                    
                     ['image' => 'imgs/IMG-20250812-WA0004.jpg', 'title' => "FEMALE LAWYERS'S NETWORK SYMPOSIUM", 'description' => 'TOPIC : WOMEN IN ELECTORAL GOVERNANCE, HAPPENING AT HOTEL AFRICANA ON THE 26TH OF SEPTEMBER 2025', 'category' => 'conferences'],
                     ['image' => 'imgs/IMG-20250813-WA0003.jpg', 'title' => '', 'description' => 'COSTS', 'category' => 'conferences'],
                     ['image' => 'imgs/IMG-20250917-WA0092.jpg', 'title' => '', 'description' => '', 'category' => 'conferences'],
@@ -225,19 +239,7 @@ include('header.php');
                     ['image' => 'imgs/IMG-20250917-WA0013.jpg', 'title' => '', 'description' => '', 'category' => 'conferences'],
                     ['image' => 'imgs/IMG-20250917-WA0077.jpg', 'title' => '', 'description' => '', 'category' => 'conferences'],
 
-                    ['image' => 'imgs/IMG-20250921-WA0016.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
-                    ['image' => 'imgs/IMG-20250921-WA0019.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
-                    ['image' => 'imgs/IMG-20250921-WA0021.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
-                    ['image' => 'imgs/IMG-20250921-WA0022.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
-                    ['image' => 'imgs/IMG-20250921-WA0018.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
-                    ['image' => 'imgs/IMG-20250921-WA0017.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
-                    ['image' => 'imgs/IMG-20250921-WA0023.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
-
-                    ['image' => 'imgs/IMG-20250921-WA0034.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
-                    ['image' => 'imgs/IMG-20250921-WA0028.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
-                    ['image' => 'imgs/IMG-20250921-WA0033.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
-                    ['image' => 'imgs/IMG-20250921-WA0031.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
-                    ['image' => 'imgs/IMG-20250921-WA0027.jpg', 'title' => '', 'description' => '', 'category' => 'events'],
+              
 
 
 
