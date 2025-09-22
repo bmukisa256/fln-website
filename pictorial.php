@@ -230,6 +230,7 @@ include('header.php');
                     ['image' => 'imgs/IMG-20250813-WA0003.jpg', 'title' => '', 'description' => 'COSTS', 'category' => 'conferences'],
                     ['image' => 'imgs/IMG-20250917-WA0092.jpg', 'title' => '', 'description' => '', 'category' => 'conferences'],
                     ['image' => 'imgs/IMG-20250917-WA0094.jpg', 'title' => '', 'description' => '', 'category' => 'conferences'],
+                    ['image' => 'imgs/IMG-20250921-WA0025.jpg', 'title' => '', 'description' => '', 'category' => 'conferences'],
                     ['image' => 'imgs/IMG-20250917-WA0060.jpg', 'title' => '', 'description' => '', 'category' => 'conferences'],
                     ['image' => 'imgs/IMG-20250917-WA0077.jpg', 'title' => '', 'description' => '', 'category' => 'conferences'],
                     ['image' => 'imgs/IMG-20250917-WA0038.jpg', 'title' => '', 'description' => '', 'category' => 'conferences'],

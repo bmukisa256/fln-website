@@ -56,6 +56,8 @@ include('header.php');
                     ['date' => '2025', 'title' => 'Strategic Partnership Announcement', 'image' => 'imgs/tress assn.jpg'],
                     ['date' => '2025', 'title' => 'FLN and Emparthy Whale', 'image' => 'imgs/tree assn2.jpg'],
                     ['date' => '2025', 'title' => 'Planting Trees', 'image' => 'imgs/planting_trees.jpg'],
+                    ['date' => '2025', 'title' => 'Markets Drive', 'image' => 'imgs/IMG-20250921-WA0024.jpg'],
+                    
                 ];
 
                 foreach ($news_items as $news) {
