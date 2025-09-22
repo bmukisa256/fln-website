@@ -74,6 +74,8 @@ include('header.php');
                     ["image" => "imgs/goodcommun.jpg", "date" => "3rd NOVEMBER 2023 | 6:00 pm", "name" => "Norah Matovu Muwanga"],
                     ["image" => "imgs/stragtegicnetw.jpg", "date" => "6th OCTOBER 2023 | 4:00 pm", "name" => "Dr. Joyce Birimumaaso"],
                     ["image" => "imgs/personal dev.jpg", "date" => "26th AUGUST 2023 | 8:00 am", "name" => "Mr. Venkatesh Kumar"],
+
+                    
                 ];
 
                 foreach ($past_events as $event) {
