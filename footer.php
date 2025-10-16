@@ -1,4 +1,16 @@
 <!-- footer.php -->
+<?php
+// Start session if not already started
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
+// Generate CSRF token for subscription form
+if (!isset($_SESSION['csrf_token'])) {
+    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+}
+$csrfToken = $_SESSION['csrf_token'];
+?>
 <footer class="text-light pt-5 pb-3">
     <div class="container">
         <div class="row">
@@ -65,9 +77,24 @@
                 </div>
                 <!-- Newsletter Subscription -->
                 <h6 class="mt-4 mb-2">Subscribe to our Newsletter</h6>
-                <form class="d-flex" action="#" method="post">
-                    <input type="email" class="form-control me-2" placeholder="Your email" aria-label="Email" required>
-                    <button type="submit" class="btn btn-primary">Subscribe</button>
+
+                <!-- Success Message -->
+                <div id="footer-success-message" class="alert alert-success d-none mb-3" role="alert">
+                    <i class="bi bi-check-circle-fill me-2"></i>
+                    <strong>You're subscribed!</strong> Check your inbox for confirmation.
+                </div>
+
+                <!-- Subscription Form -->
+                <form id="footer-subscription-form" class="d-flex flex-column">
+                    <div class="d-flex mb-2">
+                        <input type="email" id="footer-email" name="email" class="form-control me-2"
+                               placeholder="Your email" aria-label="Email" required>
+                        <button type="submit" id="footer-submit-btn" class="btn btn-primary">
+                            Subscribe
+                        </button>
+                    </div>
+                    <input type="hidden" name="csrf_token" value="<?php echo $csrfToken; ?>">
+                    <div id="footer-error-message" class="text-danger small d-none"></div>
                 </form>
             </div>
             <!-- Contact Us -->
@@ -112,6 +139,81 @@
 <!-- JavaScript Files -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/script.js"></script>
+
+<!-- Newsletter Subscription Script -->
+<script>
+    // Email validation function
+    function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+    }
+
+    // Loading state function
+    function setLoading(button, isLoading) {
+        if (isLoading) {
+            button.disabled = true;
+            button.innerHTML = '<span class="spinner-border spinner-border-sm me-1" role="status" aria-hidden="true"></span>Loading...';
+        } else {
+            button.disabled = false;
+            button.innerHTML = 'Subscribe';
+        }
+    }
+
+    // Footer subscription form handler
+    document.getElementById('footer-subscription-form').addEventListener('submit', async function(e) {
+        e.preventDefault();
+
+        const submitBtn = document.getElementById('footer-submit-btn');
+        const emailInput = document.getElementById('footer-email');
+        const errorDiv = document.getElementById('footer-error-message');
+        const successDiv = document.getElementById('footer-success-message');
+        const formDiv = document.getElementById('footer-subscription-form');
+
+        // Clear previous errors
+        errorDiv.classList.add('d-none');
+        errorDiv.textContent = '';
+        successDiv.classList.add('d-none');
+
+        // Validate email
+        if (!validateEmail(emailInput.value)) {
+            errorDiv.textContent = 'Please enter a valid email address';
+            errorDiv.classList.remove('d-none');
+            return;
+        }
+
+        // Set loading state
+        setLoading(submitBtn, true);
+
+        try {
+            const formData = new FormData(this);
+
+            const response = await fetch('api/subscribe.php', {
+                method: 'POST',
+                body: formData
+            });
+
+            const result = await response.json();
+
+            if (result.success) {
+                successDiv.classList.remove('d-none');
+                emailInput.value = '';
+
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    successDiv.classList.add('d-none');
+                }, 5000);
+            } else {
+                errorDiv.textContent = result.message || 'An error occurred';
+                errorDiv.classList.remove('d-none');
+            }
+        } catch (error) {
+            errorDiv.textContent = 'Network error. Please try again.';
+            errorDiv.classList.remove('d-none');
+        } finally {
+            setLoading(submitBtn, false);
+        }
+    });
+</script>
 </body>
 
 </html>
