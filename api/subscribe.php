@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once '../includes/functions.php';
+require_once __DIR__ . '/../includes/functions.php';
 
 header('Content-Type: application/json');
 
@@ -9,7 +9,7 @@ try {
     if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
         throw new Exception('Method not allowed');
     }
-    
+
     // Validate CSRF token
     $csrf_token = $_POST['csrf_token'] ?? '';
     if (!validateCSRFToken($csrf_token)) {
@@ -32,7 +32,7 @@ try {
     
     // Send welcome email (optional - can be disabled in production)
     try {
-        require_once '../config/email.php';
+        require_once __DIR__ . '/../config/email.php';
         $emailSender = new EmailSender();
         $emailSender->sendWelcomeEmail($email);
     } catch (Exception $e) {

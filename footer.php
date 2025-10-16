@@ -1,15 +1,7 @@
 <!-- footer.php -->
 <?php
-// Start session if not already started
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
-
-// Generate CSRF token for subscription form
-if (!isset($_SESSION['csrf_token'])) {
-    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
-}
-$csrfToken = $_SESSION['csrf_token'];
+// Get CSRF token from session (started in header.php)
+$csrfToken = $_SESSION['csrf_token'] ?? '';
 ?>
 <footer class="text-light pt-5 pb-3">
     <div class="container">
@@ -78,12 +70,6 @@ $csrfToken = $_SESSION['csrf_token'];
                 <!-- Newsletter Subscription -->
                 <h6 class="mt-4 mb-2">Subscribe to our Newsletter</h6>
 
-                <!-- Success Message -->
-                <div id="footer-success-message" class="alert alert-success d-none mb-3" role="alert">
-                    <i class="bi bi-check-circle-fill me-2"></i>
-                    <strong>You're subscribed!</strong> Check your inbox for confirmation.
-                </div>
-
                 <!-- Subscription Form -->
                 <form id="footer-subscription-form" class="d-flex flex-column">
                     <div class="d-flex mb-2">
@@ -95,6 +81,7 @@ $csrfToken = $_SESSION['csrf_token'];
                     </div>
                     <input type="hidden" name="csrf_token" value="<?php echo $csrfToken; ?>">
                     <div id="footer-error-message" class="text-danger small d-none"></div>
+                    <div id="footer-success-message" class="text-success small d-none mt-2"></div>
                 </form>
             </div>
             <!-- Contact Us -->
@@ -195,20 +182,25 @@ $csrfToken = $_SESSION['csrf_token'];
             const result = await response.json();
 
             if (result.success) {
+                successDiv.textContent = '✓ Successfully subscribed! Welcome aboard!';
                 successDiv.classList.remove('d-none');
                 emailInput.value = '';
 
                 // Hide success message after 5 seconds
                 setTimeout(() => {
                     successDiv.classList.add('d-none');
+                    successDiv.textContent = '';
                 }, 5000);
             } else {
+                // Show the actual error message from the server
                 errorDiv.textContent = result.message || 'An error occurred';
                 errorDiv.classList.remove('d-none');
+                console.error('Subscription error:', result.message);
             }
         } catch (error) {
             errorDiv.textContent = 'Network error. Please try again.';
             errorDiv.classList.remove('d-none');
+            console.error('Network error:', error);
         } finally {
             setLoading(submitBtn, false);
         }
