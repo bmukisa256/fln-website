@@ -3,7 +3,7 @@
 define('SMTP_HOST', 'smtp.gmail.com'); // Change to your SMTP server
 define('SMTP_PORT', 587);
 define('SMTP_USERNAME', 'femalelawyersnetwork@gmail.com'); // Your SMTP username
-define('SMTP_PASSWORD', 'zgmh yaji lyei xwse'); // Your SMTP password (use App Password for Gmail)
+define('SMTP_PASSWORD', 'hpxr pujq bifx wxbh'); // Your SMTP password (use App Password for Gmail)
 define('SMTP_ENCRYPTION', 'tls'); // tls or ssl
 
 define('FROM_EMAIL', 'femalelawyersnetwork@gmail.com');
