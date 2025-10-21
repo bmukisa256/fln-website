@@ -2,12 +2,12 @@
 // Email configuration
 define('SMTP_HOST', 'smtp.gmail.com'); // Change to your SMTP server
 define('SMTP_PORT', 587);
-define('SMTP_USERNAME', 'ateraxantonio@gmail.com'); // Your SMTP username
-define('SMTP_PASSWORD', 'drnn xrek dbte uali'); // Your SMTP password (use App Password for Gmail)
+define('SMTP_USERNAME', 'femalelawyersnetwork@gmail.com'); // Your SMTP username
+define('SMTP_PASSWORD', 'zgmh yaji lyei xwse'); // Your SMTP password (use App Password for Gmail)
 define('SMTP_ENCRYPTION', 'tls'); // tls or ssl
 
-define('FROM_EMAIL', 'ateraxantonio@gmail.com');
-define('FROM_NAME', 'Newsletter Team');
+define('FROM_EMAIL', 'femalelawyersnetwork@gmail.com');
+define('FROM_NAME', 'FLN Team');
 
 // Include PHPMailer autoloader if available
 if (file_exists(__DIR__ . '/../vendor/autoload.php')) {
@@ -97,22 +97,22 @@ class EmailSender
     private function formatEmailContent($content, $email, $template = null)
     {
         require_once __DIR__ . '/templates.php';
-        
+
         $unsubscribeLink = $this->generateUnsubscribeLink($email);
-        
+
         // If template is specified and exists, use template rendering
         if ($template && EmailTemplates::getTemplate($template)) {
             return EmailTemplates::renderTemplate(
-                $template, 
+                $template,
                 '', // subject not needed for rendering
-                $content, 
-                $email, 
-                FROM_EMAIL, 
-                FROM_NAME, 
+                $content,
+                $email,
+                FROM_EMAIL,
+                FROM_NAME,
                 $unsubscribeLink
             );
         }
-        
+
         // Default template (original)
         return "
         <!DOCTYPE html>
