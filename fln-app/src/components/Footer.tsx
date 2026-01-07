@@ -1,22 +1,26 @@
 'use client';
 
 import { motion } from "framer-motion";
-import { Mail, MapPin, Phone, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Mail, MapPin, Phone, Twitter, Linkedin, Instagram, Facebook, Youtube } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
 const quickLinks = [
+  { label: 'Home', href: '/' },
   { label: 'About Us', href: '/about' },
-  { label: 'Membership', href: '/membership' },
   { label: 'Events', href: '/events' },
-  { label: 'Resources', href: '/resources' },
+  { label: 'News', href: '/news' },
+  { label: 'Gallery', href: '/gallery' },
+  { label: 'Membership', href: '/membership' },
   { label: 'Contact', href: '/contact' },
 ];
 
 const socialLinks = [
-  { icon: Twitter, href: '#' },
-  { icon: Linkedin, href: '#' },
-  { icon: Instagram, href: '#' },
+  { icon: Facebook, href: 'https://www.facebook.com/profile.php?id=100085065440813&mibextid=ZbWKwL', label: 'Facebook' },
+  { icon: Twitter, href: 'https://twitter.com/femalelawyernet', label: 'Twitter' },
+  { icon: Instagram, href: 'https://www.instagram.com/invites/contact/?i=x6wh7po2r80w&utm_content=pdz0f9z', label: 'Instagram' },
+  { icon: Linkedin, href: 'https://www.linkedin.com/public-profile/settings', label: 'LinkedIn' },
+  { icon: Youtube, href: 'https://www.youtube.com/@fln_ug', label: 'YouTube' },
 ];
 
 export default function Footer() {
@@ -40,6 +44,9 @@ export default function Footer() {
                 <motion.a
                   key={i}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={social.label}
                   className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center hover:bg-gold hover:text-navy transition-colors"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -74,11 +81,15 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-gold shrink-0" />
-                <span>info@flnuganda.org</span>
+                <a href="mailto:femalelawyersnetwork@gmail.com" className="hover:text-gold transition-colors">
+                  femalelawyersnetwork@gmail.com
+                </a>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-gold shrink-0" />
-                <span>+256 XXX XXX XXX</span>
+                <a href="tel:+256755999544" className="hover:text-gold transition-colors">
+                  +256 755 999 544
+                </a>
               </li>
             </ul>
           </div>
