@@ -12,7 +12,9 @@ const navLinks = [
   { label: 'About', href: '/about' },
   { label: 'Events', href: '/events' },
   { label: 'News', href: '/news' },
+  { label: 'Gallery', href: '/gallery' },
   { label: 'Membership', href: '/membership' },
+  { label: 'Contact', href: '/contact' },
 ];
 
 interface NavbarProps {
