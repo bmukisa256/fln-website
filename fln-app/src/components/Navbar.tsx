@@ -8,7 +8,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const navLinks = [
-  { label: 'Home', href: '/home' },
+  { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
   { label: 'Events', href: '/events' },
   { label: 'Membership', href: '/membership' },
@@ -40,7 +40,7 @@ export default function Navbar({ activePage }: NavbarProps) {
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/home" className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3">
             <div className="w-10 h-10 relative rounded-xl overflow-hidden">
               <Image src="/imgs/FLN logo-full color.png" alt="FLN" fill className="object-cover" />
             </div>

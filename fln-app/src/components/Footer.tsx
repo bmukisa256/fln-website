@@ -26,7 +26,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 mb-16">
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <Link href="/home" className="flex items-center gap-3 mb-5">
+            <Link href="/" className="flex items-center gap-3 mb-5">
               <div className="w-10 h-10 relative rounded-xl overflow-hidden bg-white">
                 <Image src="/imgs/FLN logo-full color.png" alt="FLN" fill className="object-cover" />
               </div>
