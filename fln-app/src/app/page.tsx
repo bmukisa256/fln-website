@@ -2,7 +2,7 @@
 
 import { Button, Chip, Image, Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@nextui-org/react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { ArrowRight, ArrowUpRight, Globe, Shield, Star, Users } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Globe, Shield, Users } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
@@ -21,9 +21,7 @@ export default function Home() {
         }}
       >
         <NavbarBrand>
-          <div className="w-10 h-10 bg-[#0F172A] rounded-xl flex items-center justify-center mr-3 shadow-lg shadow-blue-900/10">
-            <span className="text-white font-heading font-bold text-xl">F</span>
-          </div>
+          <Image src="/logo.png" alt="FLN Logo" width={40} height={40} className="rounded-xl mr-3" />
           <p className="font-heading font-bold text-xl tracking-tight text-[#0F172A]">FLN</p>
         </NavbarBrand>
         <NavbarContent className="hidden sm:flex gap-8" justify="center">
@@ -111,20 +109,33 @@ export default function Home() {
                   </div>
                 </motion.div>
 
-                {/* Floating Card */}
+                {/* Floating Card - President Preview */}
                 <motion.div
                   animate={{ y: [0, -10, 0] }}
-                  transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
-                  className="absolute bottom-24 left-0 bg-white p-6 rounded-2xl shadow-xl max-w-xs border border-slate-100"
+                  transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
+                  className="absolute bottom-32 -left-6 bg-white p-4 rounded-2xl shadow-xl max-w-xs border border-slate-100 flex items-center gap-4"
                 >
-                  <div className="flex items-center gap-4 mb-3">
-                    <div className="p-2 bg-amber-100 rounded-lg text-amber-600">
-                      <Star className="w-6 h-6 fill-current" />
-                    </div>
-                    <div>
-                      <p className="font-bold text-slate-900">Top Tier Network</p>
-                      <p className="text-xs text-slate-500">Rated #1 for Women in Law</p>
-                    </div>
+                  <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-amber-500">
+                    <Image src="/president.jpg" alt="President" className="w-full h-full object-cover" />
+                  </div>
+                  <div>
+                    <p className="font-bold text-slate-900 text-sm">Hon. Dr. Joyce</p>
+                    <p className="text-xs text-amber-600 font-semibold">PRESIDENT</p>
+                  </div>
+                </motion.div>
+
+                {/* Floating Card - Chairperson Preview */}
+                <motion.div
+                  animate={{ y: [0, 10, 0] }}
+                  transition={{ repeat: Infinity, duration: 7, ease: "easeInOut", delay: 1 }}
+                  className="absolute top-32 -left-4 bg-white p-4 rounded-2xl shadow-xl max-w-xs border border-slate-100 flex items-center gap-4"
+                >
+                  <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-blue-900">
+                    <Image src="/chairperson.jpg" alt="Chairperson" className="w-full h-full object-cover" />
+                  </div>
+                  <div>
+                    <p className="font-bold text-slate-900 text-sm">Hon. Justice Lillian</p>
+                    <p className="text-xs text-blue-900 font-semibold">CHAIRPERSON</p>
                   </div>
                 </motion.div>
               </div>
@@ -208,11 +219,13 @@ export default function Home() {
             {/* Leader 1 */}
             <div className="group">
               <div className="relative mb-8 overflow-hidden rounded-[2rem]">
-                <div className="aspect-[4/5] bg-slate-800 w-full hover:scale-105 transition-transform duration-700" />
-                {/* Image Placeholder above - use generic div for now */}
-                <div className="absolute bottom-6 left-6 bg-white/10 backdrop-blur-md border border-white/10 p-4 rounded-xl">
-                  <p className="font-heading font-bold text-2xl">Hon. Dr. Joyce</p>
-                  <p className="text-amber-400 text-sm tracking-widest uppercase">President</p>
+                <div className="aspect-[4/5] w-full hover:scale-105 transition-transform duration-700 relative">
+                  <Image src="/president.jpg" alt="Hon. Dr. Joyce Nalunga Birimumaaso" className="w-full h-full object-cover" removeWrapper />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A] via-transparent to-transparent opacity-60" />
+                </div>
+                <div className="absolute bottom-6 left-6 text-white p-4 rounded-xl">
+                  <p className="font-heading font-bold text-2xl drop-shadow-md">Hon. Dr. Joyce</p>
+                  <p className="text-amber-400 text-sm tracking-widest uppercase font-bold drop-shadow-md">President</p>
                 </div>
               </div>
               <blockquote className="text-xl font-light leading-relaxed text-slate-300 border-l-2 border-amber-500 pl-6">
@@ -223,10 +236,13 @@ export default function Home() {
             {/* Leader 2 */}
             <div className="group md:mt-24">
               <div className="relative mb-8 overflow-hidden rounded-[2rem]">
-                <div className="aspect-[4/5] bg-slate-800 w-full hover:scale-105 transition-transform duration-700" />
-                <div className="absolute bottom-6 left-6 bg-white/10 backdrop-blur-md border border-white/10 p-4 rounded-xl">
-                  <p className="font-heading font-bold text-2xl">Hon. Justice Lillian</p>
-                  <p className="text-blue-300 text-sm tracking-widest uppercase">Chairperson</p>
+                <div className="aspect-[4/5] w-full hover:scale-105 transition-transform duration-700 relative">
+                  <Image src="/chairperson.jpg" alt="Hon. Lady Justice Lillian Tibatemwa" className="w-full h-full object-cover" removeWrapper />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A] via-transparent to-transparent opacity-60" />
+                </div>
+                <div className="absolute bottom-6 left-6 text-white p-4 rounded-xl">
+                  <p className="font-heading font-bold text-2xl drop-shadow-md">Hon. Justice Lillian</p>
+                  <p className="text-blue-300 text-sm tracking-widest uppercase font-bold drop-shadow-md">Chairperson</p>
                 </div>
               </div>
               <blockquote className="text-xl font-light leading-relaxed text-slate-300 border-l-2 border-blue-500 pl-6">
