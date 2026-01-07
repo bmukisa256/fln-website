@@ -6,15 +6,15 @@ generator client {
 }
 
 datasource db {
-  provider = "mysql"
+  provider = "sqlite"
   url      = env("DATABASE_URL")
 }
 
 // Newsletter Subscribers
 model Subscriber {
   id           Int      @id @default(autoincrement())
-  email        String   @unique @db.VarChar(255)
-  status       String   @default("active") @db.VarChar(20)
+  email        String   @unique
+  status       String   @default("active")
   subscribedAt DateTime @default(now()) @map("subscribed_at")
   createdAt    DateTime @default(now()) @map("created_at")
   updatedAt    DateTime @updatedAt @map("updated_at")
@@ -25,8 +25,8 @@ model Subscriber {
 // Email Campaigns
 model Campaign {
   id             Int      @id @default(autoincrement())
-  subject        String   @db.VarChar(255)
-  content        String   @db.Text
+  subject        String
+  content        String
   recipientCount Int      @default(0) @map("recipient_count")
   sentAt         DateTime @default(now()) @map("sent_at")
   createdAt      DateTime @default(now()) @map("created_at")
@@ -37,9 +37,9 @@ model Campaign {
 // Admin Users
 model Admin {
   id        Int      @id @default(autoincrement())
-  username  String   @unique @db.VarChar(50)
-  password  String   @db.VarChar(255)
-  email     String?  @db.VarChar(255)
+  username  String   @unique
+  password  String
+  email     String?
   createdAt DateTime @default(now()) @map("created_at")
   updatedAt DateTime @updatedAt @map("updated_at")
 
@@ -49,11 +49,11 @@ model Admin {
 // Contact Form Submissions
 model ContactSubmission {
   id        Int      @id @default(autoincrement())
-  name      String   @db.VarChar(100)
-  email     String   @db.VarChar(255)
-  subject   String   @db.VarChar(255)
-  message   String   @db.Text
-  status    String   @default("unread") @db.VarChar(20)
+  name      String
+  email     String
+  subject   String
+  message   String
+  status    String   @default("unread")
   createdAt DateTime @default(now()) @map("created_at")
 
   @@map("contact_submissions")
@@ -61,18 +61,18 @@ model ContactSubmission {
 
 // Membership Applications
 model MembershipApplication {
-  id             Int      @id @default(autoincrement())
-  firstName      String   @map("first_name") @db.VarChar(100)
-  lastName       String   @map("last_name") @db.VarChar(100)
-  email          String   @db.VarChar(255)
-  phone          String   @db.VarChar(20)
-  membershipType String   @map("membership_type") @db.VarChar(50)
-  organization   String?  @db.VarChar(255)
-  practiceArea   String?  @map("practice_area") @db.VarChar(100)
-  yearsOfPractice Int?    @map("years_of_practice")
-  status         String   @default("pending") @db.VarChar(20)
-  createdAt      DateTime @default(now()) @map("created_at")
-  updatedAt      DateTime @updatedAt @map("updated_at")
+  id              Int      @id @default(autoincrement())
+  firstName       String   @map("first_name")
+  lastName        String   @map("last_name")
+  email           String
+  phone           String
+  membershipType  String   @map("membership_type")
+  organization    String?
+  practiceArea    String?  @map("practice_area")
+  yearsOfPractice Int?     @map("years_of_practice")
+  status          String   @default("pending")
+  createdAt       DateTime @default(now()) @map("created_at")
+  updatedAt       DateTime @updatedAt @map("updated_at")
 
   @@map("membership_applications")
 }
