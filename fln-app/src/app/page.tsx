@@ -116,7 +116,7 @@ export default function Home() {
                   className="absolute bottom-32 -left-6 bg-white p-4 rounded-2xl shadow-xl max-w-xs border border-slate-100 flex items-center gap-4"
                 >
                   <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-amber-500">
-                    <Image src="/imgs/WhatsApp Image 2023-02-16 at 16.39.39.jpg" alt="President" className="w-full h-full object-cover" />
+                    <Image src="/imgs/WhatsApp Image 2023-01-05 at 13.31.00.jpeg" alt="President" className="w-full h-full object-cover" />
                   </div>
                   <div>
                     <p className="font-bold text-slate-900 text-sm">Hon. Dr. Joyce</p>
@@ -131,7 +131,7 @@ export default function Home() {
                   className="absolute top-32 -left-4 bg-white p-4 rounded-2xl shadow-xl max-w-xs border border-slate-100 flex items-center gap-4"
                 >
                   <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-blue-900">
-                    <Image src="/imgs/WhatsApp Image 2023-01-04 at 21.47.48.jpeg" alt="Chairperson" className="w-full h-full object-cover" />
+                    <Image src="/imgs/justice lillian.jfif" alt="Chairperson" className="w-full h-full object-cover" />
                   </div>
                   <div>
                     <p className="font-bold text-slate-900 text-sm">Hon. Justice Lillian</p>
@@ -202,53 +202,87 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Modern Leadership Section */}
+      {/* Modern Leadership Section - Redesigned for better image fit */}
       <section className="py-32 bg-navy text-white relative overflow-hidden">
         {/* Background Decoration */}
-        <div className="absolute top-0 left-1/4 w-[1px] h-full bg-white/10" />
-        <div className="absolute top-0 left-2/4 w-[1px] h-full bg-white/10" />
-        <div className="absolute top-0 left-3/4 w-[1px] h-full bg-white/10" />
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-white/5 to-transparent pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-gold/10 rounded-full blur-3xl pointer-events-none" />
 
         <div className="container mx-auto px-6 relative z-10">
-          <div className="text-center mb-20">
+          <div className="text-center mb-24">
             <span className="text-gold font-medium tracking-widest uppercase text-sm">Guided by Excellence</span>
             <h2 className="text-4xl md:text-5xl font-heading font-bold mt-4">Voices of Authority</h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 lg:gap-24 items-start">
-            {/* Leader 1 */}
-            <div className="group">
-              <div className="relative mb-8 overflow-hidden rounded-[2rem]">
-                <div className="aspect-[4/5] w-full hover:scale-105 transition-transform duration-700 relative">
-                  <Image src="/imgs/WhatsApp Image 2023-02-16 at 16.39.39.jpg" alt="Hon. Dr. Joyce Nalunga Birimumaaso" className="w-full h-full object-cover" removeWrapper />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A] via-transparent to-transparent opacity-60" />
+          <div className="grid md:grid-cols-2 gap-16 lg:gap-24">
+            {/* Leader 1: President */}
+            <div className="group relative">
+              <div className="flex flex-col md:flex-row gap-8 items-center md:items-start text-center md:text-left">
+                {/* Image Frame - Smaller to hide low res */}
+                <div className="relative shrink-0">
+                  <div className="w-48 h-48 md:w-56 md:h-56 rounded-full p-2 border-2 border-dashed border-gold/30">
+                    <div className="w-full h-full rounded-full overflow-hidden border-4 border-navy shadow-2xl relative z-10">
+                      <Image
+                        src="/imgs/WhatsApp Image 2023-01-05 at 13.31.00.jpeg"
+                        alt="Hon. Dr. Joyce Nalunga Birimumaaso"
+                        className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                        removeWrapper
+                      />
+                    </div>
+                  </div>
+                  <div className="absolute top-0 right-0 bg-gold text-navy font-bold text-xs px-3 py-1 rounded-full shadow-lg transform translate-x-1/4 -translate-y-1/4">
+                    PRESIDENT
+                  </div>
                 </div>
-                <div className="absolute bottom-6 left-6 text-white p-4 rounded-xl">
-                  <p className="font-heading font-bold text-2xl drop-shadow-md">Hon. Dr. Joyce</p>
-                  <p className="text-gold text-sm tracking-widest uppercase font-bold drop-shadow-md">President</p>
+
+                {/* Content */}
+                <div>
+                  <h3 className="text-2xl font-heading font-bold text-white mb-2 leading-tight">
+                    Hon. Dr. Joyce <br />
+                    <span className="text-slate-400 text-xl font-light">Nalunga Birimumaaso</span>
+                  </h3>
+                  <div className="w-12 h-1 bg-gold my-4 mx-auto md:mx-0 rounded-full" />
+                  <blockquote className="text-lg font-light leading-relaxed text-slate-300 italic">
+                    "Our mission is to empower female lawyers to lead with integrity and advocate for gender equality in the legal profession."
+                  </blockquote>
                 </div>
               </div>
-              <blockquote className="text-xl font-light leading-relaxed text-slate-300 border-l-2 border-amber-500 pl-6">
-                "Our mission is to empower female lawyers to lead with integrity and advocate for gender equality in the legal profession."
-              </blockquote>
             </div>
 
-            {/* Leader 2 */}
-            <div className="group md:mt-24">
-              <div className="relative mb-8 overflow-hidden rounded-[2rem]">
-                <div className="aspect-[4/5] w-full hover:scale-105 transition-transform duration-700 relative">
-                  <Image src="/imgs/WhatsApp Image 2023-01-04 at 21.47.48.jpeg" alt="Hon. Lady Justice Lillian Tibatemwa" className="w-full h-full object-cover" removeWrapper />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A] via-transparent to-transparent opacity-60" />
+            {/* Leader 2: Chairperson */}
+            <div className="group relative">
+              <div className="flex flex-col md:flex-row gap-8 items-center md:items-start text-center md:text-left">
+                {/* Image Frame */}
+                <div className="relative shrink-0">
+                  <div className="w-48 h-48 md:w-56 md:h-56 rounded-full p-2 border-2 border-dashed border-blue-400/30">
+                    <div className="w-full h-full rounded-full overflow-hidden border-4 border-navy shadow-2xl relative z-10">
+                      <Image
+                        src="/imgs/justice lillian.jfif"
+                        alt="Hon. Prof. Lady Justice Lillian Tibatemwa Ekirukubinza"
+                        className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                        removeWrapper
+                      />
+                    </div>
+                  </div>
+                  <div className="absolute top-0 right-0 bg-blue-500 text-white font-bold text-xs px-3 py-1 rounded-full shadow-lg transform translate-x-1/4 -translate-y-1/4">
+                    CHAIRPERSON
+                  </div>
                 </div>
-                <div className="absolute bottom-6 left-6 text-white p-4 rounded-xl">
-                  <p className="font-heading font-bold text-2xl drop-shadow-md">Hon. Justice Lillian</p>
-                  <p className="text-blue-300 text-sm tracking-widest uppercase font-bold drop-shadow-md">Chairperson</p>
+
+                {/* Content */}
+                <div>
+                  <h3 className="text-2xl font-heading font-bold text-white mb-2 leading-tight">
+                    Hon. Prof. Lady Justice <br />
+                    <span className="text-slate-400 text-xl font-light">Lillian Tibatemwa Ekirukubinza</span>
+                  </h3>
+                  <div className="w-12 h-1 bg-blue-500 my-4 mx-auto md:mx-0 rounded-full" />
+                  <blockquote className="text-lg font-light leading-relaxed text-slate-300 italic">
+                    "To uphold women’s human rights is to ensure that every woman and girl lives up to her full potential."
+                  </blockquote>
                 </div>
               </div>
-              <blockquote className="text-xl font-light leading-relaxed text-slate-300 border-l-2 border-blue-500 pl-6">
-                "To uphold women’s human rights is to ensure that every woman and girl lives up to her full potential."
-              </blockquote>
             </div>
+
           </div>
         </div>
       </section>
