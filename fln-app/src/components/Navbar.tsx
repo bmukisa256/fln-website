@@ -2,7 +2,7 @@
 
 import { Button } from "@nextui-org/react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Phone, Mail } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -32,14 +32,36 @@ export default function Navbar({ activePage }: NavbarProps) {
   }, []);
 
   return (
-    <motion.nav
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-      className={`fixed top-0 w-full z-50 transition-all duration-500 ${
-        scrolled ? 'bg-white shadow-sm' : 'bg-transparent'
-      }`}
-    >
+    <>
+      {/* Top Contact Bar */}
+      <div
+        className={`fixed top-0 w-full z-50 bg-navy text-white text-sm transition-all duration-300 hidden md:block ${
+          scrolled ? 'opacity-0 -translate-y-full' : 'opacity-100'
+        }`}
+      >
+        <div className="container mx-auto px-6 lg:px-12">
+          <div className="flex items-center justify-between h-10">
+            <a href="tel:+256755999544" className="flex items-center gap-2 hover:text-gold transition-colors">
+              <Phone className="w-3.5 h-3.5" />
+              <span>+256 755 999 544</span>
+            </a>
+            <a href="mailto:femalelawyersnetwork@gmail.com" className="flex items-center gap-2 hover:text-gold transition-colors">
+              <Mail className="w-3.5 h-3.5" />
+              <span>femalelawyersnetwork@gmail.com</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Navbar */}
+      <motion.nav
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+        className={`fixed w-full z-50 transition-all duration-500 ${
+          scrolled ? 'top-0 bg-white shadow-sm' : 'top-0 md:top-10 bg-transparent'
+        }`}
+      >
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -131,5 +153,6 @@ export default function Navbar({ activePage }: NavbarProps) {
         )}
       </AnimatePresence>
     </motion.nav>
+    </>
   );
 }

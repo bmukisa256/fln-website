@@ -485,7 +485,7 @@ export default function AboutPage() {
                 />
               </div>
               <div className="text-left">
-                <p className="font-bold text-navy">Hon. Prof. Lady Justice Lillian Tibatemwa</p>
+                <p className="font-bold text-navy">Hon. Prof. Lady Justice Lillian Tibatemwa Ekirukubinza</p>
                 <p className="text-sm text-purple">Chairperson, FLN</p>
               </div>
             </div>
