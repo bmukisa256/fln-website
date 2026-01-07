@@ -10,7 +10,7 @@ export default function Home() {
   const y = useTransform(scrollYProgress, [0, 1], [0, -50]);
 
   return (
-    <div className="min-h-screen bg-[#FDFBF7] text-[#0F172A] selection:bg-amber-100 selection:text-amber-900 overflow-x-hidden font-body">
+    <div className="min-h-screen bg-cream text-navy selection:bg-amber-100 selection:text-amber-900 overflow-x-hidden font-body">
 
       {/* Floating Modern Navbar */}
       <Navbar
@@ -21,15 +21,15 @@ export default function Home() {
         }}
       >
         <NavbarBrand>
-          <Image src="/logo.png" alt="FLN Logo" width={40} height={40} className="rounded-xl mr-3" />
-          <p className="font-heading font-bold text-xl tracking-tight text-[#0F172A]">FLN</p>
+          <Image src="/imgs/FLN logo-full color.png" alt="FLN Logo" width={40} height={40} className="rounded-xl mr-3" />
+          <p className="font-heading font-bold text-xl tracking-tight text-navy">FLN</p>
         </NavbarBrand>
         <NavbarContent className="hidden sm:flex gap-8" justify="center">
           {['Home', 'About Us', 'Events', 'Membership'].map((item) => (
             <NavbarItem key={item}>
-              <Link href={`/${item.toLowerCase().replace(' ', '')}`} className="text-base text-slate-500 hover:text-[#0F172A] font-medium transition-colors relative group">
+              <Link href={`/${item.toLowerCase().replace(' ', '')}`} className="text-base text-slate-500 hover:text-navy font-medium transition-colors relative group">
                 {item}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#0F172A] transition-all group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-navy transition-all group-hover:w-full"></span>
               </Link>
             </NavbarItem>
           ))}
@@ -38,7 +38,7 @@ export default function Home() {
           <Button
             as={Link}
             href="/membership"
-            className="bg-[#0F172A] text-white font-medium px-8 py-6 rounded-full shadow-xl shadow-[#0F172A]/10 hover:shadow-[#0F172A]/20 transition-all hover:scale-105"
+            className="bg-navy text-white font-medium px-8 py-6 rounded-full shadow-xl shadow-[#0F172A]/10 hover:shadow-[#0F172A]/20 transition-all hover:scale-105"
           >
             Join Network
           </Button>
@@ -63,7 +63,7 @@ export default function Home() {
                 <Chip size="sm" variant="flat" color="warning" className="bg-amber-100 text-amber-800 font-semibold px-2">FLN • EST 2022</Chip>
                 <span className="text-sm font-medium text-slate-500 tracking-wide uppercase">Redefining Excellence</span>
               </div>
-              <h1 className="text-6xl lg:text-8xl font-heading font-bold leading-[1.1] mb-8 text-[#0F172A]">
+              <h1 className="text-6xl lg:text-8xl font-heading font-bold leading-[1.1] mb-8 text-navy">
                 The Future <br />
                 of <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-amber-700 italic pr-2">Justice</span>
                 is Female.
@@ -73,7 +73,7 @@ export default function Home() {
               </p>
 
               <div className="flex flex-wrap gap-4 items-center">
-                <Button size="lg" className="bg-[#0F172A] text-white font-medium px-10 py-7 text-lg rounded-2xl">
+                <Button size="lg" className="bg-navy text-white font-medium px-10 py-7 text-lg rounded-2xl">
                   Become a Member <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
                 <div className="flex -space-x-4 pl-6">
@@ -98,7 +98,7 @@ export default function Home() {
                 <motion.div style={{ y }} className="absolute right-0 top-10 w-4/5 h-[85%] rounded-[3rem] overflow-hidden shadow-2xl shadow-blue-900/20">
                   <Image
                     removeWrapper
-                    src="/hero-image.jpg"
+                    src="/imgs/IMG-20250616-WA0064.jpg"
                     alt="Female Lawyers Network"
                     className="w-full h-full object-cover"
                   />
@@ -116,11 +116,11 @@ export default function Home() {
                   className="absolute bottom-32 -left-6 bg-white p-4 rounded-2xl shadow-xl max-w-xs border border-slate-100 flex items-center gap-4"
                 >
                   <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-amber-500">
-                    <Image src="/president.jpg" alt="President" className="w-full h-full object-cover" />
+                    <Image src="/imgs/WhatsApp Image 2023-02-16 at 16.39.39.jpg" alt="President" className="w-full h-full object-cover" />
                   </div>
                   <div>
                     <p className="font-bold text-slate-900 text-sm">Hon. Dr. Joyce</p>
-                    <p className="text-xs text-amber-600 font-semibold">PRESIDENT</p>
+                    <p className="text-xs text-gold font-semibold">PRESIDENT</p>
                   </div>
                 </motion.div>
 
@@ -131,7 +131,7 @@ export default function Home() {
                   className="absolute top-32 -left-4 bg-white p-4 rounded-2xl shadow-xl max-w-xs border border-slate-100 flex items-center gap-4"
                 >
                   <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-blue-900">
-                    <Image src="/chairperson.jpg" alt="Chairperson" className="w-full h-full object-cover" />
+                    <Image src="/imgs/WhatsApp Image 2023-01-04 at 21.47.48.jpeg" alt="Chairperson" className="w-full h-full object-cover" />
                   </div>
                   <div>
                     <p className="font-bold text-slate-900 text-sm">Hon. Justice Lillian</p>
@@ -149,7 +149,7 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 px-2">
             <div>
-              <h2 className="text-4xl lg:text-5xl font-heading font-bold text-[#0F172A] mb-4">Our Pillars of <br /> <span className="italic text-slate-400">Impact.</span></h2>
+              <h2 className="text-4xl lg:text-5xl font-heading font-bold text-navy mb-4">Our Pillars of <br /> <span className="italic text-slate-400">Impact.</span></h2>
             </div>
             <p className="max-w-md text-slate-600 text-lg">We structure our impact through three core pillars designed to transform the legal landscape.</p>
           </div>
@@ -163,10 +163,10 @@ export default function Home() {
             >
               <div className="relative z-10 h-full flex flex-col justify-between">
                 <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center shadow-sm mb-6">
-                  <Globe className="w-7 h-7 text-[#0F172A]" />
+                  <Globe className="w-7 h-7 text-navy" />
                 </div>
                 <div>
-                  <h3 className="text-3xl font-heading font-bold text-[#0F172A] mb-3">Global Advocacy</h3>
+                  <h3 className="text-3xl font-heading font-bold text-navy mb-3">Global Advocacy</h3>
                   <p className="text-lg text-slate-600 max-w-sm">We take our mission beyond borders, partnering with international organizations to fight for gender equality worldwide.</p>
 
                   <Button variant="light" className="mt-8 pl-0 text-lg font-medium hover:gap-4 transition-all" endContent={<ArrowUpRight />}>
@@ -180,12 +180,12 @@ export default function Home() {
             {/* Top Right Card */}
             <motion.div
               whileHover={{ scale: 0.98 }}
-              className="bg-[#0F172A] rounded-[2.5rem] p-8 text-white relative overflow-hidden md:col-span-1"
+              className="bg-navy rounded-[2.5rem] p-8 text-white relative overflow-hidden md:col-span-1"
             >
-              <Shield className="w-8 h-8 text-amber-400 mb-4" />
+              <Shield className="w-8 h-8 text-gold mb-4" />
               <h3 className="text-2xl font-heading font-bold mb-2">Integrity First</h3>
               <p className="text-slate-300 text-sm">Upholding the highest moral standards in every case.</p>
-              <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-amber-500/20 rounded-full blur-2xl" />
+              <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-gold/20 rounded-full blur-2xl" />
             </motion.div>
 
             {/* Bottom Right Card */}
@@ -203,7 +203,7 @@ export default function Home() {
       </section>
 
       {/* Modern Leadership Section */}
-      <section className="py-32 bg-[#0F172A] text-white relative overflow-hidden">
+      <section className="py-32 bg-navy text-white relative overflow-hidden">
         {/* Background Decoration */}
         <div className="absolute top-0 left-1/4 w-[1px] h-full bg-white/10" />
         <div className="absolute top-0 left-2/4 w-[1px] h-full bg-white/10" />
@@ -211,7 +211,7 @@ export default function Home() {
 
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center mb-20">
-            <span className="text-amber-400 font-medium tracking-widest uppercase text-sm">Guided by Excellence</span>
+            <span className="text-gold font-medium tracking-widest uppercase text-sm">Guided by Excellence</span>
             <h2 className="text-4xl md:text-5xl font-heading font-bold mt-4">Voices of Authority</h2>
           </div>
 
@@ -220,12 +220,12 @@ export default function Home() {
             <div className="group">
               <div className="relative mb-8 overflow-hidden rounded-[2rem]">
                 <div className="aspect-[4/5] w-full hover:scale-105 transition-transform duration-700 relative">
-                  <Image src="/president.jpg" alt="Hon. Dr. Joyce Nalunga Birimumaaso" className="w-full h-full object-cover" removeWrapper />
+                  <Image src="/imgs/WhatsApp Image 2023-02-16 at 16.39.39.jpg" alt="Hon. Dr. Joyce Nalunga Birimumaaso" className="w-full h-full object-cover" removeWrapper />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A] via-transparent to-transparent opacity-60" />
                 </div>
                 <div className="absolute bottom-6 left-6 text-white p-4 rounded-xl">
                   <p className="font-heading font-bold text-2xl drop-shadow-md">Hon. Dr. Joyce</p>
-                  <p className="text-amber-400 text-sm tracking-widest uppercase font-bold drop-shadow-md">President</p>
+                  <p className="text-gold text-sm tracking-widest uppercase font-bold drop-shadow-md">President</p>
                 </div>
               </div>
               <blockquote className="text-xl font-light leading-relaxed text-slate-300 border-l-2 border-amber-500 pl-6">
@@ -237,7 +237,7 @@ export default function Home() {
             <div className="group md:mt-24">
               <div className="relative mb-8 overflow-hidden rounded-[2rem]">
                 <div className="aspect-[4/5] w-full hover:scale-105 transition-transform duration-700 relative">
-                  <Image src="/chairperson.jpg" alt="Hon. Lady Justice Lillian Tibatemwa" className="w-full h-full object-cover" removeWrapper />
+                  <Image src="/imgs/WhatsApp Image 2023-01-04 at 21.47.48.jpeg" alt="Hon. Lady Justice Lillian Tibatemwa" className="w-full h-full object-cover" removeWrapper />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A] via-transparent to-transparent opacity-60" />
                 </div>
                 <div className="absolute bottom-6 left-6 text-white p-4 rounded-xl">
@@ -258,7 +258,7 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-8">
             <div>
-              <h4 className="font-heading font-bold text-2xl text-[#0F172A] mb-2">Female Lawyers Network</h4>
+              <h4 className="font-heading font-bold text-2xl text-navy mb-2">Female Lawyers Network</h4>
               <p className="text-slate-500">Plot 567 Nankulabye, Kampala</p>
             </div>
             <div className="text-[100px] md:text-[150px] font-heading font-black text-slate-50 opacity-50 leading-none select-none pointer-events-none">

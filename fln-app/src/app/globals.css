@@ -11,6 +11,12 @@
   --color-foreground: var(--foreground);
   --font-heading: var(--font-heading);
   --font-body: var(--font-body);
+
+  /* Brand Colors */
+  --color-navy: #1B365D;
+  --color-gold: #C5A059;
+  --color-gold-light: #E5C585;
+  --color-cream: #FDFBF7;
 }
 
 @media (prefers-color-scheme: dark) {
