@@ -1,5 +1,7 @@
 // Email service configuration
-// Using Resend for production or console logging for development
+// Using Gmail SMTP with Nodemailer (same as PHP version)
+
+import nodemailer from "nodemailer";
 
 interface EmailOptions {
   to: string | string[];
@@ -14,21 +16,35 @@ interface SendResult {
 }
 
 class EmailService {
-  private apiKey: string | undefined;
+  private transporter: nodemailer.Transporter | null = null;
   private fromEmail: string;
+  private fromName: string;
 
   constructor() {
-    this.apiKey = process.env.RESEND_API_KEY;
-    this.fromEmail = process.env.EMAIL_FROM || "FLN Uganda <noreply@fln.ug>";
+    this.fromEmail = process.env.SMTP_USERNAME || "femalelawyersnetwork@gmail.com";
+    this.fromName = process.env.FROM_NAME || "FLN Team";
+
+    // Only create transporter if SMTP credentials are configured
+    if (process.env.SMTP_USERNAME && process.env.SMTP_PASSWORD) {
+      this.transporter = nodemailer.createTransport({
+        host: process.env.SMTP_HOST || "smtp.gmail.com",
+        port: parseInt(process.env.SMTP_PORT || "587"),
+        secure: process.env.SMTP_SECURE === "true", // true for 465, false for other ports
+        auth: {
+          user: process.env.SMTP_USERNAME,
+          pass: process.env.SMTP_PASSWORD,
+        },
+      });
+    }
   }
 
   async send(options: EmailOptions): Promise<SendResult> {
     const recipients = Array.isArray(options.to) ? options.to : [options.to];
 
-    // If no API key, log to console (development mode)
-    if (!this.apiKey) {
+    // If no transporter (no SMTP config), log to console (development mode)
+    if (!this.transporter) {
       console.log("=== EMAIL SERVICE (DEV MODE) ===");
-      console.log(`From: ${this.fromEmail}`);
+      console.log(`From: ${this.fromName} <${this.fromEmail}>`);
       console.log(`To: ${recipients.join(", ")}`);
       console.log(`Subject: ${options.subject}`);
       console.log(`Content Preview: ${options.html.substring(0, 200)}...`);
@@ -40,31 +56,19 @@ class EmailService {
       };
     }
 
-    // Production: Use Resend API
+    // Production: Use SMTP
     try {
-      const response = await fetch("https://api.resend.com/emails", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${this.apiKey}`,
-        },
-        body: JSON.stringify({
-          from: this.fromEmail,
-          to: recipients,
-          subject: options.subject,
-          html: options.html,
-        }),
+      const info = await this.transporter.sendMail({
+        from: `${this.fromName} <${this.fromEmail}>`,
+        to: recipients.join(", "),
+        subject: options.subject,
+        html: options.html,
+        text: options.html.replace(/<[^>]*>/g, ""), // Strip HTML for plain text version
       });
 
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.message || "Failed to send email");
-      }
-
-      const data = await response.json();
       return {
         success: true,
-        messageId: data.id,
+        messageId: info.messageId,
       };
     } catch (error) {
       console.error("Email send error:", error);
@@ -92,6 +96,8 @@ class EmailService {
           errors.push(`${email.to}: ${result.error}`);
         }
       }
+      // Small delay between emails to avoid rate limiting
+      await new Promise((resolve) => setTimeout(resolve, 100));
     }
 
     return { sent, failed, errors };
