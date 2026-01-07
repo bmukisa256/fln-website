@@ -2,7 +2,7 @@
 
 import { Button, Chip, Input, Select, SelectItem } from "@nextui-org/react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowRight, Check, ChevronDown, Clock, Gift, GraduationCap, Loader2, Mail, Network, Phone, Sparkles, Star, User, Users, Zap } from "lucide-react";
+import { ArrowRight, Check, ChevronDown, Clock, Gift, GraduationCap, Loader2, Mail, Network, Phone, Star, User, Users, Zap } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
@@ -39,40 +39,10 @@ const benefits = [
   { icon: Gift, title: "Member Discounts", description: "Enjoy discounted rates for our annual conference and special events." },
 ];
 
-const membershipTiers = [
-  {
-    name: "Student",
-    price: "50",
-    period: "year",
-    description: "For law students beginning their journey",
-    features: ["Access to networking events", "Monthly newsletter", "Online resources", "Student mentorship program"],
-    color: "navy",
-    popular: false,
-  },
-  {
-    name: "Associate",
-    price: "100",
-    period: "year",
-    description: "For early-career legal professionals",
-    features: ["All Student benefits", "Professional workshops", "Career guidance sessions", "Event discounts (10%)"],
-    color: "purple",
-    popular: true,
-  },
-  {
-    name: "Full Member",
-    price: "200",
-    period: "year",
-    description: "For established legal practitioners",
-    features: ["All Associate benefits", "VIP event access", "Leadership programs", "Event discounts (25%)", "Exclusive resources"],
-    color: "gold",
-    popular: false,
-  },
-];
-
 const faqs = [
   {
-    question: "What are the membership fees?",
-    answer: "Membership fees vary depending on the type of membership. Student memberships start at $50 per year, associate memberships at $100 per year, and full memberships at $200 per year."
+    question: "What are the membership types?",
+    answer: "We offer three membership categories: Student membership for law students, Associate membership for early-career professionals, and Full membership for established practitioners. Contact us for current membership details."
   },
   {
     question: "How often do you host events?",
@@ -238,96 +208,6 @@ export default function MembershipPage() {
       </section>
 
       {/* ================================================================== */}
-      {/* PRICING TIERS */}
-      {/* ================================================================== */}
-      <section className="py-24 lg:py-32 bg-cream">
-        <div className="container mx-auto px-6 lg:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <p className="text-sm font-medium text-gold uppercase tracking-wider mb-2">Pricing</p>
-            <h2 className="text-3xl lg:text-5xl font-heading font-bold text-navy mb-4">
-              Choose Your Membership
-            </h2>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Select the plan that best fits your career stage and goals
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-6 lg:gap-8 max-w-5xl mx-auto">
-            {membershipTiers.map((tier, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className={`relative ${tier.popular ? 'md:-mt-4 md:mb-4' : ''}`}
-              >
-                {tier.popular && (
-                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
-                    <div className="bg-purple text-white text-xs font-bold px-4 py-1 rounded-full flex items-center gap-1">
-                      <Sparkles className="w-3 h-3" /> Most Popular
-                    </div>
-                  </div>
-                )}
-                <div className={`bg-white rounded-3xl p-8 h-full ${
-                  tier.popular ? 'ring-2 ring-purple shadow-xl' : 'shadow-sm'
-                }`}>
-                  <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 ${
-                    tier.color === 'navy' ? 'bg-navy' : tier.color === 'purple' ? 'bg-purple' : 'bg-gold'
-                  }`}>
-                    {tier.color === 'navy' ? (
-                      <GraduationCap className="w-6 h-6 text-white" />
-                    ) : tier.color === 'purple' ? (
-                      <Users className="w-6 h-6 text-white" />
-                    ) : (
-                      <Star className="w-6 h-6 text-navy" />
-                    )}
-                  </div>
-
-                  <h3 className="text-xl font-heading font-bold text-navy mb-2">{tier.name}</h3>
-                  <p className="text-slate-500 text-sm mb-4">{tier.description}</p>
-
-                  <div className="flex items-baseline gap-1 mb-6">
-                    <span className="text-4xl font-heading font-bold text-navy">${tier.price}</span>
-                    <span className="text-slate-500">/{tier.period}</span>
-                  </div>
-
-                  <ul className="space-y-3 mb-8">
-                    {tier.features.map((feature, i) => (
-                      <li key={i} className="flex items-start gap-3 text-sm">
-                        <Check className={`w-5 h-5 shrink-0 ${
-                          tier.color === 'navy' ? 'text-navy' : tier.color === 'purple' ? 'text-purple' : 'text-gold'
-                        }`} />
-                        <span className="text-slate-600">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-
-                  <Button
-                    as="a"
-                    href="#apply"
-                    onClick={() => setSelectedTier(tier.name)}
-                    className={`w-full font-medium h-12 rounded-full ${
-                      tier.popular
-                        ? 'bg-purple text-white hover:bg-navy'
-                        : 'bg-slate-100 text-navy hover:bg-navy hover:text-white'
-                    } transition-colors`}
-                  >
-                    Select {tier.name}
-                  </Button>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ================================================================== */}
       {/* APPLICATION FORM */}
       {/* ================================================================== */}
       <section id="apply" className="py-24 lg:py-32 bg-white scroll-mt-20">
@@ -456,9 +336,9 @@ export default function MembershipPage() {
                           className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-purple focus:ring-2 focus:ring-purple/20 outline-none transition-all bg-white"
                         >
                           <option value="">Select Membership Type</option>
-                          <option value="Student">Student - $50/year</option>
-                          <option value="Associate">Associate - $100/year</option>
-                          <option value="Full Member">Full Member - $200/year</option>
+                          <option value="Student">Student Member</option>
+                          <option value="Associate">Associate Member</option>
+                          <option value="Full Member">Full Member</option>
                         </select>
                       </div>
 
