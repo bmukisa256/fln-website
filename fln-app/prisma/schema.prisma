@@ -1,0 +1,78 @@
+// Prisma schema for FLN Admin Dashboard
+// Documentation: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+// Newsletter Subscribers
+model Subscriber {
+  id           Int      @id @default(autoincrement())
+  email        String   @unique @db.VarChar(255)
+  status       String   @default("active") @db.VarChar(20)
+  subscribedAt DateTime @default(now()) @map("subscribed_at")
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @updatedAt @map("updated_at")
+
+  @@map("subscribers")
+}
+
+// Email Campaigns
+model Campaign {
+  id             Int      @id @default(autoincrement())
+  subject        String   @db.VarChar(255)
+  content        String   @db.Text
+  recipientCount Int      @default(0) @map("recipient_count")
+  sentAt         DateTime @default(now()) @map("sent_at")
+  createdAt      DateTime @default(now()) @map("created_at")
+
+  @@map("campaigns")
+}
+
+// Admin Users
+model Admin {
+  id        Int      @id @default(autoincrement())
+  username  String   @unique @db.VarChar(50)
+  password  String   @db.VarChar(255)
+  email     String?  @db.VarChar(255)
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("admins")
+}
+
+// Contact Form Submissions
+model ContactSubmission {
+  id        Int      @id @default(autoincrement())
+  name      String   @db.VarChar(100)
+  email     String   @db.VarChar(255)
+  subject   String   @db.VarChar(255)
+  message   String   @db.Text
+  status    String   @default("unread") @db.VarChar(20)
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("contact_submissions")
+}
+
+// Membership Applications
+model MembershipApplication {
+  id             Int      @id @default(autoincrement())
+  firstName      String   @map("first_name") @db.VarChar(100)
+  lastName       String   @map("last_name") @db.VarChar(100)
+  email          String   @db.VarChar(255)
+  phone          String   @db.VarChar(20)
+  membershipType String   @map("membership_type") @db.VarChar(50)
+  organization   String?  @db.VarChar(255)
+  practiceArea   String?  @map("practice_area") @db.VarChar(100)
+  yearsOfPractice Int?    @map("years_of_practice")
+  status         String   @default("pending") @db.VarChar(20)
+  createdAt      DateTime @default(now()) @map("created_at")
+  updatedAt      DateTime @updatedAt @map("updated_at")
+
+  @@map("membership_applications")
+}
