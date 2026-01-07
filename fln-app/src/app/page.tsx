@@ -171,21 +171,25 @@ export default function Home() {
       {/* ================================================================== */}
       {/* HERO SECTION */}
       {/* ================================================================== */}
-      <section className="min-h-screen pt-32 pb-20 lg:pt-40 lg:pb-32 relative">
+      <section className="pt-28 lg:pt-32 pb-16 lg:pb-24 relative overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute top-20 right-0 w-[500px] h-[500px] bg-purple/5 rounded-full blur-3xl -z-10" />
+        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gold/5 rounded-full blur-3xl -z-10" />
+
         <div className="container mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-            {/* Content */}
+          <div className="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+            {/* Content - Takes 7 columns */}
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-              className="order-2 lg:order-1"
+              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] as const }}
+              className="lg:col-span-7 order-2 lg:order-1"
             >
               <Chip size="sm" className="bg-purple/10 text-purple font-medium mb-6">
                 Est. 2022 — Kampala & Arusha
               </Chip>
 
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-heading font-bold leading-[1.1] mb-6 text-navy">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold leading-[1.1] mb-6 text-navy">
                 The Future of{" "}
                 <span className="text-purple">Justice</span>{" "}
                 is Female
@@ -217,21 +221,21 @@ export default function Home() {
               </div>
 
               {/* Stats */}
-              <div className="flex gap-12">
+              <div className="flex gap-10 lg:gap-12">
                 <div>
-                  <div className="text-4xl font-heading font-bold text-navy">
+                  <div className="text-3xl lg:text-4xl font-heading font-bold text-navy">
                     <AnimatedCounter target={500} suffix="+" />
                   </div>
                   <p className="text-sm text-slate-500 mt-1">Members</p>
                 </div>
                 <div>
-                  <div className="text-4xl font-heading font-bold text-purple">
+                  <div className="text-3xl lg:text-4xl font-heading font-bold text-purple">
                     <AnimatedCounter target={2} />
                   </div>
                   <p className="text-sm text-slate-500 mt-1">Chapters</p>
                 </div>
                 <div>
-                  <div className="text-4xl font-heading font-bold text-gold">
+                  <div className="text-3xl lg:text-4xl font-heading font-bold text-gold">
                     <AnimatedCounter target={50} suffix="+" />
                   </div>
                   <p className="text-sm text-slate-500 mt-1">Events</p>
@@ -239,16 +243,16 @@ export default function Home() {
               </div>
             </motion.div>
 
-            {/* Hero Image Composition */}
+            {/* Hero Image Composition - Takes 5 columns */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-              className="order-1 lg:order-2 relative"
+              initial={{ opacity: 0, x: 40 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] as const }}
+              className="lg:col-span-5 order-1 lg:order-2"
             >
-              <div className="relative aspect-[4/5] max-w-md mx-auto lg:max-w-none">
+              <div className="relative max-w-sm mx-auto lg:max-w-none">
                 {/* Main Image */}
-                <div className="absolute inset-0 rounded-3xl overflow-hidden bg-slate-200">
+                <div className="relative aspect-[3/4] rounded-3xl overflow-hidden bg-slate-200 shadow-2xl">
                   <Image
                     src="/imgs/IMG-20250616-WA0064.jpg"
                     alt="Female Lawyers Network"
@@ -256,22 +260,26 @@ export default function Home() {
                     className="object-cover"
                     priority
                   />
+                  {/* Gradient Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy/30 via-transparent to-transparent" />
                 </div>
 
                 {/* Decorative elements */}
-                <div className="absolute -top-4 -right-4 w-24 h-24 bg-gold rounded-3xl -z-10" />
-                <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-purple/20 rounded-3xl -z-10" />
+                <div className="absolute -top-3 -right-3 w-20 h-20 bg-gold rounded-2xl -z-10" />
+                <div className="absolute -bottom-3 -left-3 w-24 h-24 bg-purple/20 rounded-2xl -z-10" />
 
                 {/* Floating Card - President */}
                 <motion.div
                   animate={{ y: [0, -8, 0] }}
                   transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
-                  className="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-xl flex items-center gap-3"
+                  className="absolute -bottom-4 -left-4 lg:-left-8 bg-white p-3 rounded-xl shadow-xl flex items-center gap-3"
                 >
-                  <ProfileImage src="/imgs/WhatsApp Image 2023-01-05 at 13.31.00.jpeg" alt="President" size="sm" accent="gold" />
+                  <div className="w-10 h-10 rounded-lg overflow-hidden relative bg-slate-200">
+                    <Image src="/imgs/WhatsApp Image 2023-01-05 at 13.31.00.jpeg" alt="President" fill className="object-cover" />
+                  </div>
                   <div>
-                    <p className="font-bold text-navy text-sm">Hon. Dr. Joyce</p>
-                    <p className="text-xs text-gold font-medium">President</p>
+                    <p className="font-bold text-navy text-xs">Hon. Dr. Joyce</p>
+                    <p className="text-[10px] text-gold font-medium">President</p>
                   </div>
                 </motion.div>
 
@@ -279,12 +287,27 @@ export default function Home() {
                 <motion.div
                   animate={{ y: [0, 8, 0] }}
                   transition={{ repeat: Infinity, duration: 5, ease: "easeInOut", delay: 1 }}
-                  className="absolute -top-6 -right-6 bg-white p-4 rounded-2xl shadow-xl flex items-center gap-3"
+                  className="absolute -top-4 -right-4 lg:-right-8 bg-white p-3 rounded-xl shadow-xl flex items-center gap-3"
                 >
-                  <ProfileImage src="/imgs/justice lillian.jfif" alt="Chairperson" size="sm" accent="purple" />
+                  <div className="w-10 h-10 rounded-lg overflow-hidden relative bg-slate-200">
+                    <Image src="/imgs/justice lillian.jfif" alt="Chairperson" fill className="object-cover" />
+                  </div>
                   <div>
-                    <p className="font-bold text-navy text-sm">Justice Lillian</p>
-                    <p className="text-xs text-purple font-medium">Chairperson</p>
+                    <p className="font-bold text-navy text-xs">Justice Lillian</p>
+                    <p className="text-[10px] text-purple font-medium">Chairperson</p>
+                  </div>
+                </motion.div>
+
+                {/* Stats Badge */}
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: 0.6, duration: 0.5 }}
+                  className="absolute top-1/2 -left-4 lg:-left-12 transform -translate-y-1/2 bg-navy text-white p-4 rounded-2xl shadow-xl hidden sm:block"
+                >
+                  <div className="text-center">
+                    <p className="text-2xl font-bold text-gold">2+</p>
+                    <p className="text-[10px] text-slate-300 uppercase tracking-wider">Years</p>
                   </div>
                 </motion.div>
               </div>
