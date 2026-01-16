@@ -1,12 +1,12 @@
 'use client';
 
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 import { Button, Chip } from "@nextui-org/react";
 import { motion } from "framer-motion";
 import { ArrowRight, Award, BookOpen, Globe, Heart, Lightbulb, Quote, Scale, Shield, Target, TrendingUp, Users } from "lucide-react";
-import Link from "next/link";
 import Image from "next/image";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import Link from "next/link";
 
 // ============================================================================
 // ANIMATION VARIANTS
@@ -276,20 +276,18 @@ export default function AboutPage() {
                 className="group"
               >
                 <div className="bg-white rounded-3xl p-8 h-full text-center hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
-                  <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 transition-colors duration-300 ${
-                    value.color === 'navy'
+                  <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 transition-colors duration-300 ${value.color === 'navy'
                       ? 'bg-navy/10 group-hover:bg-navy'
                       : value.color === 'purple'
                         ? 'bg-purple/10 group-hover:bg-purple'
                         : 'bg-gold/10 group-hover:bg-gold'
-                  }`}>
-                    <value.icon className={`w-8 h-8 transition-colors duration-300 ${
-                      value.color === 'navy'
+                    }`}>
+                    <value.icon className={`w-8 h-8 transition-colors duration-300 ${value.color === 'navy'
                         ? 'text-navy group-hover:text-white'
                         : value.color === 'purple'
                           ? 'text-purple group-hover:text-white'
                           : 'text-gold group-hover:text-navy'
-                    }`} />
+                      }`} />
                   </div>
                   <h3 className="text-xl font-heading font-bold text-navy mb-3">{value.title}</h3>
                   <p className="text-slate-600 text-sm leading-relaxed">{value.description}</p>
@@ -329,15 +327,13 @@ export default function AboutPage() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.2 }}
-                  className={`relative flex items-center mb-12 ${
-                    index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-                  }`}
+                  className={`relative flex items-center mb-12 ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                    }`}
                 >
                   {/* Content */}
                   <div className={`flex-1 pl-12 md:pl-0 ${index % 2 === 0 ? 'md:pr-16 md:text-right' : 'md:pl-16'}`}>
-                    <div className={`inline-block px-4 py-1 rounded-full text-sm font-bold mb-3 ${
-                      index === 0 ? 'bg-navy text-white' : index === 1 ? 'bg-purple text-white' : 'bg-gold text-navy'
-                    }`}>
+                    <div className={`inline-block px-4 py-1 rounded-full text-sm font-bold mb-3 ${index === 0 ? 'bg-navy text-white' : index === 1 ? 'bg-purple text-white' : 'bg-gold text-navy'
+                      }`}>
                       {milestone.year}
                     </div>
                     <h3 className="text-xl font-heading font-bold text-navy mb-2">{milestone.title}</h3>
@@ -435,13 +431,12 @@ export default function AboutPage() {
                     </div>
 
                     {/* Role Badge */}
-                    <div className={`absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-bold ${
-                      leader.accent === 'gold'
+                    <div className={`absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-bold ${leader.accent === 'gold'
                         ? 'bg-gold text-navy'
                         : leader.accent === 'purple'
                           ? 'bg-purple text-white'
                           : 'bg-navy text-white'
-                    }`}>
+                      }`}>
                       {leader.position.split(' ')[0]}
                     </div>
                   </div>
@@ -478,7 +473,7 @@ export default function AboutPage() {
             <div className="flex items-center justify-center gap-4">
               <div className="w-16 h-16 rounded-full overflow-hidden relative">
                 <Image
-                  src="/imgs/justice lillian.jfif"
+                  src="/imgs/justice-lillian.jfif"
                   alt="Hon. Justice Lillian"
                   fill
                   className="object-cover"

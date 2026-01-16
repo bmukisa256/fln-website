@@ -1,13 +1,13 @@
 'use client';
 
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 import { Button, Chip } from "@nextui-org/react";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowRight, ArrowUpRight, Check, Globe, Loader2, Mail, Shield, Users } from "lucide-react";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 
 // ============================================================================
 // ANIMATION VARIANTS
@@ -37,8 +37,8 @@ const scaleIn = {
 
 const boardMembers = [
   { image: "/imgs/WhatsApp Image 2023-01-05 at 13.31.00.jpeg", name: "Hon Dr. Joyce Nalunga Birimumaaso", position: "President | Founder", description: "Member, Leadership Code Tribunal." },
-  { image: "/imgs/justice lillian.jfif", name: "Hon Prof. Lady Justice Lillian Tibatemwa Ekirukubinza", position: "Chairperson", description: "Justice of the Supreme Court." },
-  { image: "/imgs/jane abodo.png", name: "Hon. Lady Justice Jane Frances Abodo", position: "Vice Chairperson", description: "Director of Public Prosecutions." },
+  { image: "/imgs/justice-lillian.jfif", name: "Hon Prof. Lady Justice Lillian Tibatemwa Ekirukubinza", position: "Chairperson", description: "Justice of the Supreme Court." },
+  { image: "/imgs/jane-abodo.png", name: "Hon. Lady Justice Jane Frances Abodo", position: "Vice Chairperson", description: "Director of Public Prosecutions." },
   { image: "/imgs/WhatsApp Image 2023-01-05 at 14.26.09.jpeg", name: "Ms. Angelina Namakula Ofwono", position: "Member", description: "Chief Legal, DFCU Bank." },
   { image: "/imgs/WhatsApp Image 2023-01-06 at 08.48.58.jpeg", name: "Bulya Lillian", position: "Secretary", description: "Managing Partner, L-Bulya & Co. Advocates." },
   { image: "/imgs/PHOTO-2022-06-27-16-56-26.jpg", name: "Hope Atuhairwe Kisitu", position: "Member", description: "Corporation Secretary, Uganda Development Corporation." },
@@ -455,7 +455,7 @@ export default function Home() {
             >
               <div className="flex flex-col sm:flex-row gap-6 items-center sm:items-start text-center sm:text-left">
                 <ProfileImage
-                  src="/imgs/justice lillian.jfif"
+                  src="/imgs/justice-lillian.jfif"
                   alt="Hon. Prof. Lady Justice Lillian"
                   size="xl"
                   accent="purple"
