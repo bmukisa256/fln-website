@@ -287,10 +287,10 @@ function Lightbox({ images, currentIndex, onClose, onPrev, onNext }: LightboxPro
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0.9 }}
         transition={{ duration: 0.3 }}
-        className="relative max-w-5xl max-h-[85vh] mx-auto px-4"
+        className="relative w-full max-w-5xl max-h-[85vh] mx-auto px-4"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="relative aspect-[4/3] w-full">
+        <div className="relative w-full h-[60vh] md:h-[75vh]">
           <Image
             src={currentImage.src}
             alt={currentImage.title}
@@ -301,10 +301,10 @@ function Lightbox({ images, currentIndex, onClose, onPrev, onNext }: LightboxPro
         </div>
 
         {/* Caption */}
-        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent pt-20 pb-6 px-6 pointer-events-none">
+        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent pt-12 pb-4 px-6 pointer-events-none">
           <div className="w-full mx-auto pointer-events-auto">
             <div className="flex flex-col items-start gap-1">
-              <span className="inline-flex items-center justify-center px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider text-gold bg-black/60 border border-gold/20 mb-1">
+              <span className="inline-flex items-center justify-center px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider text-gold bg-black/40 border border-gold/20 mb-1">
                 {currentImage.category}
               </span>
               <h3 className="text-lg md:text-xl font-bold text-white leading-tight drop-shadow-md">
