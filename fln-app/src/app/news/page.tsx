@@ -1,13 +1,12 @@
 'use client';
 
-import { Button, Chip } from "@nextui-org/react";
-import { motion, AnimatePresence } from "framer-motion";
-import { ArrowRight, Calendar, ChevronRight, Filter, Newspaper, Search, X } from "lucide-react";
-import Link from "next/link";
-import Image from "next/image";
-import { useState, useMemo } from "react";
-import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import { Button, Chip } from "@nextui-org/react";
+import { AnimatePresence, motion } from "framer-motion";
+import { Calendar, ChevronRight, Newspaper, Search, X } from "lucide-react";
+import Image from "next/image";
+import { useMemo, useState } from "react";
 
 // ============================================================================
 // ANIMATION VARIANTS
@@ -49,9 +48,9 @@ const newsItems = [
   { date: "2025", title: "Developed Countries Collaboration", image: "/imgs/IMG-20250409-WA0015.jpg", category: "partnerships", featured: false },
   { date: "2025", title: "Climate Justice Action", image: "/imgs/IMG-20250409-WA0014.jpg", category: "climate", featured: false },
   { date: "2025", title: "Global Fund for Women", image: "/imgs/IMG-20250409-WA0013.jpg", category: "gender", featured: false },
-  { date: "2024", title: "Online Symposium on Women and Children with Disabilities", image: "/imgs/FLN online symposium.jpg", category: "gender", featured: false },
-  { date: "2024", title: "Advancing Gender Equality for Women and Children with Disabilities", image: "/imgs/FLN advancing gender equality.jpg", category: "gender", featured: false },
-  { date: "2024", title: "End Violence Against Women and Children with Disabilities", image: "/imgs/FLN end women violence.jpg", category: "gender", featured: false },
+  { date: "2024", title: "Online Symposium on Women and Children with Disabilities", image: "/imgs/FLN-online-symposium.jpg", category: "gender", featured: false },
+  { date: "2024", title: "Advancing Gender Equality for Women and Children with Disabilities", image: "/imgs/FLN-advancing-gender-equality.jpg", category: "gender", featured: false },
+  { date: "2024", title: "End Violence Against Women and Children with Disabilities", image: "/imgs/FLN-end-women-violence.jpg", category: "gender", featured: false },
   { date: "2024", title: "Effects of Climate Justice Change and Its Negative Impact on Society", image: "/imgs/news (5).jpeg", category: "climate", featured: false },
   { date: "2024", title: "The Role of Women in Climate Justice Action", image: "/imgs/news (4).jpeg", category: "climate", featured: false },
   { date: "2024", title: "Sensitization & Awareness on Climate Change", image: "/imgs/news (3).jpeg", category: "climate", featured: false },
@@ -226,11 +225,10 @@ export default function NewsPage() {
                 <button
                   key={category.value}
                   onClick={() => setSelectedCategory(category.value)}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
-                    selectedCategory === category.value
+                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${selectedCategory === category.value
                       ? "bg-navy text-white"
                       : "bg-white text-slate-600 hover:bg-slate-100"
-                  }`}
+                    }`}
                 >
                   {category.label}
                 </button>
@@ -265,15 +263,14 @@ export default function NewsPage() {
                         />
                         {/* Category Badge */}
                         <div className="absolute top-3 left-3">
-                          <span className={`text-xs font-bold px-2 py-1 rounded-lg ${
-                            item.category === "climate"
+                          <span className={`text-xs font-bold px-2 py-1 rounded-lg ${item.category === "climate"
                               ? "bg-green-100 text-green-700"
                               : item.category === "gender"
                                 ? "bg-purple/10 text-purple"
                                 : item.category === "partnerships"
                                   ? "bg-gold/20 text-gold"
                                   : "bg-navy/10 text-navy"
-                          }`}>
+                            }`}>
                             {categories.find(c => c.value === item.category)?.label || item.category}
                           </span>
                         </div>

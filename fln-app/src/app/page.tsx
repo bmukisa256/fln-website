@@ -290,7 +290,7 @@ export default function Home() {
                   className="absolute -top-4 -right-4 lg:-right-8 bg-white p-3 rounded-xl shadow-xl flex items-center gap-3"
                 >
                   <div className="w-10 h-10 rounded-lg overflow-hidden relative bg-slate-200">
-                    <Image src="/imgs/justice lillian.jfif" alt="Chairperson" fill className="object-cover" />
+                    <Image src="/imgs/justice-lillian.jfif" alt="Chairperson" fill className="object-cover" />
                   </div>
                   <div>
                     <p className="font-bold text-navy text-xs">Justice Lillian</p>
