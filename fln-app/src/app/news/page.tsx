@@ -59,7 +59,7 @@ const newsItems = [
   { date: "2024", title: "Sensitization and Awareness on Climate Change", image: "/imgs/climate_change.jpeg", category: "climate", featured: false },
   { date: "2024", title: "FLN Distinguished Dinner Sponsors", image: "/imgs/dinnersponsors.jpg", category: "events", featured: false },
   { date: "2024", title: "Founder/President Bio", image: "/imgs/PHOTO-2023-12-29-20-28-10.jpg", category: "events", featured: false },
-  { date: "2024", title: "Our Socials", image: "/imgs/WhatsApp Image 2023-01-04 at 14.01.56.jpeg", category: "events", featured: false },
+  { date: "2024", title: "Our Socials", image: "/imgs/WA-20230104-140156.jpeg", category: "events", featured: false },
 ];
 
 // ============================================================================
