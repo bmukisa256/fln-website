@@ -2,7 +2,8 @@
 
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import { Button, Chip } from "@nextui-org/react";
+import PageHero from "@/components/PageHero";
+import { Button } from "@nextui-org/react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Camera, ChevronLeft, ChevronRight, Grid3X3, LayoutGrid, X, ZoomIn } from "lucide-react";
 import Image from "next/image";
@@ -385,45 +386,21 @@ export default function GalleryPage() {
     <div className="min-h-screen bg-cream text-navy overflow-x-hidden font-body">
       <Navbar activePage="Gallery" />
 
-      {/* ================================================================== */}
-      {/* HERO SECTION */}
-      {/* ================================================================== */}
-      <section className="pt-28 lg:pt-32 pb-16 lg:pb-20 bg-navy relative overflow-hidden">
-        {/* Background Elements */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-purple/20 via-transparent to-transparent" />
-        <div className="absolute top-20 right-20 w-72 h-72 bg-gold/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple/10 rounded-full blur-3xl" />
-
-        <div className="container mx-auto px-6 lg:px-12 relative">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] as const }}
-            className="text-center max-w-3xl mx-auto"
-          >
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2 }}
-              className="w-20 h-20 rounded-2xl bg-gold/20 flex items-center justify-center mx-auto mb-6"
-            >
-              <Camera className="w-10 h-10 text-gold" />
-            </motion.div>
-
-            <Chip size="sm" className="bg-gold text-navy font-bold mb-6">
-              Photo Gallery
-            </Chip>
-
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-white mb-6">
-              Our Moments
-            </h1>
-
-            <p className="text-lg text-slate-300 leading-relaxed">
-              Browse through our collection of memorable moments, events, and initiatives
-            </p>
-          </motion.div>
-        </div>
-      </section>
+      <PageHero
+        centered
+        badge="Photo Gallery"
+        title="Our Moments"
+        description="Browse through our collection of memorable moments, events, and initiatives"
+      >
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.2 }}
+          className="w-20 h-20 rounded-2xl bg-gold/20 flex items-center justify-center mx-auto mb-6"
+        >
+          <Camera className="w-10 h-10 text-gold" />
+        </motion.div>
+      </PageHero>
 
       {/* ================================================================== */}
       {/* FILTERS & GALLERY */}

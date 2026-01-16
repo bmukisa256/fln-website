@@ -1,13 +1,14 @@
 'use client';
 
-import { Button, Chip, Input, Select, SelectItem } from "@nextui-org/react";
-import { motion, AnimatePresence } from "framer-motion";
+import CTASection from "@/components/CTASection";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import PageHero from "@/components/PageHero";
+import { Button } from "@nextui-org/react";
+import { AnimatePresence, motion } from "framer-motion";
 import { ArrowRight, Check, ChevronDown, Clock, Gift, GraduationCap, Loader2, Mail, Network, Phone, Star, User, Users, Zap } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
 import { useState } from "react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 
 // ============================================================================
 // ANIMATION VARIANTS
@@ -80,82 +81,38 @@ export default function MembershipPage() {
     <div className="min-h-screen bg-cream text-navy overflow-x-hidden font-body">
       <Navbar activePage="Membership" />
 
-      {/* ================================================================== */}
-      {/* HERO SECTION */}
-      {/* ================================================================== */}
-      <section className="pt-28 lg:pt-32 bg-navy relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-purple/20 via-transparent to-transparent" />
-
-        <div className="container mx-auto px-6 lg:px-12 relative">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center py-16 lg:py-24">
-            {/* Content */}
-            <motion.div
-              initial={{ opacity: 0, x: -40 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] as const }}
-            >
-              <Chip size="sm" className="bg-gold text-navy font-bold mb-6">
-                Join Our Network
-              </Chip>
-
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-white mb-6 leading-tight">
-                Become a{" "}
-                <span className="text-gold">Member</span>
-              </h1>
-
-              <p className="text-lg text-slate-300 mb-8 leading-relaxed max-w-xl">
-                Join a vibrant community of female lawyers dedicated to professional excellence, mentorship, and advancing gender equality in the legal profession.
-              </p>
-
-              <div className="flex flex-wrap gap-6 mb-8">
-                <div className="flex items-center gap-2">
-                  <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
-                    <Users className="w-5 h-5 text-gold" />
-                  </div>
-                  <span className="text-white font-medium">500+ Members</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
-                    <Star className="w-5 h-5 text-gold" />
-                  </div>
-                  <span className="text-white font-medium">50+ Events/Year</span>
-                </div>
-              </div>
-
-              <Button
-                as="a"
-                href="#apply"
-                size="lg"
-                className="bg-gold text-navy font-bold px-8 h-14 rounded-full hover:bg-white transition-colors"
-                endContent={<ArrowRight className="w-5 h-5" />}
-              >
-                Apply Now
-              </Button>
-            </motion.div>
-
-            {/* Image */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] as const }}
-              className="relative hidden lg:block"
-            >
-              <div className="relative aspect-square max-w-md mx-auto">
-                <div className="absolute inset-0 rounded-3xl overflow-hidden">
-                  <Image
-                    src="/imgs/FLN logo-full color.png"
-                    alt="FLN Membership"
-                    fill
-                    className="object-contain p-8"
-                  />
-                </div>
-                <div className="absolute -top-4 -right-4 w-24 h-24 bg-gold/30 rounded-3xl -z-10" />
-                <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-purple/30 rounded-3xl -z-10" />
-              </div>
-            </motion.div>
+      <PageHero
+        badge="Join Our Network"
+        title={<>Become a <span className="text-gold">Member</span></>}
+        description="Join a vibrant community of female lawyers dedicated to professional excellence, mentorship, and advancing gender equality in the legal profession."
+        imageSrc="/imgs/FLN logo-full color.png"
+        imageAlt="FLN Membership"
+      >
+        <div className="flex flex-wrap gap-6 mb-8">
+          <div className="flex items-center gap-2">
+            <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
+              <Users className="w-5 h-5 text-gold" />
+            </div>
+            <span className="text-white font-medium">500+ Members</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
+              <Star className="w-5 h-5 text-gold" />
+            </div>
+            <span className="text-white font-medium">50+ Events/Year</span>
           </div>
         </div>
-      </section>
+
+        <Button
+          as="a"
+          href="#apply"
+          size="lg"
+          className="bg-gold text-navy font-bold px-8 h-14 rounded-full hover:bg-white transition-colors"
+          endContent={<ArrowRight className="w-5 h-5" />}
+        >
+          Apply Now
+        </Button>
+      </PageHero>
 
       {/* ================================================================== */}
       {/* BENEFITS SECTION */}
@@ -394,9 +351,8 @@ export default function MembershipPage() {
                 >
                   <div className="flex items-center justify-between">
                     <h3 className="font-bold text-navy pr-4">{faq.question}</h3>
-                    <ChevronDown className={`w-5 h-5 text-purple shrink-0 transition-transform ${
-                      openFaq === index ? 'rotate-180' : ''
-                    }`} />
+                    <ChevronDown className={`w-5 h-5 text-purple shrink-0 transition-transform ${openFaq === index ? 'rotate-180' : ''
+                      }`} />
                   </div>
                   <AnimatePresence>
                     {openFaq === index && (
@@ -418,51 +374,14 @@ export default function MembershipPage() {
         </div>
       </section>
 
-      {/* ================================================================== */}
-      {/* CTA SECTION */}
-      {/* ================================================================== */}
-      <section className="py-24 lg:py-32 bg-purple relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-64 h-64 bg-gold/10 rounded-full blur-3xl" />
-
-        <div className="container mx-auto px-6 lg:px-12 relative">
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="max-w-3xl mx-auto text-center"
-          >
-            <h2 className="text-3xl lg:text-5xl font-heading font-bold text-white mb-6">
-              Ready to Transform Your Legal Career?
-            </h2>
-
-            <p className="text-xl text-purple-200 mb-10 leading-relaxed">
-              Join our community today and connect with hundreds of ambitious female lawyers across Africa.
-            </p>
-
-            <div className="flex flex-wrap justify-center gap-4">
-              <Button
-                as="a"
-                href="#apply"
-                size="lg"
-                className="bg-white text-purple font-bold px-8 h-14 rounded-full hover:bg-gold hover:text-navy transition-colors"
-                endContent={<ArrowRight className="w-5 h-5" />}
-              >
-                Apply Now
-              </Button>
-              <Button
-                as={Link}
-                href="/contact"
-                size="lg"
-                variant="bordered"
-                className="font-medium px-8 h-14 rounded-full border-2 border-white/30 text-white hover:bg-white/10 transition-colors"
-              >
-                Contact Us
-              </Button>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+      <CTASection
+        title="Ready to Transform Your Legal Career?"
+        description="Join our community today and connect with hundreds of ambitious female lawyers across Africa."
+        primaryBtnText="Apply Now"
+        primaryBtnHref="#apply"
+        secondaryBtnText="Contact Us"
+        secondaryBtnHref="/contact"
+      />
 
       <Footer />
     </div>

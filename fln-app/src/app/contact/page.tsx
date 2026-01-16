@@ -1,11 +1,12 @@
 'use client';
 
-import { Button, Chip } from "@nextui-org/react";
-import { motion } from "framer-motion";
-import { Clock, Mail, MapPin, Phone, Send, MessageSquare, User, AtSign, FileText, CheckCircle, Loader2 } from "lucide-react";
-import { useState } from "react";
-import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import PageHero from "@/components/PageHero";
+import { Button } from "@nextui-org/react";
+import { motion } from "framer-motion";
+import { AtSign, CheckCircle, Clock, FileText, Loader2, Mail, MapPin, MessageSquare, Phone, Send, User } from "lucide-react";
+import { useState } from "react";
 
 // ============================================================================
 // ANIMATION VARIANTS
@@ -99,42 +100,21 @@ export default function ContactPage() {
       {/* ================================================================== */}
       {/* HERO SECTION */}
       {/* ================================================================== */}
-      <section className="pt-28 lg:pt-32 pb-16 lg:pb-20 bg-navy relative overflow-hidden">
-        {/* Background Elements */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-purple/20 via-transparent to-transparent" />
-        <div className="absolute top-10 right-10 w-80 h-80 bg-gold/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-purple/10 rounded-full blur-3xl" />
-
-        <div className="container mx-auto px-6 lg:px-12 relative">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] as const }}
-            className="text-center max-w-3xl mx-auto"
-          >
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2 }}
-              className="w-20 h-20 rounded-2xl bg-gold/20 flex items-center justify-center mx-auto mb-6"
-            >
-              <MessageSquare className="w-10 h-10 text-gold" />
-            </motion.div>
-
-            <Chip size="sm" className="bg-gold text-navy font-bold mb-6">
-              Get In Touch
-            </Chip>
-
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-white mb-6">
-              Contact Us
-            </h1>
-
-            <p className="text-lg text-slate-300 leading-relaxed">
-              Have questions or want to get involved? We'd love to hear from you. Reach out and let's start a conversation.
-            </p>
-          </motion.div>
-        </div>
-      </section>
+      <PageHero
+        centered
+        badge="Get In Touch"
+        title="Contact Us"
+        description="Have questions or want to get involved? We'd love to hear from you. Reach out and let's start a conversation."
+      >
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.2 }}
+          className="w-20 h-20 rounded-2xl bg-gold/20 flex items-center justify-center mx-auto mb-6"
+        >
+          <MessageSquare className="w-10 h-10 text-gold" />
+        </motion.div>
+      </PageHero>
 
       {/* ================================================================== */}
       {/* CONTACT INFO CARDS */}
@@ -298,11 +278,10 @@ export default function ContactPage() {
                 <Button
                   type="submit"
                   disabled={isSubmitting || isSuccess}
-                  className={`w-full font-bold h-14 rounded-xl text-base transition-all ${
-                    isSuccess
-                      ? "bg-green-500 text-white"
-                      : "bg-navy text-white hover:bg-purple"
-                  }`}
+                  className={`w-full font-bold h-14 rounded-xl text-base transition-all ${isSuccess
+                    ? "bg-green-500 text-white"
+                    : "bg-navy text-white hover:bg-purple"
+                    }`}
                 >
                   {isSubmitting ? (
                     <>

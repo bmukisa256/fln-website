@@ -1,5 +1,6 @@
 'use client';
 
+import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { Button, Chip } from "@nextui-org/react";
@@ -488,52 +489,14 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ================================================================== */}
-      {/* CTA SECTION */}
-      {/* ================================================================== */}
-      <section className="py-24 lg:py-32 bg-purple relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-64 h-64 bg-gold/10 rounded-full blur-3xl" />
-
-        <div className="container mx-auto px-6 lg:px-12 relative">
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="max-w-3xl mx-auto text-center"
-          >
-            <h2 className="text-3xl lg:text-5xl font-heading font-bold text-white mb-6">
-              Ready to Join Our Network?
-            </h2>
-
-            <p className="text-xl text-purple-200 mb-10 leading-relaxed">
-              Become part of a community dedicated to empowering female lawyers across Africa.
-              Together, we can make a difference.
-            </p>
-
-            <div className="flex flex-wrap justify-center gap-4">
-              <Button
-                as={Link}
-                href="/membership"
-                size="lg"
-                className="bg-white text-purple font-bold px-8 h-14 rounded-full hover:bg-gold hover:text-navy transition-colors"
-                endContent={<ArrowRight className="w-5 h-5" />}
-              >
-                Become a Member
-              </Button>
-              <Button
-                as={Link}
-                href="/events"
-                size="lg"
-                variant="bordered"
-                className="font-medium px-8 h-14 rounded-full border-2 border-white/30 text-white hover:bg-white/10 transition-colors"
-              >
-                View Our Events
-              </Button>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+      <CTASection
+        title="Ready to Join Our Network?"
+        description="Become part of a community dedicated to empowering female lawyers across Africa. Together, we can make a difference."
+        primaryBtnText="Become a Member"
+        primaryBtnHref="/membership"
+        secondaryBtnText="View Our Events"
+        secondaryBtnHref="/events"
+      />
 
       <Footer />
     </div>

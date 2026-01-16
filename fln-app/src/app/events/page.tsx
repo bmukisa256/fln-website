@@ -2,9 +2,10 @@
 
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import { Button, Chip } from "@nextui-org/react";
+import PageHero from "@/components/PageHero";
+import { Button } from "@nextui-org/react";
 import { motion } from "framer-motion";
-import { ArrowRight, Calendar, ChevronRight, Clock, MapPin, Play } from "lucide-react";
+import { ArrowRight, Calendar, ChevronRight, Clock, MapPin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -86,98 +87,46 @@ export default function EventsPage() {
       {/* ================================================================== */}
       {/* FEATURED EVENT HERO */}
       {/* ================================================================== */}
-      <section className="pt-28 lg:pt-32 bg-navy relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-purple/20 via-transparent to-transparent" />
-
-        <div className="container mx-auto px-6 lg:px-12 relative">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center py-16 lg:py-24">
-            {/* Content */}
-            <motion.div
-              initial={{ opacity: 0, x: -40 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] as const }}
-            >
-              <Chip size="sm" className="bg-gold text-navy font-bold mb-6">
-                Featured Event
-              </Chip>
-
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-white mb-4 leading-tight">
-                {featuredEvent.title}
-              </h1>
-
-              <p className="text-lg text-slate-300 mb-8 leading-relaxed">
-                {featuredEvent.description}
-              </p>
-
-              {/* Event Details */}
-              <div className="flex flex-wrap gap-4 mb-8">
-                <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
-                  <Calendar className="w-4 h-4 text-gold" />
-                  <span className="text-white text-sm">{featuredEvent.date}</span>
-                </div>
-                <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
-                  <Clock className="w-4 h-4 text-gold" />
-                  <span className="text-white text-sm">{featuredEvent.time}</span>
-                </div>
-                <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
-                  <MapPin className="w-4 h-4 text-gold" />
-                  <span className="text-white text-sm">{featuredEvent.location}</span>
-                </div>
-              </div>
-
-              {/* Speaker */}
-              <div className="flex items-center gap-4 mb-8">
-                <div className="w-12 h-12 rounded-full bg-purple/30 flex items-center justify-center">
-                  <span className="text-white font-bold">{featuredEvent.speaker.charAt(0)}</span>
-                </div>
-                <div>
-                  <p className="text-white font-medium">{featuredEvent.speaker}</p>
-                  <p className="text-slate-400 text-sm">Speaker</p>
-                </div>
-              </div>
-
-              <Button
-                size="lg"
-                className="bg-gold text-navy font-bold px-8 h-14 rounded-full hover:bg-white transition-colors"
-                endContent={<ArrowRight className="w-5 h-5" />}
-              >
-                Register Now
-              </Button>
-            </motion.div>
-
-            {/* Featured Image */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] as const }}
-              className="relative"
-            >
-              <div className="relative aspect-[4/3] rounded-3xl overflow-hidden">
-                <Image
-                  src={featuredEvent.image}
-                  alt={featuredEvent.title}
-                  fill
-                  className="object-cover"
-                  priority
-                />
-                {/* Play button overlay */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <motion.button
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="w-20 h-20 rounded-full bg-white/90 flex items-center justify-center shadow-2xl"
-                  >
-                    <Play className="w-8 h-8 text-navy ml-1" fill="currentColor" />
-                  </motion.button>
-                </div>
-              </div>
-              {/* Decorative elements */}
-              <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-gold/30 rounded-3xl -z-10" />
-              <div className="absolute -top-4 -left-4 w-24 h-24 bg-purple/30 rounded-2xl -z-10" />
-            </motion.div>
+      <PageHero
+        badge="Featured Event"
+        title={featuredEvent.title}
+        description={featuredEvent.description}
+        imageSrc={featuredEvent.image}
+        imageAlt={featuredEvent.title}
+      >
+        <div className="flex flex-wrap gap-4 mb-8">
+          <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
+            <Calendar className="w-4 h-4 text-gold" />
+            <span className="text-white text-sm">{featuredEvent.date}</span>
+          </div>
+          <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
+            <Clock className="w-4 h-4 text-gold" />
+            <span className="text-white text-sm">{featuredEvent.time}</span>
+          </div>
+          <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
+            <MapPin className="w-4 h-4 text-gold" />
+            <span className="text-white text-sm">{featuredEvent.location}</span>
           </div>
         </div>
-      </section>
+
+        <div className="flex items-center gap-4 mb-8">
+          <div className="w-12 h-12 rounded-full bg-purple/30 flex items-center justify-center">
+            <span className="text-white font-bold">{featuredEvent.speaker.charAt(0)}</span>
+          </div>
+          <div>
+            <p className="text-white font-medium">{featuredEvent.speaker}</p>
+            <p className="text-slate-400 text-sm">Speaker</p>
+          </div>
+        </div>
+
+        <Button
+          size="lg"
+          className="bg-gold text-navy font-bold px-8 h-14 rounded-full hover:bg-white transition-colors"
+          endContent={<ArrowRight className="w-5 h-5" />}
+        >
+          Register for Event
+        </Button>
+      </PageHero>
 
       {/* ================================================================== */}
       {/* UPCOMING EVENTS */}

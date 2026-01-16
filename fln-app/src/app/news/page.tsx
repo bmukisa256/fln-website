@@ -2,9 +2,10 @@
 
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import { Button, Chip } from "@nextui-org/react";
+import PageHero from "@/components/PageHero";
+import { Button } from "@nextui-org/react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Calendar, ChevronRight, Newspaper, Search, X } from "lucide-react";
+import { Calendar, ChevronRight, LayoutGrid, Newspaper, Search, X } from "lucide-react";
 import Image from "next/image";
 import { useMemo, useState } from "react";
 
@@ -86,55 +87,44 @@ export default function NewsPage() {
     <div className="min-h-screen bg-cream text-navy overflow-x-hidden font-body">
       <Navbar activePage="News" />
 
-      {/* ================================================================== */}
-      {/* HERO SECTION */}
-      {/* ================================================================== */}
-      <section className="pt-28 lg:pt-32 pb-16 lg:pb-20 bg-navy relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-purple/20 via-transparent to-transparent" />
+      <PageHero
+        centered
+        badge="Stay Informed"
+        title="News & Updates"
+        description="Explore the latest news, initiatives, and updates from the Female Lawyers Network"
+      >
+        <div className="max-w-xl mx-auto">
+          <div className="relative group">
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 group-focus-within:text-gold transition-colors" />
+            <input
+              type="text"
+              placeholder="Search news by title or topic..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full bg-white/10 border-2 border-white/10 rounded-2xl py-4 pl-12 pr-12 text-white placeholder:text-slate-400 focus:outline-none focus:border-gold/50 focus:bg-white/15 transition-all text-lg"
+            />
+            {searchQuery && (
+              <button
+                onClick={() => setSearchQuery("")}
+                className="absolute right-4 top-1/2 -translate-y-1/2 p-1 hover:bg-white/10 rounded-full transition-colors"
+              >
+                <X className="w-5 h-5 text-slate-400" />
+              </button>
+            )}
+          </div>
 
-        <div className="container mx-auto px-6 lg:px-12 relative">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] as const }}
-            className="text-center max-w-3xl mx-auto"
-          >
-            <Chip size="sm" className="bg-gold text-navy font-bold mb-6">
-              Stay Informed
-            </Chip>
-
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-white mb-6">
-              News & Updates
-            </h1>
-
-            <p className="text-lg text-slate-300 leading-relaxed mb-8">
-              Explore the latest news, initiatives, and updates from the Female Lawyers Network
-            </p>
-
-            {/* Search Bar */}
-            <div className="max-w-xl mx-auto">
-              <div className="relative">
-                <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-slate-400" />
-                <input
-                  type="text"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  placeholder="Search news..."
-                  className="w-full pl-12 pr-4 py-4 rounded-full bg-white/10 border border-white/20 text-white placeholder:text-slate-400 focus:outline-none focus:border-gold focus:bg-white/20 transition-all"
-                />
-                {searchQuery && (
-                  <button
-                    onClick={() => setSearchQuery("")}
-                    className="absolute right-4 top-1/2 transform -translate-y-1/2 w-6 h-6 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition-colors"
-                  >
-                    <X className="w-3 h-3 text-white" />
-                  </button>
-                )}
-              </div>
-            </div>
-          </motion.div>
+          <div className="flex flex-wrap justify-center gap-3 mt-6">
+            <button
+              onClick={() => setShowFilters(!showFilters)}
+              className={`flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium transition-all ${showFilters ? "bg-gold text-navy" : "bg-white/5 text-white hover:bg-white/10"
+                }`}
+            >
+              <LayoutGrid className="w-4 h-4" />
+              {showFilters ? "Hide Categories" : "Show Categories"}
+            </button>
+          </div>
         </div>
-      </section>
+      </PageHero>
 
       {/* ================================================================== */}
       {/* FEATURED NEWS */}
