@@ -303,17 +303,18 @@ function Lightbox({ images, currentIndex, onClose, onPrev, onNext }: LightboxPro
         {/* Caption */}
         {/* Caption */}
         {/* Caption */}
-        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent pt-24 pb-8 px-6 lg:px-12 pointer-events-none">
-          <div className="max-w-4xl mx-auto transform transition-all duration-500 ease-out pointer-events-auto">
-            <div className="flex flex-col gap-2">
-              <span className="inline-flex w-fit px-3 py-1 text-xs font-bold uppercase tracking-widest text-gold border border-gold/30 rounded-full bg-black/40 backdrop-blur-md shadow-sm">
+        {/* Caption */}
+        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent pt-32 pb-6 px-4 md:px-8 pointer-events-none">
+          <div className="w-full mx-auto pointer-events-auto">
+            <div className="flex flex-col items-start gap-2">
+              <span className="inline-flex items-center justify-center px-2.5 py-0.5 rounded-full text-[10px] md:text-xs font-bold uppercase tracking-wider text-gold bg-black/50 backdrop-blur-sm border border-gold/20">
                 {currentImage.category}
               </span>
-              <h3 className="text-xl md:text-2xl font-heading font-bold text-white leading-tight drop-shadow-md">
+              <h3 className="text-lg md:text-2xl font-bold text-white leading-snug drop-shadow-md max-w-3xl">
                 {currentImage.title}
               </h3>
               {currentImage.description && (
-                <p className="text-gray-200 text-sm md:text-base leading-relaxed font-light opacity-95 max-w-2xl">
+                <p className="text-white/90 text-sm md:text-base leading-relaxed font-light max-w-4xl drop-shadow-sm">
                   {currentImage.description}
                 </p>
               )}
