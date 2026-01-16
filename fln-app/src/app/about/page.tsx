@@ -474,7 +474,7 @@ export default function AboutPage() {
             <div className="flex items-center justify-center gap-4">
               <div className="w-16 h-16 rounded-full overflow-hidden relative">
                 <Image
-                  src="/imgs/justice-lillian.jfif"
+                  src="/imgs/justice-lillian.jpg"
                   alt="Hon. Justice Lillian"
                   fill
                   className="object-cover"
