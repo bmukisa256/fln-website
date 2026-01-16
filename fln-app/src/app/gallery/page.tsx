@@ -301,20 +301,17 @@ function Lightbox({ images, currentIndex, onClose, onPrev, onNext }: LightboxPro
         </div>
 
         {/* Caption */}
-        {/* Caption */}
-        {/* Caption */}
-        {/* Caption */}
-        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent pt-32 pb-6 px-4 md:px-8 pointer-events-none">
+        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent pt-20 pb-6 px-6 pointer-events-none">
           <div className="w-full mx-auto pointer-events-auto">
-            <div className="flex flex-col items-start gap-2">
-              <span className="inline-flex items-center justify-center px-2.5 py-0.5 rounded-full text-[10px] md:text-xs font-bold uppercase tracking-wider text-gold bg-black/50 backdrop-blur-sm border border-gold/20">
+            <div className="flex flex-col items-start gap-1">
+              <span className="inline-flex items-center justify-center px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider text-gold bg-black/60 border border-gold/20 mb-1">
                 {currentImage.category}
               </span>
-              <h3 className="text-lg md:text-2xl font-bold text-white leading-snug drop-shadow-md max-w-3xl">
+              <h3 className="text-lg md:text-xl font-bold text-white leading-tight drop-shadow-md">
                 {currentImage.title}
               </h3>
               {currentImage.description && (
-                <p className="text-white/90 text-sm md:text-base leading-relaxed font-light max-w-4xl drop-shadow-sm">
+                <p className="text-white/90 text-sm leading-snug font-light max-w-3xl drop-shadow-sm line-clamp-2 md:line-clamp-none">
                   {currentImage.description}
                 </p>
               )}
@@ -324,7 +321,7 @@ function Lightbox({ images, currentIndex, onClose, onPrev, onNext }: LightboxPro
       </motion.div>
 
       {/* Counter */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/70 text-sm">
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/70 text-xs tracking-widest bg-black/50 px-3 py-1 rounded-full">
         {currentIndex + 1} / {images.length}
       </div>
     </motion.div>
@@ -515,27 +512,27 @@ export default function GalleryPage() {
 
                     {/* Hover Overlay */}
                     {/* Hover Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out flex items-end p-6">
-                      <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-100 w-full">
-                        <div className="flex items-center gap-2 mb-2">
-                          <span className="inline-flex items-center justify-center px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider text-white bg-white/20 border border-white/20 backdrop-blur-md shadow-sm">
+                    <div className="absolute inset-x-0 bottom-0 top-1/2 bg-gradient-to-t from-black/90 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 ease-out flex items-end p-4">
+                      <div className="transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300 w-full">
+                        <div className="flex items-center gap-2 mb-1">
+                          <span className="text-[10px] font-bold uppercase tracking-wider text-gold">
                             {image.category}
                           </span>
                         </div>
-                        <h3 className="text-white font-heading font-bold text-lg leading-tight mb-2 drop-shadow-sm">
+                        <h3 className="text-white font-bold text-sm leading-tight mb-1 drop-shadow-md line-clamp-1">
                           {image.title}
                         </h3>
                         {image.description && (
-                          <p className="text-gray-200 text-xs leading-relaxed line-clamp-3 opacity-90">
+                          <p className="text-gray-300 text-[10px] leading-snug line-clamp-2">
                             {image.description}
                           </p>
                         )}
                       </div>
+                    </div>
 
-                      {/* Zoom Icon */}
-                      <div className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                        <ZoomIn className="w-5 h-5 text-white" />
-                      </div>
+                    {/* Zoom Icon */}
+                    <div className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                      <ZoomIn className="w-5 h-5 text-white" />
                     </div>
                   </div>
                 </motion.div>
@@ -564,7 +561,7 @@ export default function GalleryPage() {
             </motion.div>
           )}
         </div>
-      </section>
+      </section >
 
       {/* ================================================================== */}
       {/* STATS SECTION */}
@@ -657,6 +654,6 @@ export default function GalleryPage() {
           />
         )}
       </AnimatePresence>
-    </div>
+    </div >
   );
 }
