@@ -37,7 +37,7 @@ const scaleIn = {
 
 const boardMembers = [
   { image: "/imgs/WA-20230105-133100.jpeg", name: "Hon Dr. Joyce Nalunga Birimumaaso", position: "President | Founder", description: "Member, Leadership Code Tribunal." },
-  { image: "/imgs/justice-lillian.jfif", name: "Hon Prof. Lady Justice Lillian Tibatemwa Ekirukubinza", position: "Chairperson", description: "Justice of the Supreme Court." },
+  { image: "/imgs/justice-lillian.jpg", name: "Hon Prof. Lady Justice Lillian Tibatemwa Ekirukubinza", position: "Chairperson", description: "Justice of the Supreme Court." },
   { image: "/imgs/jane-abodo.png", name: "Hon. Lady Justice Jane Frances Abodo", position: "Vice Chairperson", description: "Director of Public Prosecutions." },
   { image: "/imgs/WA-20230105-142609.jpeg", name: "Ms. Angelina Namakula Ofwono", position: "Member", description: "Chief Legal, DFCU Bank." },
   { image: "/imgs/WA-20230106-084858.jpeg", name: "Bulya Lillian", position: "Secretary", description: "Managing Partner, L-Bulya & Co. Advocates." },
@@ -290,7 +290,7 @@ export default function Home() {
                   className="absolute -top-4 -right-4 lg:-right-8 bg-white p-3 rounded-xl shadow-xl flex items-center gap-3"
                 >
                   <div className="w-10 h-10 rounded-lg overflow-hidden relative bg-slate-200">
-                    <Image src="/imgs/justice-lillian.jfif" alt="Chairperson" fill className="object-cover" />
+                    <Image src="/imgs/justice-lillian.jpg" alt="Chairperson" fill className="object-cover" />
                   </div>
                   <div>
                     <p className="font-bold text-navy text-xs">Justice Lillian</p>
@@ -455,7 +455,7 @@ export default function Home() {
             >
               <div className="flex flex-col sm:flex-row gap-6 items-center sm:items-start text-center sm:text-left">
                 <ProfileImage
-                  src="/imgs/justice-lillian.jfif"
+                  src="/imgs/justice-lillian.jpg"
                   alt="Hon. Prof. Lady Justice Lillian"
                   size="xl"
                   accent="purple"
@@ -493,7 +493,7 @@ export default function Home() {
               <div className="shrink-0">
                 <div className="relative">
                   <div className="w-48 h-48 lg:w-56 lg:h-56 relative rounded-3xl overflow-hidden bg-slate-700">
-                    <Image src="/imgs/kadaga.jfif" alt="RT. HON. REBECCA ALITWALA KADAGA" fill className="object-cover" />
+                    <Image src="/imgs/kadaga.jpg" alt="RT. HON. REBECCA ALITWALA KADAGA" fill className="object-cover" />
                   </div>
                   <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-gold rounded-xl" />
                   <div className="absolute -top-2 -left-2 w-6 h-6 bg-purple rounded-lg" />
