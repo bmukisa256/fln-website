@@ -1,12 +1,12 @@
 'use client';
 
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 import { Button, Chip } from "@nextui-org/react";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { Camera, ChevronLeft, ChevronRight, Grid3X3, LayoutGrid, X, ZoomIn } from "lucide-react";
 import Image from "next/image";
-import { useState, useMemo, useCallback } from "react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import { useCallback, useMemo, useState } from "react";
 
 // ============================================================================
 // ANIMATION VARIANTS
@@ -106,21 +106,14 @@ const galleryImages = [
   { src: '/imgs/IMG-20250621-WA0012.jpg', title: '', description: '', category: 'events' },
   { src: '/imgs/IMG-20250621-WA0006.jpg', title: '', description: '', category: 'events' },
   { src: '/imgs/IMG-20250621-WA0001.jpg', title: '', description: '', category: 'events' },
-  { src: '/imgs/IMG-20250624-WA0024.jpg', title: '', description: 'Mentoring women and girls for climate justice is not just about equity it is about survival.', category: 'events' },
-  { src: '/imgs/IMG-20250624-WA0019.jpg', title: '', description: 'Their leadership, knowledge, and resilience are critical to building a sustainable future.', category: 'events' },
-  { src: '/imgs/IMG-20250624-WA0021.jpg', title: '', description: 'By investing in mentorship, we unlock the full potential of half the world population to drive transformative change.', category: 'events' },
-  { src: '/imgs/IMG-20250624-WA0028.jpg', title: '', description: '', category: 'events' },
-  { src: '/imgs/IMG-20250624-WA0027.jpg', title: '', description: '', category: 'events' },
-  { src: '/imgs/IMG-20250624-WA0026.jpg', title: '', description: '', category: 'events' },
-  { src: '/imgs/IMG-20250624-WA0020.jpg', title: '', description: '', category: 'events' },
-  { src: '/imgs/IMG-20250628-WA0032.jpg', title: '', description: 'FLN as part of climate action agenda trains, encourages and supports women and girls in local markets to lead tree planting efforts.', category: 'events' },
-  { src: '/imgs/IMG-20250628-WA0034.jpg', title: '', description: 'FLN supporting such involvement means providing access to information, mentoring, training, and supporting women-led climate initiatives.', category: 'events' },
-  { src: '/imgs/IMG-20250628-WA0025.jpg', title: '', description: 'This helps to dismantle these barriers. It signals a shift towards inclusive climate solutions where gender equality is integrated into environmental policy and practice.', category: 'events' },
-  { src: '/imgs/IMG-20250628-WA0022.jpg', title: '', description: 'It also means recognizing and valuing indigenous and local knowledge held by women about plant species, forest ecosystems, and traditional conservation methods.', category: 'events' },
-  { src: '/imgs/IMG-20250628-WA0024.jpg', title: '', description: '', category: 'events' },
-  { src: '/imgs/IMG-20250628-WA0029.jpg', title: '', description: '', category: 'events' },
-  { src: '/imgs/IMG-20250628-WA0035.jpg', title: '', description: '', category: 'events' },
-  { src: '/imgs/IMG-20250628-WA0032.jpg', title: '', description: '', category: 'events' },
+  { src: '/imgs/IMG-20250624-WA0020.jpg', title: 'Local Leadership', description: 'Women leaders', category: 'community' },
+  { src: '/imgs/IMG-20250628-WA0032.jpg', title: 'Tree Planting', description: 'Women leading tree planting', category: 'community' },
+  { src: '/imgs/IMG-20250628-WA0034.jpg', title: 'Climate Training', description: 'Supporting women-led initiatives', category: 'community' },
+  { src: '/imgs/IMG-20250628-WA0025.jpg', title: 'Inclusive Solutions', description: 'Gender equality in climate policy', category: 'community' },
+  { src: '/imgs/IMG-20250628-WA0022.jpg', title: 'Indigenous Knowledge', description: 'Valuing traditional conservation', category: 'community' },
+  { src: '/imgs/IMG-20250628-WA0024.jpg', title: 'Community Action', description: 'Local initiatives', category: 'community' },
+  { src: '/imgs/IMG-20250628-WA0029.jpg', title: 'Women Farmers', description: 'Agricultural support', category: 'community' },
+  { src: '/imgs/IMG-20250628-WA0035.jpg', title: 'Group Activity', description: 'Community program', category: "community" },
   { src: '/imgs/IMG-20250725-WA0024.jpg', title: 'FLN Annual Corporate Social Responsibility', description: 'FLN visited disabled children in a home in Mukono to give share with them love,goods and happiness.', category: 'events' },
   { src: '/imgs/IMG-20250725-WA0026.jpg', title: '', description: 'Elizabeth Home Mukono', category: 'events' },
   { src: '/imgs/IMG-20250725-WA0029.jpg', title: '', description: '', category: 'events' },
@@ -308,18 +301,24 @@ function Lightbox({ images, currentIndex, onClose, onPrev, onNext }: LightboxPro
         </div>
 
         {/* Caption */}
-        <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
-          <h3 className="text-xl font-heading font-bold text-white mb-1">
-            {currentImage.title}
-          </h3>
-          <p className="text-white/70 text-sm capitalize mb-2">
-            {currentImage.category}
-          </p>
-          {currentImage.description && (
-            <p className="text-white/90 text-sm">
-              {currentImage.description}
-            </p>
-          )}
+        {/* Caption */}
+        {/* Caption */}
+        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent pt-24 pb-8 px-6 lg:px-12 pointer-events-none">
+          <div className="max-w-4xl mx-auto transform transition-all duration-500 ease-out pointer-events-auto">
+            <div className="flex flex-col gap-2">
+              <span className="inline-flex w-fit px-3 py-1 text-xs font-bold uppercase tracking-widest text-gold border border-gold/30 rounded-full bg-black/40 backdrop-blur-md shadow-sm">
+                {currentImage.category}
+              </span>
+              <h3 className="text-xl md:text-2xl font-heading font-bold text-white leading-tight drop-shadow-md">
+                {currentImage.title}
+              </h3>
+              {currentImage.description && (
+                <p className="text-gray-200 text-sm md:text-base leading-relaxed font-light opacity-95 max-w-2xl">
+                  {currentImage.description}
+                </p>
+              )}
+            </div>
+          </div>
         </div>
       </motion.div>
 
@@ -446,11 +445,10 @@ export default function GalleryPage() {
                 <button
                   key={category.value}
                   onClick={() => setSelectedCategory(category.value)}
-                  className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all ${
-                    selectedCategory === category.value
-                      ? "bg-navy text-white shadow-lg"
-                      : "bg-white text-slate-600 hover:bg-slate-100"
-                  }`}
+                  className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all ${selectedCategory === category.value
+                    ? "bg-navy text-white shadow-lg"
+                    : "bg-white text-slate-600 hover:bg-slate-100"
+                    }`}
                 >
                   {category.label}
                 </button>
@@ -466,17 +464,15 @@ export default function GalleryPage() {
               <div className="flex bg-white rounded-full p-1 shadow-sm">
                 <button
                   onClick={() => setViewMode("grid")}
-                  className={`p-2 rounded-full transition-colors ${
-                    viewMode === "grid" ? "bg-navy text-white" : "text-slate-400 hover:text-navy"
-                  }`}
+                  className={`p-2 rounded-full transition-colors ${viewMode === "grid" ? "bg-navy text-white" : "text-slate-400 hover:text-navy"
+                    }`}
                 >
                   <Grid3X3 className="w-4 h-4" />
                 </button>
                 <button
                   onClick={() => setViewMode("masonry")}
-                  className={`p-2 rounded-full transition-colors ${
-                    viewMode === "masonry" ? "bg-navy text-white" : "text-slate-400 hover:text-navy"
-                  }`}
+                  className={`p-2 rounded-full transition-colors ${viewMode === "masonry" ? "bg-navy text-white" : "text-slate-400 hover:text-navy"
+                    }`}
                 >
                   <LayoutGrid className="w-4 h-4" />
                 </button>
@@ -505,9 +501,8 @@ export default function GalleryPage() {
                   onClick={() => openLightbox(index)}
                 >
                   <div
-                    className={`relative overflow-hidden rounded-2xl bg-white shadow-sm hover:shadow-xl transition-all duration-500 ${
-                      viewMode === "grid" ? "aspect-square" : index % 3 === 0 ? "aspect-[4/5]" : index % 3 === 1 ? "aspect-square" : "aspect-[4/3]"
-                    }`}
+                    className={`relative overflow-hidden rounded-2xl bg-white shadow-sm hover:shadow-xl transition-all duration-500 ${viewMode === "grid" ? "aspect-square" : index % 3 === 0 ? "aspect-[4/5]" : index % 3 === 1 ? "aspect-square" : "aspect-[4/3]"
+                      }`}
                   >
                     <Image
                       src={image.src}
@@ -518,16 +513,19 @@ export default function GalleryPage() {
                     />
 
                     {/* Hover Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 lg:p-5">
-                      <div>
-                        <h3 className="text-white font-bold text-sm lg:text-base mb-1 line-clamp-2">
+                    {/* Hover Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out flex items-end p-6">
+                      <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-100 w-full">
+                        <div className="flex items-center gap-2 mb-2">
+                          <span className="inline-flex items-center justify-center px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider text-white bg-white/20 border border-white/20 backdrop-blur-md shadow-sm">
+                            {image.category}
+                          </span>
+                        </div>
+                        <h3 className="text-white font-heading font-bold text-lg leading-tight mb-2 drop-shadow-sm">
                           {image.title}
                         </h3>
-                        <span className="text-white/70 text-xs capitalize block mb-1">
-                          {image.category}
-                        </span>
                         {image.description && (
-                          <p className="text-white/90 text-xs line-clamp-2">
+                          <p className="text-gray-200 text-xs leading-relaxed line-clamp-3 opacity-90">
                             {image.description}
                           </p>
                         )}
