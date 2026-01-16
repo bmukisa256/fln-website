@@ -36,13 +36,13 @@ const scaleIn = {
 // ============================================================================
 
 const boardMembers = [
-  { image: "/imgs/WhatsApp Image 2023-01-05 at 13.31.00.jpeg", name: "Hon Dr. Joyce Nalunga Birimumaaso", position: "President | Founder", description: "Member, Leadership Code Tribunal." },
+  { image: "/imgs/WA-20230105-133100.jpeg", name: "Hon Dr. Joyce Nalunga Birimumaaso", position: "President | Founder", description: "Member, Leadership Code Tribunal." },
   { image: "/imgs/justice-lillian.jfif", name: "Hon Prof. Lady Justice Lillian Tibatemwa Ekirukubinza", position: "Chairperson", description: "Justice of the Supreme Court." },
   { image: "/imgs/jane-abodo.png", name: "Hon. Lady Justice Jane Frances Abodo", position: "Vice Chairperson", description: "Director of Public Prosecutions." },
-  { image: "/imgs/WhatsApp Image 2023-01-05 at 14.26.09.jpeg", name: "Ms. Angelina Namakula Ofwono", position: "Member", description: "Chief Legal, DFCU Bank." },
-  { image: "/imgs/WhatsApp Image 2023-01-06 at 08.48.58.jpeg", name: "Bulya Lillian", position: "Secretary", description: "Managing Partner, L-Bulya & Co. Advocates." },
+  { image: "/imgs/WA-20230105-142609.jpeg", name: "Ms. Angelina Namakula Ofwono", position: "Member", description: "Chief Legal, DFCU Bank." },
+  { image: "/imgs/WA-20230106-084858.jpeg", name: "Bulya Lillian", position: "Secretary", description: "Managing Partner, L-Bulya & Co. Advocates." },
   { image: "/imgs/PHOTO-2022-06-27-16-56-26.jpg", name: "Hope Atuhairwe Kisitu", position: "Member", description: "Corporation Secretary, Uganda Development Corporation." },
-  { image: "/imgs/WhatsApp Image 2023-01-09 at 15.23.47.jpeg", name: "Anne Abeja", position: "Member", description: "Company Secretary Housing Finance Bank." },
+  { image: "/imgs/WA-20230109-152347.jpeg", name: "Anne Abeja", position: "Member", description: "Company Secretary Housing Finance Bank." },
   { image: "/imgs/suz.jpg", name: "Suzan Batuuka", position: "Member", description: "Head Legal Uganda Airlines." },
   { image: "/imgs/joanita.jpg", name: "Joanita Bushara", position: "Member", description: "Managing Partner of Justitia Advocates Private Practice." }
 ];

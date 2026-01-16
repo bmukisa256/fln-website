@@ -40,8 +40,8 @@ const categories = [
 const newsItems = [
   { date: "2025", title: "Markets Drive", image: "/imgs/IMG-20250921-WA0024.jpg", category: "events", featured: true },
   { date: "2025", title: "Planting Trees Initiative", image: "/imgs/planting_trees.jpg", category: "climate", featured: true },
-  { date: "2025", title: "FLN and Empathy Whale Partnership", image: "/imgs/tree assn2.jpg", category: "partnerships", featured: false },
-  { date: "2025", title: "Strategic Partnership Announcement", image: "/imgs/tress assn.jpg", category: "partnerships", featured: false },
+  { date: "2025", title: "FLN and Empathy Whale Partnership", image: "/imgs/tree-assn2.jpg", category: "partnerships", featured: false },
+  { date: "2025", title: "Strategic Partnership Announcement", image: "/imgs/tree-assn.jpg", category: "partnerships", featured: false },
   { date: "2025", title: "Vulnerable Communities Support", image: "/imgs/IMG-20250409-WA0018.jpg", category: "climate", featured: false },
   { date: "2025", title: "Green Economy Initiative", image: "/imgs/IMG-20250409-WA0017.jpg", category: "climate", featured: false },
   { date: "2025", title: "Intergenerational Equity", image: "/imgs/IMG-20250409-WA0016.jpg", category: "climate", featured: false },
@@ -226,8 +226,8 @@ export default function NewsPage() {
                   key={category.value}
                   onClick={() => setSelectedCategory(category.value)}
                   className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${selectedCategory === category.value
-                      ? "bg-navy text-white"
-                      : "bg-white text-slate-600 hover:bg-slate-100"
+                    ? "bg-navy text-white"
+                    : "bg-white text-slate-600 hover:bg-slate-100"
                     }`}
                 >
                   {category.label}
@@ -264,12 +264,12 @@ export default function NewsPage() {
                         {/* Category Badge */}
                         <div className="absolute top-3 left-3">
                           <span className={`text-xs font-bold px-2 py-1 rounded-lg ${item.category === "climate"
-                              ? "bg-green-100 text-green-700"
-                              : item.category === "gender"
-                                ? "bg-purple/10 text-purple"
-                                : item.category === "partnerships"
-                                  ? "bg-gold/20 text-gold"
-                                  : "bg-navy/10 text-navy"
+                            ? "bg-green-100 text-green-700"
+                            : item.category === "gender"
+                              ? "bg-purple/10 text-purple"
+                              : item.category === "partnerships"
+                                ? "bg-gold/20 text-gold"
+                                : "bg-navy/10 text-navy"
                             }`}>
                             {categories.find(c => c.value === item.category)?.label || item.category}
                           </span>

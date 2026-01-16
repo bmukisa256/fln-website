@@ -64,14 +64,14 @@ const milestones = [
 
 const leadershipTeam = [
   {
-    image: "/imgs/WhatsApp Image 2023-02-16 at 16.39.39.jpg",
+    image: "/imgs/WA-20230216-163939.jpg",
     name: "Leah Nasasira",
     position: "Chief Executive Officer",
     description: "Leah has been at the forefront of FLN since its inception, driving initiatives that promote gender equality in law.",
     accent: "gold"
   },
   {
-    image: "/imgs/WhatsApp Image 2023-04-04 at 11.08.26 (1).jpg",
+    image: "/imgs/WA-20230404-110826-1.jpg",
     name: "Sandra Nantaba",
     position: "Executive Coordinator",
     description: "Sandra oversees FLN's day-to-day operations, ensuring our programs are executed effectively and efficiently.",
@@ -277,16 +277,16 @@ export default function AboutPage() {
               >
                 <div className="bg-white rounded-3xl p-8 h-full text-center hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
                   <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 transition-colors duration-300 ${value.color === 'navy'
-                      ? 'bg-navy/10 group-hover:bg-navy'
-                      : value.color === 'purple'
-                        ? 'bg-purple/10 group-hover:bg-purple'
-                        : 'bg-gold/10 group-hover:bg-gold'
+                    ? 'bg-navy/10 group-hover:bg-navy'
+                    : value.color === 'purple'
+                      ? 'bg-purple/10 group-hover:bg-purple'
+                      : 'bg-gold/10 group-hover:bg-gold'
                     }`}>
                     <value.icon className={`w-8 h-8 transition-colors duration-300 ${value.color === 'navy'
-                        ? 'text-navy group-hover:text-white'
-                        : value.color === 'purple'
-                          ? 'text-purple group-hover:text-white'
-                          : 'text-gold group-hover:text-navy'
+                      ? 'text-navy group-hover:text-white'
+                      : value.color === 'purple'
+                        ? 'text-purple group-hover:text-white'
+                        : 'text-gold group-hover:text-navy'
                       }`} />
                   </div>
                   <h3 className="text-xl font-heading font-bold text-navy mb-3">{value.title}</h3>
@@ -432,10 +432,10 @@ export default function AboutPage() {
 
                     {/* Role Badge */}
                     <div className={`absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-bold ${leader.accent === 'gold'
-                        ? 'bg-gold text-navy'
-                        : leader.accent === 'purple'
-                          ? 'bg-purple text-white'
-                          : 'bg-navy text-white'
+                      ? 'bg-gold text-navy'
+                      : leader.accent === 'purple'
+                        ? 'bg-purple text-white'
+                        : 'bg-navy text-white'
                       }`}>
                       {leader.position.split(' ')[0]}
                     </div>

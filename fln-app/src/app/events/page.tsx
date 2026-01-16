@@ -1,13 +1,13 @@
 'use client';
 
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 import { Button, Chip } from "@nextui-org/react";
 import { motion } from "framer-motion";
-import { Calendar, Clock, ArrowRight, MapPin, Play, ChevronRight } from "lucide-react";
-import Link from "next/link";
+import { ArrowRight, Calendar, ChevronRight, Clock, MapPin, Play } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 
 // ============================================================================
 // ANIMATION VARIANTS
@@ -49,25 +49,25 @@ const pastEventsByYear = {
   "2023": [
     { image: "/imgs/corporatewomen.jpg", date: "1st JUN", speaker: "Hilder Bahati Sabiti", title: "Corporate Women Summit" },
     { image: "/imgs/essential.png", date: "16th JUN", speaker: "Ivan Baguma", title: "Essential Legal Skills" },
-    { image: "/imgs/personal fina.jpg", date: "7th JUL", speaker: "Angelina Ofwono", title: "Personal Finance for Lawyers" },
+    { image: "/imgs/personal-fina.jpg", date: "7th JUL", speaker: "Angelina Ofwono", title: "Personal Finance for Lawyers" },
     { image: "/imgs/pp.jpg", date: "21st JUL", speaker: "Dr. Joyce Birimumaaso", title: "Professional Development" },
     { image: "/imgs/journey.jpg", date: "22nd SEP", speaker: "Penelope Sanyu", title: "The Legal Journey" },
-    { image: "/imgs/century female.jpg", date: "13th OCT", speaker: "Daisy Mulamuzi Kasujja", title: "21st Century Female Lawyer" },
+    { image: "/imgs/century-female.jpg", date: "13th OCT", speaker: "Daisy Mulamuzi Kasujja", title: "21st Century Female Lawyer" },
     { image: "/imgs/dynamic.jpg", date: "27th OCT", speaker: "Fatuma Omar", title: "Dynamic Leadership" },
     { image: "/imgs/goodcommun.jpg", date: "3rd NOV", speaker: "Norah Matovu Muwanga", title: "Communication Excellence" },
     { image: "/imgs/stragtegicnetw.jpg", date: "6th OCT", speaker: "Dr. Joyce Birimumaaso", title: "Strategic Networking" },
-    { image: "/imgs/personal dev.jpg", date: "26th AUG", speaker: "Mr. Venkatesh Kumar", title: "Personal Development" },
+    { image: "/imgs/personal-dev.jpg", date: "26th AUG", speaker: "Mr. Venkatesh Kumar", title: "Personal Development" },
   ],
   "2022": [
-    { image: "/imgs/WhatsApp Image 2023-01-04 at 21.47.42.jpeg", date: "7th SEP", speaker: "Hope Atuhairwe", title: "Legal Excellence" },
-    { image: "/imgs/WhatsApp Image 2023-01-04 at 21.47.43 (1).jpeg", date: "7th SEP", speaker: "Mariam Mbabaali", title: "Advocacy Skills" },
-    { image: "/imgs/WhatsApp Image 2023-01-04 at 21.47.43.jpeg", date: "7th SEP", speaker: "Dr. Joyce Nalunga Birimumaaso", title: "Leadership Forum" },
-    { image: "/imgs/WhatsApp Image 2023-01-04 at 21.47.44 (1).jpeg", date: "7th SEP", speaker: "Dr. Zahara Nampewo", title: "Legal Research" },
-    { image: "/imgs/WhatsApp Image 2023-01-04 at 21.47.44.jpeg", date: "7th SEP", speaker: "Angelina Namakula Ofwono", title: "Corporate Law" },
-    { image: "/imgs/WhatsApp Image 2023-01-04 at 21.47.45 (1).jpeg", date: "7th SEP", speaker: "Hon. Lady Justice Jane Frances Abodo", title: "Justice & Integrity" },
-    { image: "/imgs/WhatsApp Image 2023-01-04 at 21.47.48.jpeg", date: "7th OCT", speaker: "Hon. Lady Justice Lillian T. Ekirukubinza", title: "Judicial Excellence" },
-    { image: "/imgs/WhatsApp Image 2023-01-04 at 21.47.50.jpeg", date: "4th NOV", speaker: "Hon. Lady Justice Julia Sebutinde", title: "International Law" },
-    { image: "/imgs/WhatsApp Image 2023-01-04 at 21.47.52.jpeg", date: "25th NOV", speaker: "Patience T. Rubagumya", title: "Legal Practice" },
+    { image: "/imgs/WA-20230104-214742.jpeg", date: "7th SEP", speaker: "Hope Atuhairwe", title: "Legal Excellence" },
+    { image: "/imgs/WA-20230104-214743-1.jpeg", date: "7th SEP", speaker: "Mariam Mbabaali", title: "Advocacy Skills" },
+    { image: "/imgs/WA-20230104-214743.jpeg", date: "7th SEP", speaker: "Dr. Joyce Nalunga Birimumaaso", title: "Leadership Forum" },
+    { image: "/imgs/WA-20230104-214744-1.jpeg", date: "7th SEP", speaker: "Dr. Zahara Nampewo", title: "Legal Research" },
+    { image: "/imgs/WA-20230104-214744.jpeg", date: "7th SEP", speaker: "Angelina Namakula Ofwono", title: "Corporate Law" },
+    { image: "/imgs/WA-20230104-214745-1.jpeg", date: "7th SEP", speaker: "Hon. Lady Justice Jane Frances Abodo", title: "Justice & Integrity" },
+    { image: "/imgs/WA-20230104-214748.jpeg", date: "7th OCT", speaker: "Hon. Lady Justice Lillian T. Ekirukubinza", title: "Judicial Excellence" },
+    { image: "/imgs/WA-20230104-214750.jpeg", date: "4th NOV", speaker: "Hon. Lady Justice Julia Sebutinde", title: "International Law" },
+    { image: "/imgs/WA-20230104-214752.jpeg", date: "25th NOV", speaker: "Patience T. Rubagumya", title: "Legal Practice" },
   ],
 };
 
@@ -272,11 +272,10 @@ export default function EventsPage() {
                 <button
                   key={year}
                   onClick={() => setActiveYear(year)}
-                  className={`px-6 py-3 rounded-full font-medium transition-all ${
-                    activeYear === year
-                      ? 'bg-navy text-white'
-                      : 'bg-white text-slate-600 hover:bg-slate-100'
-                  }`}
+                  className={`px-6 py-3 rounded-full font-medium transition-all ${activeYear === year
+                    ? 'bg-navy text-white'
+                    : 'bg-white text-slate-600 hover:bg-slate-100'
+                    }`}
                 >
                   {year}
                 </button>
