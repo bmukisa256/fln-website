@@ -54,7 +54,7 @@ const secretariatMembers = [
   { image: "/imgs/fatta.jpg", name: "Muzafar Gweyawadde", position: "Social Media Officer" },
   { image: "/imgs/PHOTO-2024-01-03-19-42-44.jpg", name: "Mubiru Byron", position: "I.T" },
   { image: "/imgs/PHOTO-2024-01-03-19-42-54.jpg", name: "Jordanah Nandaula", position: "Coordinator" },
-  { image: "/imgs/WA-20230110-195711.jpg", name: "Aphophia Komugambe", position: "Law University Coordinator" },
+  { image: "/imgs/WA-20230110-195711.jpeg", name: "Aphophia Komugambe", position: "Law University Coordinator" },
   { image: "/imgs/lavender.jpg", name: "Lavender Nassanga", position: "Volunteer" },
 ];
 
