@@ -48,13 +48,13 @@ const boardMembers = [
 ];
 
 const secretariatMembers = [
-  { image: "/imgs/WhatsApp Image 2023-02-16 at 16.39.39.jpg", name: "Leah Nasasira", position: "Chief Executive Officer" },
-  { image: "/imgs/WhatsApp Image 2023-04-04 at 11.08.26 (1).jpg", name: "Sandra Nantaba", position: "Executive Coordinator" },
+  { image: "/imgs/WA-20230216-163939.jpg", name: "Leah Nasasira", position: "Chief Executive Officer" },
+  { image: "/imgs/WA-20230404-110826-1.jpg", name: "Sandra Nantaba", position: "Executive Coordinator" },
   { image: "/imgs/daisy.jpg", name: "Daisy Mulamuzi Kasujja", position: "Strategic Advisor" },
   { image: "/imgs/fatta.jpg", name: "Muzafar Gweyawadde", position: "Social Media Officer" },
   { image: "/imgs/PHOTO-2024-01-03-19-42-44.jpg", name: "Mubiru Byron", position: "I.T" },
   { image: "/imgs/PHOTO-2024-01-03-19-42-54.jpg", name: "Jordanah Nandaula", position: "Coordinator" },
-  { image: "/imgs/WhatsApp Image 2023-01-10 at 19.57.11.jpg", name: "Aphophia Komugambe", position: "Law University Coordinator" },
+  { image: "/imgs/WA-20230110-195711.jpg", name: "Aphophia Komugambe", position: "Law University Coordinator" },
   { image: "/imgs/lavender.jpg", name: "Lavender Nassanga", position: "Volunteer" },
 ];
 
@@ -275,7 +275,7 @@ export default function Home() {
                   className="absolute -bottom-4 -left-4 lg:-left-8 bg-white p-3 rounded-xl shadow-xl flex items-center gap-3"
                 >
                   <div className="w-10 h-10 rounded-lg overflow-hidden relative bg-slate-200">
-                    <Image src="/imgs/WhatsApp Image 2023-01-05 at 13.31.00.jpeg" alt="President" fill className="object-cover" />
+                    <Image src="/imgs/WA-20230105-133100.jpeg" alt="President" fill className="object-cover" />
                   </div>
                   <div>
                     <p className="font-bold text-navy text-xs">Hon. Dr. Joyce</p>
@@ -426,7 +426,7 @@ export default function Home() {
             >
               <div className="flex flex-col sm:flex-row gap-6 items-center sm:items-start text-center sm:text-left">
                 <ProfileImage
-                  src="/imgs/WhatsApp Image 2023-01-05 at 13.31.00.jpeg"
+                  src="/imgs/WA-20230105-133100.jpeg"
                   alt="Hon. Dr. Joyce Nalunga Birimumaaso"
                   size="xl"
                   accent="gold"
