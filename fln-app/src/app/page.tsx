@@ -519,9 +519,7 @@ export default function Home() {
                 <blockquote className="text-xl text-slate-300 italic leading-relaxed mb-8">
                   "Empowering women in law is essential for achieving justice and equality in society."
                 </blockquote>
-                <Button as={Link} href="/messages" className="bg-white text-navy font-medium px-6 h-11 rounded-full hover:bg-gold transition-colors">
-                  Read Full Message
-                </Button>
+
               </div>
             </div>
           </motion.div>
