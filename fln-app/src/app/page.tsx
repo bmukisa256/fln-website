@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { Button, Chip } from "@nextui-org/react";
 import { AnimatePresence, motion } from "framer-motion";
-import { ArrowRight, ArrowUpRight, Check, Globe, Loader2, Mail, Shield, Users } from "lucide-react";
+import { ArrowRight, Check, Globe, Loader2, Mail, Shield, Users } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
@@ -354,9 +354,7 @@ export default function Home() {
                 <p className="text-slate-600 group-hover:text-slate-300 transition-colors duration-500">
                   Taking our mission beyond borders, partnering with international organizations for gender equality.
                 </p>
-                <button className="mt-6 flex items-center gap-2 text-sm font-medium text-navy group-hover:text-gold transition-colors duration-500">
-                  Learn more <ArrowUpRight className="w-4 h-4" />
-                </button>
+
               </div>
             </motion.div>
 
@@ -372,9 +370,7 @@ export default function Home() {
                 <p className="text-purple-200">
                   Upholding the highest moral and ethical standards in every case and interaction.
                 </p>
-                <button className="mt-6 flex items-center gap-2 text-sm font-medium text-white">
-                  Learn more <ArrowUpRight className="w-4 h-4" />
-                </button>
+
               </div>
             </motion.div>
 
@@ -390,9 +386,7 @@ export default function Home() {
                 <p className="text-slate-600 group-hover:text-navy/70 transition-colors duration-500">
                   Connecting junior lawyers with experienced leaders to accelerate career growth.
                 </p>
-                <button className="mt-6 flex items-center gap-2 text-sm font-medium text-navy transition-colors duration-500">
-                  Learn more <ArrowUpRight className="w-4 h-4" />
-                </button>
+
               </div>
             </motion.div>
           </motion.div>
