@@ -439,9 +439,12 @@ export default function Home() {
                     Hon. Dr. Joyce Nalunga
                   </h3>
                   <p className="text-sm text-slate-500 mb-4">Birimumaaso</p>
-                  <p className="text-slate-600 italic">
+                  <p className="text-slate-600 italic mb-4">
                     "Our mission is to empower female lawyers to lead with integrity."
                   </p>
+                  <Link href="/messages" className="text-xs font-bold text-gold hover:text-navy uppercase tracking-wider transition-colors inline-flex items-center">
+                    Read Message <ArrowRight className="w-3 h-3 ml-1" />
+                  </Link>
                 </div>
               </div>
             </motion.div>
@@ -468,9 +471,12 @@ export default function Home() {
                     Hon. Justice Lillian
                   </h3>
                   <p className="text-sm text-slate-500 mb-4">Tibatemwa Ekirukubinza</p>
-                  <p className="text-slate-600 italic">
+                  <p className="text-slate-600 italic mb-4">
                     "Every woman and girl deserves to live up to her full potential."
                   </p>
+                  <Link href="/messages" className="text-xs font-bold text-purple hover:text-navy uppercase tracking-wider transition-colors inline-flex items-center">
+                    Read Message <ArrowRight className="w-3 h-3 ml-1" />
+                  </Link>
                 </div>
               </div>
             </motion.div>
@@ -513,7 +519,7 @@ export default function Home() {
                 <blockquote className="text-xl text-slate-300 italic leading-relaxed mb-8">
                   "Empowering women in law is essential for achieving justice and equality in society."
                 </blockquote>
-                <Button className="bg-white text-navy font-medium px-6 h-11 rounded-full hover:bg-gold transition-colors">
+                <Button as={Link} href="/messages" className="bg-white text-navy font-medium px-6 h-11 rounded-full hover:bg-gold transition-colors">
                   Read Full Message
                 </Button>
               </div>
