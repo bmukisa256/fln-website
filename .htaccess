@@ -1,0 +1,20 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  
+  # 1. Redirect specfic legacy PHP pages to their clean URL counterparts on the new domain
+  RewriteRule ^events\.php$ https://www.femalelawyersnetwork.com/events [L,R=301]
+  RewriteRule ^about\.php$ https://www.femalelawyersnetwork.com/about [L,R=301]
+  RewriteRule ^contact\.php$ https://www.femalelawyersnetwork.com/contact [L,R=301]
+  RewriteRule ^membership\.php$ https://www.femalelawyersnetwork.com/membership [L,R=301]
+  RewriteRule ^news\.php$ https://www.femalelawyersnetwork.com/news [L,R=301]
+  RewriteRule ^gallery\.php$ https://www.femalelawyersnetwork.com/gallery [L,R=301]
+  RewriteRule ^messages/([^/]+)$ https://www.femalelawyersnetwork.com/messages [L,R=301]
+
+  # 2. Redirect the root and index.php
+  RewriteRule ^index\.php$ https://www.femalelawyersnetwork.com/ [L,R=301]
+  RewriteRule ^$ https://www.femalelawyersnetwork.com/ [L,R=301]
+
+  # 3. Catch-all: Redirect any other request to the new homepage (optional, creates a soft landing)
+  # RewriteCond %{REQUEST_FILENAME} !-f
+  # RewriteRule ^(.*)$ https://www.femalelawyersnetwork.com/ [L,R=301]
+</IfModule>
