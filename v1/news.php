@@ -7,8 +7,8 @@ include('header.php');
     <!-- Page Header -->
     <section class="page-header py-5  text-white">
         <div class="container text-center">
-            <h1>News</h1>
-            <p class="lead">Explore Our Latest News and Updates</p>
+            <h1>Miscellaneous</h1>
+            <p class="lead">Explore Our Updates</p>
         </div>
     </section>
 
@@ -22,16 +22,16 @@ include('header.php');
                     <option value="legal-updates">Legal Updates</option>
                     <option value="member-spotlight">Member Spotlight</option>
                     <option value="events">Events</option>
-                </select>
-                <button type="submit" class="button">Search</button>
+                 </select>
+              <!--  <button type="submit" class="button">Search</button> -->
             </form>
         </div>
-    </section>
+    </section> 
 
     <!-- News Articles Section -->
     <section class="news-grid py-5">
         <div class="container">
-            <h2 class="text-center mb-5"><i class="bi bi-newspaper  me-2"></i>Latest News</h2>
+            <h2 class="text-center mb-5"><i class="bi bi-newspaper  me-2"></i>Latest</h2>
             <div class="row article-grid">
                 <?php
                 $news_items = [
@@ -57,6 +57,26 @@ include('header.php');
                     ['date' => '2025', 'title' => 'FLN and Emparthy Whale', 'image' => 'imgs/tree assn2.jpg'],
                     ['date' => '2025', 'title' => 'Planting Trees', 'image' => 'imgs/planting_trees.jpg'],
                     ['date' => '2025', 'title' => 'Markets Drive', 'image' => 'imgs/IMG-20250921-WA0024.jpg'],
+                    ['date' => '2025', 'title' => 'FLN Symposium Women In Electoral Governance', 'image' => 'imgs/FlnUpdate29-4-26/1758648916973.jpg'],
+                    ['date' => '2025', 'title' => 'FLN Symposium Women In Electoral Governance SPONSORS', 'image' => 'imgs/FlnUpdate29-4-26/1757350269515.jpg'],
+                    ['date' => '2025', 'title' => 'FLN CSR ACTIVITY', 'image' => 'imgs/FlnUpdate29-4-26/1752749041682.jpg'],
+                    ['date' => '2025', 'title' => 'CLIMATE CHANGE NEED TO KNOW', 'image' => 'imgs/FlnUpdate29-4-26/1755025250616.jpg'],
+                    ['date' => '2025', 'title' => 'BECOME FLN MEMBER', 'image' => 'imgs/FlnUpdate29-4-26/1756724080016.jpg'],
+                    ['date' => '2025', 'title' => 'INTER-UNIVERSITY LEADERSHIP', 'image' => 'imgs/FlnUpdate29-4-26/1763636823152.jpg'],
+                    ['date' => '2025', 'title' => 'INTER-UNIVERSITY LEADERSHIP', 'image' => 'imgs/FlnUpdate29-4-26/1762339083110.jpg'],
+                    ['date' => '2025', 'title' => 'INTER-UNIVERSITY LEADERSHIP', 'image' => 'imgs/FlnUpdate29-4-26/1762631422397.jpg'],
+                    ['date' => '2026', 'title' => 'LEGAL SYMPOSIUM: BISHOP STUART UNIVERSITY', 'image' => 'imgs/FlnUpdate29-4-26/1774912670854.jpg'],
+                    ['date' => '2026', 'title' => 'SUBSCRIBE AS FLN MEMEBER', 'image' => 'imgs/FlnUpdate29-4-26/1772635724407.jpg'],
+                    ['date' => '2026', 'title' => 'CLIMATE', 'image' => 'imgs/FlnUpdate29-4-26/1772033801784.jpg'],
+                    ['date' => '2026', 'title' => 'FACE OF CRISIS', 'image' => 'imgs/FlnUpdate29-4-26/1772033803525.jpg'],
+                    ['date' => '2026', 'title' => 'INTERGENERATIONAL EQUITY', 'image' => 'imgs/FlnUpdate29-4-26/1767308250896.jpg'],
+                    ['date' => '2026', 'title' => 'GENDER EQUALITY = CLIMATE JUSTICE', 'image' => 'imgs/FlnUpdate29-4-26/1766504308552.jpg'],
+                    ['date' => '2026', 'title' => 'FLN EMPOWERMENT APPROACH', 'image' => 'imgs/FlnUpdate29-4-26/1761119377722.jpg'],
+                    ['date' => '2026', 'title' => 'FLN GREEN LIVELIHOODS AND ECONOMIC EMPOWERMENT', 'image' => 'imgs/FlnUpdate29-4-26/1755874656210.jpg'],
+                    ['date' => '2026', 'title' => 'PROTECTING REFUGEES RIGHTS MATTERS', 'image' => 'imgs/FlnUpdate29-4-26/1756453668341.jpg'],
+                    ['date' => '2026', 'title' => 'FLN PRIDE WALKING ALONGSIDE WOMEN AND GIRLS', 'image' => 'imgs/FlnUpdate29-4-26/1774804050465.jpg'],
+
+
                     
                 ];
 
