@@ -39,8 +39,8 @@ const categories = [
 ];
 
 const newsItems = [
-  { date: "2025", title: "Markets Drive", image: "/imgs/IMG-20250921-WA0024.jpg", category: "events", featured: true },
-  { date: "2025", title: "Planting Trees Initiative", image: "/imgs/planting_trees.jpg", category: "climate", featured: true },
+  { date: "2025", title: "Markets Drive", image: "/imgs/IMG-20250921-WA0024.jpg", category: "events", featured: false },
+  { date: "2025", title: "Planting Trees Initiative", image: "/imgs/planting_trees.jpg", category: "climate", featured: false },
   { date: "2025", title: "FLN and Empathy Whale Partnership", image: "/imgs/tree-assn2.jpg", category: "partnerships", featured: false },
   { date: "2025", title: "Strategic Partnership Announcement", image: "/imgs/tree-assn.jpg", category: "partnerships", featured: false },
   { date: "2025", title: "Vulnerable Communities Support", image: "/imgs/IMG-20250409-WA0018.jpg", category: "climate", featured: false },
@@ -61,6 +61,26 @@ const newsItems = [
   { date: "2024", title: "FLN Distinguished Dinner Sponsors", image: "/imgs/dinnersponsors.jpg", category: "events", featured: false },
   { date: "2024", title: "Founder/President Bio", image: "/imgs/PHOTO-2023-12-29-20-28-10.jpg", category: "events", featured: false },
   { date: "2024", title: "Our Socials", image: "/imgs/WA-20230104-140156.jpeg", category: "events", featured: false },
+
+  { date: "2025", title: "FLN Symposium Women In Electoral Governance", image: "/imgs/FlnUpdate29-4-26/1758648916973.jpg", category: "events", featured: false },
+  { date: "2025", title: "FLN Symposium Women In Electoral Governance SPONSORS", image: "/imgs/FlnUpdate29-4-26/1757350269515.jpg", category: "events", featured: false },
+  { date: "2025", title: "FLN CSR ACTIVITY", image: "/imgs/FlnUpdate29-4-26/1752749041682.jpg", category: "events", featured: false },
+  { date: "2025", title: "CLIMATE CHANGE NEED TO KNOW", image: "/imgs/FlnUpdate29-4-26/1755025250616.jpg", category: "climate", featured: false },
+  { date: "2025", title: "BECOME FLN MEMBER", image: "/imgs/FlnUpdate29-4-26/1756724080016.jpg", category: "events", featured: false },
+  { date: "2025", title: "INTER-UNIVERSITY LEADERSHIP", image: "/imgs/FlnUpdate29-4-26/1763636823152.jpg", category: "conferences", featured: false },
+  { date: "2025", title: "INTER-UNIVERSITY LEADERSHIP", image: "/imgs/FlnUpdate29-4-26/1762339083110.jpg", category: "conferences", featured: false },
+  { date: "2025", title: "INTER-UNIVERSITY LEADERSHIP", image: "/imgs/FlnUpdate29-4-26/1762631422397.jpg", category: "conferences", featured: false },
+  { date: "2026", title: "LEGAL SYMPOSIUM: BISHOP STUART UNIVERSITY", image: "/imgs/FlnUpdate29-4-26/1774912670854.jpg", category: "events", featured: false },
+  { date: "2026", title: "SUBSCRIBE AS FLN MEMEBER", image: "/imgs/FlnUpdate29-4-26/1772635724407.jpg", category: "events", featured: false },
+  { date: "2026", title: "CLIMATE", image: "/imgs/FlnUpdate29-4-26/1772033801784.jpg", category: "climate", featured: false },
+  { date: "2026", title: "FACE OF CRISIS", image: "/imgs/FlnUpdate29-4-26/1772033803525.jpg", category: "climate", featured: false },
+  { date: "2026", title: "INTERGENERATIONAL EQUITY", image: "/imgs/FlnUpdate29-4-26/1767308250896.jpg", category: "climate", featured: false },
+  { date: "2026", title: "GENDER EQUALITY = CLIMATE JUSTICE", image: "/imgs/FlnUpdate29-4-26/1766504308552.jpg", category: "climate", featured: false },
+  { date: "2026", title: "FLN EMPOWERMENT APPROACH", image: "/imgs/FlnUpdate29-4-26/1761119377722.jpg", category: "events", featured: false },
+  { date: "2026", title: "FLN GREEN LIVELIHOODS AND ECONOMIC EMPOWERMENT", image: "/imgs/FlnUpdate29-4-26/1755874656210.jpg", category: "events", featured: false },
+  { date: "2026", title: "PROTECTING REFUGEES RIGHTS MATTERS", image: "/imgs/FlnUpdate29-4-26/1756453668341.jpg", category: "events", featured: true },
+  { date: "2026", title: "FLN PRIDE WALKING ALONGSIDE WOMEN AND GIRLS", image: "/imgs/FlnUpdate29-4-26/1774804050465.jpg", category: "events", featured: true },
+
 ];
 
 // ============================================================================
@@ -123,7 +143,7 @@ export default function NewsPage() {
               {showFilters ? "Hide Categories" : "Show Categories"}
             </button>
           </div>
-        </div>
+        </div> 
       </PageHero>
 
       {/* ================================================================== */}

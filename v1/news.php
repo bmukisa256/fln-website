@@ -57,27 +57,8 @@ include('header.php');
                     ['date' => '2025', 'title' => 'FLN and Emparthy Whale', 'image' => 'imgs/tree assn2.jpg'],
                     ['date' => '2025', 'title' => 'Planting Trees', 'image' => 'imgs/planting_trees.jpg'],
                     ['date' => '2025', 'title' => 'Markets Drive', 'image' => 'imgs/IMG-20250921-WA0024.jpg'],
-                    ['date' => '2025', 'title' => 'FLN Symposium Women In Electoral Governance', 'image' => 'v1\imgs\FlnUpdate29-4-26\1758648916973.jpg'],
-                    ['date' => '2025', 'title' => 'FLN Symposium Women In Electoral Governance SPONSORS', 'image' => 'v1\imgs\FlnUpdate29-4-26\1757350269515.jpg'],
-                    ['date' => '2025', 'title' => 'FLN CSR ACTIVITY', 'image' => 'v1\imgs\FlnUpdate29-4-26\1752749041682.jpg'],
-                    ['date' => '2025', 'title' => 'CLIMATE CHANGE NEED TO KNOW', 'image' => 'v1\imgs\FlnUpdate29-4-26\1755025250616.jpg'],
-                    ['date' => '2025', 'title' => 'BECOME FLN MEMBER', 'image' => 'v1\imgs\FlnUpdate29-4-26\1756724080016.jpg'],
-                    ['date' => '2025', 'title' => 'INTER-UNIVERSITY LEADERSHIP', 'image' => 'v1\imgs\FlnUpdate29-4-26\1763636823152.jpg'],
-                    ['date' => '2025', 'title' => 'INTER-UNIVERSITY LEADERSHIP', 'image' => 'v1\imgs\FlnUpdate29-4-26\1762339083110.jpg'],
-                    ['date' => '2025', 'title' => 'INTER-UNIVERSITY LEADERSHIP', 'image' => 'v1\imgs\FlnUpdate29-4-26\1762631422397.jpg'],
-                    ['date' => '2026', 'title' => 'LEGAL SYMPOSIUM: BISHOP STUART UNIVERSITY', 'image' => 'v1\imgs\FlnUpdate29-4-26\1774912670854.jpg'],
-                    ['date' => '2026', 'title' => 'SUBSCRIBE AS FLN MEMEBER', 'image' => 'v1\imgs\FlnUpdate29-4-26\1772635724407.jpg'],
-                    ['date' => '2026', 'title' => 'CLIMATE', 'image' => 'v1\imgs\FlnUpdate29-4-26\1772033801784.jpg'],
-                    ['date' => '2026', 'title' => 'FACE OF CRISIS', 'image' => 'v1\imgs\FlnUpdate29-4-26\1772033803525.jpg'],
-                    ['date' => '2026', 'title' => 'INTERGENERATIONAL EQUITY', 'image' => 'v1\imgs\FlnUpdate29-4-26\1767308250896.jpg'],
-                    ['date' => '2026', 'title' => 'GENDER EQUALITY = CLIMATE JUSTICE', 'image' => 'v1\imgs\FlnUpdate29-4-26\1766504308552.jpg'],
-                    ['date' => '2026', 'title' => 'FLN EMPOWERMENT APPROACH', 'image' => 'v1\imgs\FlnUpdate29-4-26\176111937772₂.jpg'],
-                    ['date' => '2026', 'title' => 'FLN GREEN LIVELIHOODS AND ECONOMIC EMPOWERMENT', 'image' => 'v1\imgs\FlnUpdate29-4-26\1755874656210.jpg'],
-                    ['date' => '2026', 'title' => 'PROTECTING REFUGEES RIGHTS MATTERS', 'image' => 'v1\imgs\FlnUpdate29-4-26\1756453668341.jpg'],
-                    ['date' => '2026', 'title' => 'FLN PRIDE WALKING ALONGSIDE WOMEN AND GIRLS', 'image' => 'v1\imgs\FlnUpdate29-4-26\1774804050465.jpg'],
-
-
                     
+
                 ];
 
                 foreach ($news_items as $news) {
