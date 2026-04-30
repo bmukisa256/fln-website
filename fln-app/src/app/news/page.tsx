@@ -61,7 +61,6 @@ const newsItems = [
   { date: "2024", title: "FLN Distinguished Dinner Sponsors", image: "/imgs/dinnersponsors.jpg", category: "events", featured: false },
   { date: "2024", title: "Founder/President Bio", image: "/imgs/PHOTO-2023-12-29-20-28-10.jpg", category: "events", featured: false },
   { date: "2024", title: "Our Socials", image: "/imgs/WA-20230104-140156.jpeg", category: "events", featured: false },
-<<<<<<< HEAD
 
   { date: "2025", title: "FLN Symposium Women In Electoral Governance", image: "/imgs/FlnUpdate29-4-26/1758648916973.jpg", category: "events", featured: false },
   { date: "2025", title: "FLN Symposium Women In Electoral Governance SPONSORS", image: "/imgs/FlnUpdate29-4-26/1757350269515.jpg", category: "events", featured: false },
@@ -82,21 +81,6 @@ const newsItems = [
   { date: "2026", title: "PROTECTING REFUGEES RIGHTS MATTERS", image: "/imgs/FlnUpdate29-4-26/1756453668341.jpg", category: "events", featured: true },
   { date: "2026", title: "FLN PRIDE WALKING ALONGSIDE WOMEN AND GIRLS", image: "/imgs/FlnUpdate29-4-26/1774804050465.jpg", category: "events", featured: true },
 
-=======
-  { date: "2026", title: "FEMALE LAWYERS GIRLS EMPOWERMENT", image: "/imgs/FlnUpdate29-4-26/1750961988408.jpg", category: "events", featured: false },
-  { date: "2026", title: "FLN Mentorship Session at Muwema & Co Advocates", image: "/imgs/FlnUpdate29-4-26/1752549186983.jpg", category: "events", featured: false },
-  { date: "2026", title: "FLN partnership with The Empathy Whale at Zion Advocates", image: "/imgs/FlnUpdate29-4-26/1750852241061.jpg", category: "climate", featured: false },
-  { date: "2026", title: "Global Fund For Women", image: "/imgs/FlnUpdate29-4-26/1753124778837.jpg", category: "events", featured: false },
-  { date: "2026", title: "FLN Market Drive", image: "/imgs/FlnUpdate29-4-26/1761121137115.jpg", category: "events", featured: false },
-  { date: "2026", title: "FLN Workshop on Climate Change", image: "/imgs/FlnUpdate29-4-26/1766391920488.jpg", category: "climate", featured: false },
-  { date: "2026", title: "FLN IUIU-Rule of LAW-Leadership Summit", image: "/imgs/FlnUpdate29-4-26/1762585557380.jpg", category: "events", featured: false },
-  { date: "2026", title: "FLN Community Climate Change Drive", image: "/imgs/FlnUpdate29-4-26/1772045454239.jpg", category: "climate", featured: false },
-  { date: "2026", title: "FLN CORPORATE SOCIAL RESPONSIBILITY", image: "/imgs/FlnUpdate29-4-26/1753788952159.jpg", category: "events", featured: false },
-  { date: "2026", title: "UWA Womens Day", image: "/imgs/FlnUpdate29-4-26/1773498040652.jpg", category: "events", featured: false },
-  { date: "2026", title: "Women in Electoral Governance", image: "/imgs/FlnUpdate29-4-26/1760341181965.jpg", category: "events", featured: false },
-  { date: "2026", title: "Inter-University Leadership Conference", image: "/imgs/FlnUpdate29-4-26/1763636823152.jpg", category: "events", featured: false },
-  { date: "2026", title: "FISHERWOMEN AND CLIMATE CHANGE CRISIS", image: "/imgs/FlnUpdate29-4-26/1774363722331.jpg", category: "climate", featured: false },
->>>>>>> 7360790978b259f63fda2bb9e344c0d050d9a33b
 ];
 
 // ============================================================================
