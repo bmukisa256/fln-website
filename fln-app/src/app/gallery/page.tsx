@@ -287,9 +287,9 @@ const galleryImages = [
   { src: 'imgs/FlnUpdate29-4-26/1774409540942.jpg', title: '', description: '', category: 'events' },
   { src: 'imgs/FlnUpdate29-4-26/1774363722635.jpg', title: '', description: '', category: 'events' },
 
-  { src: 'imgs/FlnUpdate29-4-26/WhatsApp Image 2026-06-02 at 18.19.06.jpg', title: 'FLN climate change engagement with  christian women lawyers and youth', description: 'Climate change is not gender-neutral. Women and girls are often among the most affected by its impacts due to existing social, economic, and cultural inequalities. From droughts and floods to food insecurity and displacement, women frequently bear the greatest burden of caring for families and securing basic necessities such as water, food, and fuel.', category: 'events' },
-  { src: 'imgs/FlnUpdate29-4-26/WhatsApp Image 2026-06-02 at 18.20.09.jpg', title: '', description: "Addressing climate change requires empowering women, promoting gender equality, and ensuring that women's voices are represented in climate policies and decision-making processes. When women thrive, communities become more resilient, and the fight against climate change becomes more effective.", category: 'events' },
-  
+  { src: 'imgs/FlnUpdate29-4-26/WhatsApp Image 2026-06-02 at 18.19.06.jpeg', title: 'FLN climate change engagement with  christian women lawyers and youth', description: 'Climate change is not gender-neutral. Women and girls are often among the most affected by its impacts due to existing social, economic, and cultural inequalities. From droughts and floods to food insecurity and displacement, women frequently bear the greatest burden of caring for families and securing basic necessities such as water, food, and fuel.', category: 'events' },
+  { src: 'imgs/FlnUpdate29-4-26/WhatsApp Image 2026-06-02 at 18.20.09.jpeg', title: '', description: "Addressing climate change requires empowering women, promoting gender equality, and ensuring that women's voices are represented in climate policies and decision-making processes. When women thrive, communities become more resilient, and the fight against climate change becomes more effective.", category: 'events' },
+ 
 ];
 
 // ============================================================================
