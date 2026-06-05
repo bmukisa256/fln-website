@@ -38,13 +38,13 @@ const scaleIn = {
 const boardMembers = [
   { image: "/imgs/WA-20230105-133100.jpeg", name: "Hon Dr. Joyce Nalunga Birimumaaso", position: "President | Founder", description: "Member, Leadership Code Tribunal." },
   { image: "/imgs/justice-lillian.jpg", name: "Hon Prof. Lady Justice Lillian Tibatemwa Ekirukubinza", position: "Chairperson", description: "Justice of the Supreme Court." },
-  { image: "/imgs/jane-abodo.png", name: "Hon. Lady Justice Jane Frances Abodo", position: "Vice Chairperson", description: "Director of Public Prosecutions." },
-  { image: "/imgs/WA-20230105-142609.jpeg", name: "Ms. Angelina Namakula Ofwono", position: "Member", description: "Chief Legal, DFCU Bank." },
+  { image: "/imgs/jane-abodo.png", name: "Hon. Lady Justice Jane Frances Abodo", position: "Vice Chairperson", description: " Principal Judge." },
+  { image: "/imgs/WA-20230105-142609.jpeg", name: "Ms. Angelina Namakula Ofwono", position: "Member", description: "Managing Partner, Gardenia Advocates." },
   { image: "/imgs/WA-20230106-084858.jpeg", name: "Bulya Lillian", position: "Secretary", description: "Managing Partner, L-Bulya & Co. Advocates." },
   { image: "/imgs/PHOTO-2022-06-27-16-56-26.jpg", name: "Hope Atuhairwe Kisitu", position: "Member", description: "Corporation Secretary, Uganda Development Corporation." },
   { image: "/imgs/WA-20230109-152347.jpeg", name: "Anne Abeja", position: "Member", description: "Company Secretary Housing Finance Bank." },
   { image: "/imgs/suz.jpg", name: "Suzan Batuuka", position: "Member", description: "Head Legal Uganda Airlines." },
-  { image: "/imgs/joanita.jpg", name: "Joanita Bushara", position: "Member", description: "Managing Partner of Justitia Advocates Private Practice." }
+  { image: "/imgs/joanita.jpg", name: "Joanita Bushara", position: "Member", description: "Judge of High court, Uganda." }
 ];
 
 const secretariatMembers = [
@@ -59,7 +59,7 @@ const secretariatMembers = [
 ];
 
 const associateMembers = [
-  { image: "/imgs/asuman.png", name: "Hon. Asuman Kiyingi", position: "Deputy Chairperson, Leadership Code Tribunal." },
+  { image: "/imgs/asuman.png", name: "Hon. Asuman Kiyingi", position: "Leadership Code Tribunal." },
   { image: "/imgs/deo.jpg", name: "Kalikumutima Deo", position: "Managing Partner Kalikumutima & Co. Advocates." },
   { image: "/imgs/sp.jpg", name: "Musangala Simon Peter", position: "Managing Partner Musangala & Co. Advocates." },
   { image: "/imgs/sto.jpg", name: "Stanley Oketcho", position: "Partner Gem Advocates." },
