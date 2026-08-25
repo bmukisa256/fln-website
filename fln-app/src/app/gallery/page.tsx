@@ -289,7 +289,17 @@ const galleryImages = [
 
   { src: 'imgs/FlnUpdate29-4-26/WhatsApp Image 2026-06-02 at 18.19.06.jpeg', title: 'FLN climate change engagement with  christian women lawyers and youth', description: 'Climate change is not gender-neutral. Women and girls are often among the most affected by its impacts due to existing social, economic, and cultural inequalities. From droughts and floods to food insecurity and displacement, women frequently bear the greatest burden of caring for families and securing basic necessities such as water, food, and fuel.', category: 'events' },
   { src: 'imgs/FlnUpdate29-4-26/WhatsApp Image 2026-06-02 at 18.20.09.jpeg', title: '', description: "Addressing climate change requires empowering women, promoting gender equality, and ensuring that women's voices are represented in climate policies and decision-making processes. When women thrive, communities become more resilient, and the fight against climate change becomes more effective.", category: 'events' },
- 
+
+  { src: 'imgs/FlnUpdate25-8-26/WhatsApp Image 2026-08-24 at 05.11.51.jpeg', title: 'Climate change girls empowering at King ceasar University by FLN.', description: "Empowering girls to take action on climate change is critical because they are not only among those most affected by climate change, but also powerful agents of change. When girls are equipped with knowledge, skills, leadership opportunities and resources, they can develop innovative solutions, influence their communities and become champions of environmental protection.", category: 'events' },
+  { src: 'imgs/FlnUpdate25-8-26/WhatsApp Image 2026-08-24 at 05.11.51 (1).jpeg', title: '', description: "Investing in girls’ climate leadership has immense benefits: it strengthens community resilience, promotes sustainable livelihoods, advances gender equality, and prepares a generation of young women to lead the transition towards a greener and more sustainable future.", category: 'events' },
+  { src: 'imgs/FlnUpdate25-8-26/WhatsApp Image 2026-08-24 at 05.11.52 (1).jpeg', title: '', description: "Empowering a girl today is investing in a climate-resilient community tomorrow.", category: 'events' },
+  { src: 'imgs/FlnUpdate25-8-26/WhatsApp Image 2026-08-24 at 05.11.52.jpeg', title: '', description: "", category: 'events' },
+
+  { src: 'imgs/FlnUpdate25-8-26/WhatsApp Image 2026-08-24 at 09.54.58.jpeg', title: ' FLN held a climaye change workshop for female lawyers with the topic', description: "Climate change, women and technology are deeply interconnected. Women and girls are often among those most affected by climate change, yet they are also powerful agents of resilience, innovation and transformation.", category: 'workshops' },
+  { src: 'imgs/FlnUpdate25-8-26/WhatsApp Image 2026-08-24 at 09.54.59 (1).jpeg', title: '', description: "Technology can help bridge this gap by giving women access to climate information, early-warning systems, digital finance, clean-energy solutions, agricultural technologies and new markets. ", category: 'workshops' },
+  { src: 'imgs/FlnUpdate25-8-26/WhatsApp Image 2026-08-25 at 09.54.59 (2).jpeg', title: '', description: "Digital platforms can also amplify women's voices in climate decision-making and create opportunities for women entrepreneurs to develop green businesses.", category: 'workshops' },
+  { src: 'imgs/FlnUpdate25-8-26/WhatsApp Image 2026-08-25 at 09.54.59.jpeg', title: '', description: "Invest in women. Equip them with technology. Empower them to lead the climate transition.", category: 'workshops' },
+
 ];
 
 // ============================================================================
