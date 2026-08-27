@@ -254,7 +254,7 @@ export default function Home() {
                 {/* Main Image */}
                 <div className="relative aspect-[3/4] rounded-3xl overflow-hidden bg-slate-200 shadow-2xl">
                   <Image
-                    src="/imgs/IMG-20250616-WA0064.jpg"
+                    src="/imgs/FlnUpdate29-4-26/1760341181965.jpg"
                     alt="Female Lawyers Network"
                     fill
                     className="object-cover"
@@ -275,7 +275,7 @@ export default function Home() {
                   className="absolute -bottom-4 -left-4 lg:-left-8 bg-white p-3 rounded-xl shadow-xl flex items-center gap-3"
                 >
                   <div className="w-10 h-10 rounded-lg overflow-hidden relative bg-slate-200">
-                    <Image src="/imgs/WA-20230105-133100.jpeg" alt="President" fill className="object-cover" />
+                    <Image src="/imgs/FlnUpdate29-4-26/1760341181965.jpg" alt="President" fill className="object-cover" />
                   </div>
                   <div>
                     <p className="font-bold text-navy text-xs">Hon. Dr. Joyce</p>
