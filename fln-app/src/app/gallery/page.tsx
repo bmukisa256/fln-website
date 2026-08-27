@@ -300,6 +300,10 @@ const galleryImages = [
   { src: 'imgs/FlnUpdate25-8-26/WhatsApp Image 2026-08-25 at 09.54.59 (2).jpeg', title: '', description: "Digital platforms can also amplify women's voices in climate decision-making and create opportunities for women entrepreneurs to develop green businesses.", category: 'workshops' },
   { src: 'imgs/FlnUpdate25-8-26/WhatsApp Image 2026-08-25 at 09.54.59.jpeg', title: '', description: "Invest in women. Equip them with technology. Empower them to lead the climate transition.", category: 'workshops' },
 
+  { src: 'imgs/FlnUpdate25-8-26/WhatsApp Image 2026-08-27 at 15.06.40.jpeg', title: '', description: "Invest in women. Equip them with technology. Empower them to lead the climate transition.", category: 'workshops' },
+  { src: 'imgs/FlnUpdate25-8-26/WhatsApp Image 2026-08-27 at 15.06.40 (1).jpeg', title: '', description: "Invest in women. Equip them with technology. Empower them to lead the climate transition.", category: 'workshops' },
+  { src: 'imgs/FlnUpdate25-8-26/WhatsApp Image 2026-08-27 at 15.06.40 (2).jpeg', title: '', description: "Invest in women. Equip them with technology. Empower them to lead the climate transition.", category: 'workshops' },
+
 ];
 
 // ============================================================================
